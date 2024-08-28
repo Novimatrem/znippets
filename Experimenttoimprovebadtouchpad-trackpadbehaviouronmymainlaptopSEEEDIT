@@ -1,0 +1,18 @@
+# Experiment to improve bad touchpad/trackpad behaviour on my main laptop (SEE EDIT)
+
+# DO THIS AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR DAMAGE TO YOUR INSTALL IF YOU FOLLOW THIS.
+
+# thanks to @IceWolf@meow.social 
+
+sudo apt remove -y xserver-xorg-input-synaptics
+sudo apt install -y xserver-xorg-input-libinput
+sudo reboot now # reboot the system
+
+# hope it works, 🤞
+
+# EDIT: doing this seems to enable "disable mouse movement while typing", I can't deal with that.
+#           to undo this, re-install xserver-xorg-input-synaptics and reboot.
+
+
+# for future reference, I am using this in addition to this guide;
+# https://novimatrem.gitlab.io/blog/2020/08/22/how-to-fully-properly-disable-mouse-acceleration-in-most-linux-distros-and-de.html

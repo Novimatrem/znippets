@@ -1,0 +1,9 @@
+After spending my entire day debugging in Garry's Mod, I want to say this:
+
+If you are suffering from lua panic not enough memory errors in Garry's Mod, ensure that you are NOT subscribed to the addon "Simple Garbage Collector" by 'techno atomic tangerine'
+
+Not an addon for me. Either something's wrong with it, or the regular automatic garbage collection is saving my existing setup from breaking. For me this addon causes lots (100MB+) of initial extra lua memory load, and seems to allow things to leak memory (or has one itself) until the game crashes. So, not for my setup.
+
+I wouldn't recommend it, and if you have it installed, uninstall it, or your game may suffer heavily.
+
+#gaming

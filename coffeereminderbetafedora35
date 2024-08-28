@@ -1,0 +1,13 @@
+# coffee reminder beta (fedora 35)
+
+sudo dnf install -y cronie
+crontab -e
+
+[[Press Ctrl+X]]
+
+(crontab -l ; echo "0 */6 * * * notify-send 'Coffee time?'")| crontab -
+(crontab -l ; echo "@reboot sleep 300 && notify-send 'Coffee time?'")| crontab -
+
+sudo systemctl start crond
+sudo systemctl enable crond
+sudo systemctl status crond.service 

@@ -1,0 +1,20 @@
+# Enable Alt+F4 and disable Ctrl+Q on Pop!_OS
+
+sudo apt install -y xbindkeys
+
+touch /home/$(whoami)/.xbindkeysrc
+
+echo '"null"' >> /home/$(whoami)/.xbindkeysrc
+echo -e ' \t Control + Q' >> /home/$(whoami)/.xbindkeysrc
+
+echo '"wmctrl -c :ACTIVE:"' >> /home/$(whoami)/.xbindkeysrc
+echo -e ' \t Alt + F4' >> /home/$(whoami)/.xbindkeysrc
+
+xbindkeys_autostart
+
+killall xbindkeys
+pkill xbindkeys
+
+xbindkeys
+
+# Done, Ctrl+Q should be disabled, now, and Alt+F4 should work as intended.

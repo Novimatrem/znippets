@@ -1,0 +1,37 @@
+# Force a monitor that only says it's 640x480 to be any mode that it actually supports. (X11) v5
+# (ensure you set this to a mode you know your monitor actually does properly support)
+
+# command
+cvt 1280 720 60
+
+# makes this line
+Modeline "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync
+
+# use this line in this command	
+xrandr --newmode "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync
+
+# then add this mode to the display, replacing NAME with the name of your display, so, usually its connector
+xrandr --addmode NAME "1280x720_60.00"
+
+# you can get what NAME is by seeing it in the output of	
+xrandr --listactivemonitors
+
+# mine ends up being 
+xrandr --addmode DisplayPort-1 "1280x720_60.00"
+
+# for me specifically, i have to type these commands in order;
+xrandr --newmode "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync
+xrandr --addmode DisplayPort-1 "1280x720_60.00"
+
+# then go into your regular display control panel, monitor preferences, etc, and you will see a new option.
+# select that, apply it, and your display will now work properly. yay!
+
+# EDIT: having colour issues? a command like this could help. but, it might be darker.
+# adjust in your monitor/TV settings menu [internal monitor one] afterwards to try to make up for it.
+# given you are following this guide, the actual colour settings didn't get set, you see.
+xrandr --output DisplayPort-1 --brightness 1.2 --gamma 0.355:0.355:0.355
+# maybe put something like this into a script and keep it running all the time;
+while true; do sleep 7s; xrandr --output DisplayPort-1 --brightness 1.2 --gamma 0.355:0.355:0.355; done
+# OBVIOUSLY you may need to adjust these gamma/bright values depending on how your monitor reacts!!
+
+# hopefully that worked! enjoy~

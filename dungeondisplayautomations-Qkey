@@ -1,0 +1,13 @@
+Q::
+Sleep,0
+MouseGetPos, xpos, ypos 
+CoordMode, Mouse, Screen
+x := 60
+y := 140
+Click %x% %Y%
+Sleep,0
+CoordMode, Mouse, Screen
+x := 854
+y := 480
+MouseMove, %xpos%, %ypos%
+keywait,q

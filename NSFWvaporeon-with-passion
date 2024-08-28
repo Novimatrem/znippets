@@ -1,0 +1,251 @@
+#!/bin/bash
+
+# (NSFW) vaporeon with passion v2
+
+# vaporeon-with-passion.sh v2
+
+# deps: xdotool
+clear
+echo "deps: xdotool"
+echo ""
+echo "SWITCH TO WINDOW NOW"
+echo ""
+sleep 3s
+sleep 1s
+
+
+echo "Yes..."
+
+sleep 0.1s
+
+count=250
+for i in $(seq $count); do
+    xdotool key 1
+done
+
+sleep 0.1s
+
+count=250
+for i in $(seq $count); do
+    xdotool key BackSpace
+done
+
+sleep 0.1s
+
+# vaporeon code here
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "Hey guys, did you know that in terms of male human"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "and female Pokemon breeding, Vaporeon is the most"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "compatible Pokemon for humans? Not only are they "
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "in the field egg group, which is mostly comprised"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "of mammals, Vaporeon are an average of 3”03’ tall"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "and 63.9 pounds, this means they’re large enough"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "to be able handle human dicks, and with their "
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "impressive Base Stats for HP and access to "
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "Acid Armor, you can be rough with one. Due to"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "their mostly water based biology, there’s no"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "doubt in my mind that an aroused Vaporeon would"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "be incredibly wet, so wet that you could easily"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "have sex with one for hours without getting sore."
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "They can also learn the moves Attract, "
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "Baby-Doll Eyes, Captivate, Charm, and Tail Whip,"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "along with not having fur to hide nipples, so it’d"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "be incredibly easy for one to get you in the mood."
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "With their abilities Water Absorb and Hydration,"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+
+sleep 0.1s
+xdotool type "they can easily recover from fatigue with enough"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "water. No other Pokemon comes close to this level"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+
+
+sleep 0.1s
+xdotool type "of compatibility. Also, fun fact, if you pull out"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "enough, you can make your Vaporeon turn white."
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "Vaporeon is literally built for human dick."
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+sleep 0.1s
+xdotool type "Ungodly defense stat+high HP pool+Acid Armor means"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "it can take cock all day, all shapes and sizes"
+sleep 0.1s
+
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "and still come for more"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+# /vaporeon code here
+
+sleep 0.1s
+
+xdotool key m
+
+sleep 0.1s
+
+xdotool key e
+
+sleep 0.1s
+
+xdotool key o
+
+sleep 0.1s
+
+xdotool key w
+
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+clear
+echo "Done."
+

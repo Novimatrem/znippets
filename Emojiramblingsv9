@@ -1,0 +1,41 @@
+# emoji-thing-v9.txt
+
+# ubuntu
+
+# how to make it work
+sudo apt install -y ttf-ancient-fonts
+sudo apt install -y fonts-noto-color-emoji
+sudo apt install -y fonts-recommended
+
+sudo apt install -y gnome-characters
+
+# make emoji work way better in firefox
+Emoji Everywhere (extension): https://addons.mozilla.org/en-GB/firefox/addon/emoji-everywhere
+Emoji Cheatsheet (extension): https://addons.mozilla.org/en-GB/firefox/addon/emoji-cheatsheet/
+
+# good gnome emoji selector shell extension
+Emoji Selector by Maestroschan - https://extensions.gnome.org/extension/1162/emoji-selector/
+
+# how to type them
+While in a text field, right-click and select the "Insert Emoji" option from the context menu.
+
+# possible key combos to type them if the 'Insert Emoji' option is missing
+If that doesn't work, try hitting Ctrl + . (full stop).
+
+If that doesn't work, try hitting Control + Shift + E, then press 'Space', works in most apps.
+
+If that doesn't work, try hitting Ctrl + ; (semi-colon)
+
+If that doesn't work, try hitting Alt + M
+
+If that doesn't work, try hitting Super + E
+
+If that doesn't work try typing the emoji name between colons :heart:
+
+If that doesn't work, try looking for an emoji button you can click with your mouse, silly
+
+
+# backup way to type them if all else fails
+sudo apt install -y gnome-characters
+
+open gnome-characters "sometimes just named characters", find an emoji, and click it to copy it.

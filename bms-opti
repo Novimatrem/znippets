@@ -1,0 +1,3 @@
+// bms-opti.cfg
+mat_setvideomode 1600 900 0
+fps_max 75

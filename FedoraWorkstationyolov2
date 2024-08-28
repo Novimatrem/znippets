@@ -1,0 +1,3 @@
+# Fedora Workstation 'yolo' v2 for .bashrc
+
+alias yolo='sudo dnf autoremove -y && sudo dnf check -y && sudo dnf upgrade -y && sudo dnf distro-sync -y && sudo dnf autoremove -y && sudo dnf check -y'

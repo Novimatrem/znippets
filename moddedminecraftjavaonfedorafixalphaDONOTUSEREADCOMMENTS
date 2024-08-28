@@ -1,0 +1,43 @@
+# modded minecraft on fedora fix alpha DO NOT USE, READ COMMENTS
+
+# this is dumb as fuck, don't run this- don't do this. i was desperate
+# you will lose the ability to update your system whilst oracle's java is installed, after running this script.
+# to restore the ability to update the system, you need to uninstall oracle's java, with the command sudo dnf remove -y jdk1.8-2000:1.8.0_311-fcs.x86_64 (or thereabouts, use tab completion on jdk1.8-)
+# t-then you could just, you know.. do this process again to get modded minecraft back :) :)
+
+
+# this is not a script, this is a manual process, copy paste into your terminal, read comments, the whole jobby VVV
+
+# start
+sudo dnf autoremove -y && sudo dnf check -y && sudo dnf upgrade -y && sudo dnf distro-sync -y && sudo dnf autoremove -y && sudo dnf check -y
+
+sudo dnf remove -y java-1.8.0-openjdk
+sudo dnf remove -y java-11-openjdk-headless
+sudo dnf remove -y java-11-openjdk
+
+#<download java 8 from https://www.oracle.com/java/technologies/downloads/ {requires signup!!}>
+
+sudo rpm -ivh ./jdk-8u311-linux-x64.rpm
+
+sudo dnf autoremove -y && sudo dnf check -y && sudo dnf upgrade -y && sudo dnf distro-sync -y && sudo dnf autoremove -y && sudo dnf check -y
+
+# restart the PC
+
+sudo dnf autoremove -y && sudo dnf check -y && sudo dnf upgrade -y && sudo dnf distro-sync -y && sudo dnf autoremove -y && sudo dnf check -y
+
+sudo alternatives --config java
+
+java --version
+
+java -version
+
+# set minecraft's java executable to /usr/bin/java in more options under edit installation of the install you're using
+
+# CONGRATULATIONS, RUN IT, IT SHOULD WORK NOW!! YOU'RE DONE, HAVE FUN!!
+
+
+# bonus link1 (wrong in some places): https://www.tecmint.com/install-java-in-fedora/
+
+# bonus note: i strongly recommend using multimc, it will allow you to ensure you're using the-
+        -right java, and will also allow you to easily assign the amount of RAM the game can use.
+

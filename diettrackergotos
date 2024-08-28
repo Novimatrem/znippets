@@ -1,0 +1,100 @@
+# thank you to Wafer for the inspiration of this small script
+
+count = 1
+
+import time
+import sys
+from datetime import datetime
+
+now = datetime.now()
+
+# dd/mm/YY H:M:S
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+
+def jump(lineno):
+    frame = sys._getframe().f_back
+    called_from = frame
+
+    def hook(frame, event, arg):
+        if event == 'line' and frame == called_from:
+            try:
+                frame.f_lineno = lineno
+            except ValueError as e:
+                print ("jump failed:"), e
+            while frame:
+                frame.f_trace = None
+                frame = frame.f_back
+            return None
+        return hook
+
+    while frame:
+        frame.f_trace = hook
+        frame = frame.f_back
+    sys.settrace(hook)
+# jumppoint- line 34
+
+import os
+os.system('cls' if os.name == 'nt' else 'clear')
+
+rejectqueryyesno = "None"
+
+print("------------------------------------------------------------------------")
+print("You should make a note of every time you eat something.")
+print("")
+print("If you're behaving, that means you're only eating 3 meals a day,")
+print("at these specific mealtimes.")
+print("[1] Breakfast, 8:30AM. [2] Mid-day, 01:30. [3] Last, 6:30 PM.")
+print("")
+print("Ensure that you stay quite hydrated.") 
+print("")
+print("""Type exit to exit. Though, probably keep this open so that you remember it.""")
+print("------------------------------------------------------------------------")
+print("")
+
+now = datetime.now()
+
+# dd/mm/YY H:M:S
+dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+
+query = input("""Please tell me, what have you eaten?: \n""")
+
+if query == "exit":
+        os.system('cls' if os.name == 'nt' else 'clear')
+        sys.exit()
+        os._exit()
+        exit()
+
+print("------------------------------------------------------------------------")
+print (query)
+print("------------------------------------------------------------------------")
+
+
+while rejectqueryyesno not in ("yes", "no"):
+    rejectqueryyesno = input ("""Is the above input correct?: (answer yes or no) \n""")
+    if rejectqueryyesno == "yes":
+        print("------------------------------------------------------------------------")
+        print("Saved to diet-log.txt, for reference.")
+        print("(This file is in $PWD or the script-folder.)")
+        print("------------------------------------------------------------------------")
+
+        with open("diet-log.txt", "a") as text_file:
+            print("Logged an instance of eating '" + query + "', at time:", dt_string.format(query), file=text_file)
+
+        print("""If you ate anything else, please enter that into this thing, too.""")
+        print("")
+        print("Strike RETURN to restart script/return to menu.")
+        input()
+        time.sleep(0)
+        jump(34)
+    elif rejectqueryyesno == "no":
+        print("""------------------------------------------------------------------------""")
+        print("Whoops. Typo!")
+        print("Strike RETURN to restart script and try again.")
+        print("""------------------------------------------------------------------------""")
+        input()
+        time.sleep(0)
+        jump(34)
+    else:
+        print("")
+        print("Please enter yes or no.")
+        print("")

@@ -1,0 +1,65 @@
+#!/bin/bash
+# HAIKU-start-all-the-stuff.sh v5
+cd "$(dirname "$0")"
+
+clear
+sleep 0.166s
+# ---
+echo "HAIKU-start-all-the-stuff.sh"
+echo ""
+sleep 0.166s
+echo "[STARTED] Starting all the stuff..."
+sleep 0.166s
+
+# +Start of apps
+
+# WebPositive
+sleep 0s && nohup /boot/system/apps/WebPositive && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown && echo ""
+
+# GNOME Web (epiphany)
+sleep 0s && nohup "/boot/system/apps/GNOME Web/Web" && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown && echo ""
+
+# Clementine
+sleep 0s && nohup /boot/system/apps/Clementine/Clementine && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown && echo ""
+
+# QMPlay2
+sleep 0s && nohup /boot/system/apps/QMPlay2/QMPlay2 && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown && echo ""
+
+# QuiteRSS
+sleep 0s && nohup /boot/system/apps/QuiteRSS/QuiteRSS && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown && echo ""
+
+# Psi-plus
+sleep 0s && nohup /boot/system/apps/Psi-plus/Psi-plus && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown && echo ""
+
+# /End of apps
+
+
+# Cleanup
+sleep 0s && nohup echo "" && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown
+rm -rf /opt/nohup.out
+rm -rf $HOME/nohup.out
+rm -rf $(pwd)/nohup.out
+
+# MULTIPROCESS POWERRR!
+echo ""
+echo "MULTIPROCESS POWERRR!"
+echo ""
+sleep 0.166s
+echo ""
+sleep 0.166s
+# Exit the script after all the progs have finished starting to launch
+echo "[WORKING, PLEASE WAIT] Almost done starting all the stuff..."
+echo "[loading...]"
+echo ""
+# Make this delay long enough that the terminal exits after all the progs have done launching
+# Else you do not return to the prompt and it hangs
+sleep 48s
+echo ""
+echo "[FINISHED] Done!"
+echo "!!!"
+echo ""
+# ---
+sleep 0.166s
+exit
+
+

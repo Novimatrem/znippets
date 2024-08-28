@@ -1,0 +1,1 @@
+echo "disk, max, current, free, filled%" && sudo df -h | grep vdb | grep -v kvm

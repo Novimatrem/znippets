@@ -1,0 +1,9 @@
+# nethack easier launch (put in .bashrc)
+echo "type zoey-nh to play nethack on hf, properly"
+echo "(zoom out twice, first)"
+echo ""
+
+alias zoey-hf='tput cols && tput lines && echo "if the big number is not 100 or above, and the small number is not 25 or above, then-" && echo "press ctrl+c and zoom out, then re-run" && echo copy for pasting: REDACTED - then press return && read -p "Press [Enter] key to start.., or Ctrl+C to readjust" && ssh nethack@eu.hardfought.org && ccb && cbh'
+
+alias zoey-nh='zoey-hf'
+# /nethack easier launch (put in .bashrc)

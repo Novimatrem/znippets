@@ -1,0 +1,34 @@
+# Initial experiments with Steam on BSD - v3
+# run with bash nameofscript.sh
+
+sudo pkg update
+sudo pkg upgrade
+
+sudo freebsd-update fetch
+sudo freebsd-update install
+
+sudo pkg update
+sudo pkg upgrade
+
+sudo pkg install git
+sudo pkg install ca_root_nss
+sudo pkg install linux-c7-dbus-libs
+sudo pkg install linux-c7-devtools
+sudo pkg install linux-c7-nss
+sudo pkg install ruby
+sudo pkg install git
+sudo pkg install zenity
+
+git clone https://github.com/shkhln/linuxulator-steam-utils
+
+cd linuxulator-steam-utils
+
+make
+
+sudo make install
+
+/opt/steam-utils/bin/steam-install
+
+/opt/steam-utils/bin/steam
+
+

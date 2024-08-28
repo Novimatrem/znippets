@@ -1,0 +1,5 @@
+# do thing at specific location command blocks (1.19) [rip testfor, was so much easier]
+
+/execute if entity @p[x=4,y=58,z=6,distance=..1] run say here
+
+# if entity nearest player within 1 block of 4, 58, 6, then run say here

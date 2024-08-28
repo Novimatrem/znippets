@@ -1,0 +1,44 @@
+bind R +button5
+/bind R +button5
+seta bind R +button5
+/seta bind R +button5
+
+bind r +button5
+/bind r +button5
+seta bind r +button5
+/seta bind r +button5
+
+bind space +moveup
+/bind space +moveup
+seta bind space +moveup
+/seta bind space +moveup
+
+bind del quit
+/bind del quit
+seta bind del quit
+/seta bind del quit
+
+bind P ut_itemuse
+/bind P ut_itemuse
+seta bind P ut_itemuse
+/seta bind P ut_itemuse
+
+bind p ut_itemuse
+/bind p ut_itemuse
+seta bind p ut_itemuse
+/seta bind p ut_itemuse
+
+bind CTRL +button7
+/bind CTRL +button7
+seta bind CTRL +button7
+/seta bind CTRL +button7
+
+bind y ui_radio
+/bind y ui_radio
+seta bind y ui_radio
+/seta bind y ui_radio
+
+bind MOUSE4 +moveup
+/bind MOUSE4 +moveup
+seta bind MOUSE4 +moveup
+/seta bind MOUSE4 +moveup

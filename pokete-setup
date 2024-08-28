@@ -1,0 +1,26 @@
+#!/bin/bash
+# pokete-setup.sh
+
+echo "pokete-setup.sh"
+echo "makes it easier to install and run pokete on linux without stress"
+echo ""
+echo "To begin, enter your password"
+sudo echo ""
+
+sudo dnf install -y git # fedora
+sudo apt install -y git # ubuntu
+
+# linux deps
+sudo pip install scrap_engine playsound pygobject
+
+# just to be sure/paranoia
+sudo pip install scrap_engine pynput playsound pygobject
+
+# clone repo
+cd "$(dirname "$0")"
+git clone https://github.com/lxgr-linux/pokete.git
+
+# run
+echo "Running!"
+cd pokete
+python3 pokete.py

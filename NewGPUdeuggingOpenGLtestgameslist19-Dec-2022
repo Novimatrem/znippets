@@ -1,0 +1,18 @@
+New GPU deugging OpenGL test games list 19/Dec/2022:
+
+
+
+Half-Life 2: Lost Coast (can test OpenGL, and compare with another creature's results)
+[ensure you both have novi's source engine config file]
+
+
+
+DOOM 2016 (can compare between OpenGL and Vulkan, and possibly compare with another creature's results)
+[ensure you have the same exact settings between users]
+
+
+
+Tomb Raider 2013 (can test OpenGL, and possibly compare with another creature's results)
+[ensure you have the same exact settings between users]
+
+

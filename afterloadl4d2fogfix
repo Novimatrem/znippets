@@ -1,0 +1,10 @@
+// afterload_l4d2fogfix.cfg v2
+// after-load l4d2 fog fix
+
+sv_cheats 1
+mat_grain_scale_override 0
+fog_enable 1
+fog_enableskybox 1
+fog_override 0
+r_farz 99999999999999999999999999999999999999
+sv_cheats 0

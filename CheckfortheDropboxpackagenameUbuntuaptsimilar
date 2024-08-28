@@ -1,0 +1,2 @@
+sudo apt search dropbox | grep dropbox | grep / | grep dropbox | grep -v lib | grep -v golang | grep -v python3 | grep dropbox
+

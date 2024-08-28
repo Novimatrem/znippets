@@ -1,0 +1,1 @@
+-console -w 640 -h 480 -fullscreen -high -novid -trusted +exec autoexec.cfg -forcenovsync -noforcemaccel -noforcemparms -noforcemspd +disconnect +exec custom.cfg -secure -sillygibs -lv -autoexec -soft +_setrenderer software -vid_mode software -vt software

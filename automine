@@ -1,0 +1,234 @@
+#!/bin/bash
+# automine.sh
+
+clear
+
+echo "automine.sh"
+
+read -p "Have you ever ran this script on this system install before (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  echo "" && echo "Running." && echo "";
+else
+  echo "" && echo "Installing requirements." && sudo dnf install -y xdotool && exit;
+fi
+
+echo "Switch to the game now!"
+sleep 3s
+
+while true
+do
+xdotool keyup w
+xdotool mouseup 1
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+# Look down a bit
+xdotool mousemove_relative 0 300
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# walk fowards
+xdotool keydown w
+sleep 1s
+xdotool keyup w
+
+# Look up a bit
+xdotool mousemove_relative 0 -300
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+# Look down a bit
+xdotool mousemove_relative 0 300
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# walk fowards
+xdotool keydown w
+sleep 1s
+xdotool keyup w
+
+# Look up a bit
+xdotool mousemove_relative 0 -300
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+# Look down a bit
+xdotool mousemove_relative 0 300
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# walk fowards
+xdotool keydown w
+sleep 1s
+xdotool keyup w
+
+# Look up a bit
+xdotool mousemove_relative 0 -300
+
+echo "Now digging sightlines."
+
+sleep 0.2s
+
+# Look left
+xdotool mousemove_relative 600 0
+
+# walk fowards
+xdotool keydown w
+sleep 0.2s
+xdotool keyup w
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Turning around
+xdotool mousemove_relative -- -600 0
+xdotool mousemove_relative -- -600 0
+
+# walk fowards
+xdotool keydown w
+sleep 0.2s
+xdotool keyup w
+
+sleep 0.2s
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+
+# Dig the block
+xdotool mousedown 1
+
+sleep 0.44s #adjust based on how good your pickaxe is
+
+xdotool mouseup 1
+#/
+
+# Look back normal
+xdotool mousemove_relative 600 0
+
+# walk fowards
+xdotool keydown w
+sleep 0.2s
+xdotool keyup w
+
+echo "Looping!"
+done
+
+
+

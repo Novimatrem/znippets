@@ -1,0 +1,19 @@
+# Set KDE Plasma pointer speed to a value *between* the ones allowed by the pegs in the GUI
+
+You can modify the value of the mouse pointer speed in KDE to allow values between what the pegs
+ allow you to set in the GUI by going to your home directory, navigate to .config folder and then
+  open `kcminputrc` file. ( /home/<your_username>/.config/kcminputrc )
+
+You should see a line that says something like this:
+
+`XLbInptPointerAcceleration=`
+
+Just change the decimal value to suit your needs. Once you saved, just reboot/reset your KWin/Plasma
+ desktop.
+
+Personally for me, it seems those two pegs in the settings set it between 0.6, to 0.8, so my perfect
+ sensitivity would be 0.7
+
+
+Thank you so much to The Linux Legend (@LinuxLegend@fosstodon.org) for figuring this out for me,
+ absolute lifesaver 

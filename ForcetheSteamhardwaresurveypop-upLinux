@@ -1,0 +1,10 @@
+# close steam
+
+# type the following command into your terminal
+sed -i -e '/SurveyDate/ s/"[0-9].*"/"'$(date +%Y-%m-%d -d "1 year ago")'"/' ~/.steam/steam/config/config.vdf
+
+# re-open steam
+
+# it should now pop-up the survey
+
+# if it doesn't work, repeat these steps, but find and use the path of your actual config.vdf

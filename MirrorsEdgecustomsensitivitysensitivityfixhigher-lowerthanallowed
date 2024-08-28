@@ -1,0 +1,16 @@
+Mirror's Edge custom sensitivity, sensitivity fix (+higher/lower than allowed)
+
+A custom (+ lower/higher than allowed) mouse sensitivity can be set through bindings in a config file. 
+Find the [Engine.PlayerInput] section in the config file,
+My Documents\EA Games\Mirror's Edge\TdGame\Config\TdInput.ini and add a line like this:
+
+Bindings=(Name="NumPadOne",Command="Setsensitivity 7",Control=False,Shift=False,Alt=False)
+
+This example binds numpad 1 to set a sensitivity of 7.
+
+The file may be set as read-only by default, you can untick that in Properties, before editing it.
+
+Just MAKE SURE that TdInput.ini is set to read-only AGAIN before you start the game,
+else your changes would be overwritten by the game.
+
+

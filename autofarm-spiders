@@ -1,0 +1,27 @@
+#!/bin/bash
+# autofarm-spiders.sh
+
+clear
+
+echo "autofarm-spiders.sh"
+
+read -p "Have you ever ran this script on this system install before (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  echo "" && echo "Running." && echo "";
+else
+  echo "" && echo "Installing requirements." && sudo dnf install -y xdotool && exit;
+fi
+
+
+while true
+do
+
+sleep 0.8s
+
+xdotool click 1
+echo "Clicked! (Ctrl+C in this Terminal quickly to quit)"
+
+done
+
+
+

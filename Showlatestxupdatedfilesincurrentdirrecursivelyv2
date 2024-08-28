@@ -1,0 +1,2 @@
+read -p 'How many? ' count && echo '(oldest)' && find . -type f -printf '%T@ %p\n' | sort -n | cut -d' ' -f 2- | tail -n $count && echo '(newest)'
+

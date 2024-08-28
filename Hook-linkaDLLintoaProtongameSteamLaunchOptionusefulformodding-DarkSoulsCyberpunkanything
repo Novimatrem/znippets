@@ -1,0 +1,18 @@
+# Hook/link a DLL into a Proton game (Steam Launch Option) useful for modding. 
+# Dark Souls, Cyberpunk, anything.
+
+
+# Use this/prepend this on the launch options for the game, replacing the meow with the name
+#    of the DLL you are trying to hook into your game (without extension).
+
+WINEDLLOVERRIDES="meow=n,b" %command%
+
+
+
+# Cyberpunk (Cyber Engine Tweaks)
+WINEDLLOVERRIDES="version=n,b" %command%
+
+
+# Dark Souls PTDE (DSfix)
+WINEDLLOVERRIDES="dinput8=n,b" %command%
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# bullshit-keepawake.sh
+
+while true;
+do
+
+sleep 1s
+
+xdotool key Num_Lock
+xdotool mousemove_relative 0 0
+
+echo amogus
+
+done
+
+

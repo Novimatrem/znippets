@@ -1,0 +1,49 @@
+Crostini notes (Chromebook):
+
+I didn't have a great first experience getting my Chromebook as Linuxy as I could.
+I had no success with GalliumOS, Chrx, or Crouton, they all failed, some dramatically!
+
+I was left with the final option I could try being Crostini, Google's Linux Debian sandboxy containerized thing.
+
+Apparently you can just install the KDE desktop & gnome-software store seamlessly.
+This is what encouraged me to try.
+
+Ensure you are fully updated in the Settings > About ChromeOS page.
+Perhaps even opt into the beta, from there.
+
+Press the Search key/click the start menu button, and type Linux, hit Enter.
+
+Turn on the Linux development environment option in the settings, there.
+
+Enter exactly 50% *of the space remaining free/available on your disk* when it asks.
+(for me this was 22GB, because I had 44GB free)
+
+When the initial terminal pops up after it's installed, type the following commands:
+
+sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y
+
+(^ to ensure you'll be fully up to date ^)
+
+Then, type these following commands to get you all you'll need initially, to get going:
+
+# Installs
+sudo apt install -y task-kde-desktop
+sudo apt install -y dolphin
+sudo apt install -y papirus-icon-theme
+sudo apt install -y gimp
+sudo apt install -y gnome-software
+sudo apt install -y gnome-software-common
+sudo apt install -y plasma-discover
+sudo apt install -y plasma-discover-common
+sudo apt install -y gedit
+sudo apt install -y pip
+sudo apt install -y python3-pip
+sudo apt install -y synaptic
+sudo apt install -y command-not-found
+
+After all that, type this command again to ensure all is up to date and fine;
+
+sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y
+
+
+Then you should be all good to go, good luck, and have fun! Hope it helps!

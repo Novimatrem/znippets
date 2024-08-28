@@ -1,0 +1,28 @@
+The pillars of a DE/WM being any good [for me] (revision 4)
+
+If a desktop environment/window manager doesn't do the following, I can't stand it, and thus do not expect me to use it.
+
+(note that my criteria for what makes a desktop usable may change over time)
+
+1. Has the ability to search through all installed applications for a specific one, and have this be very quick to access.
+(For example, pressing the Super key in most distros will allow searching for applications immediately, or Ctrl+Escape on Xfce).
+
+2. Has the ability to list all installed applications in a visible and readable form.
+(For example, GNOME 3's "applications menu" [Super+A], and Xfce4's xfce4-appfinder.)
+
+3. Has the ability to set applications as favourites, to be accessed in an easy accessible way.
+(For example, Cinnamon's 'Pin to Panel', Xfce4's favourites in the start menu, Pinning to the Ubuntu Dock, etc.)
+
+4. Has the ability to track notifications into a list for referring to at a later time. So I don't miss anything.
+(For example, the Notifications log that can be enabled in current Xfce, the Recent Notifications applet indicator for Unity 7, etc.)
+
+5. Has the ability to fully use all types of things known as "tray icons", "appindicators", etc.
+I find these things, that go by various names, very important- some applications I use REQUIRE them--
+and even if they're not strictly REQUIRED, they're really nice to have. 
+GNOME 3 broke their support recently, but there are extensions to hack-back full functionality.
+
+6. Has the ability to set a 'default monitor' for things such as fullscreen game opening, "taskbar", etc.
+If this isn't possible, stuff opens on the wrong monitors, and it is really annoying. It's even worse in-
+  -desktops where you can't move fullscreen programs and games *between* monitors.
+
+If a desktop has those functions, I can start to get along with it, even if it's not perfect. If not, it's not AT ALL for me.

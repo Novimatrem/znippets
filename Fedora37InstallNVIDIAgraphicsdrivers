@@ -1,0 +1,18 @@
+# (Fedora 37) Install NVIDIA graphics drivers
+
+sudo dnf autoremove -y && sudo dnf check -y && sudo dnf upgrade -y && sudo dnf distro-sync -y && sudo dnf autoremove -y && sudo dnf check -y
+
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf update --refresh
+
+sudo dnf install akmod-nvidia -y
+
+sudo dnf install xorg-x11-drv-nvidia-cuda
+
+sudo dnf autoremove -y && sudo dnf check -y && sudo dnf upgrade -y && sudo dnf distro-sync -y && sudo dnf autoremove -y && sudo dnf check -y
+
+echo "Reboot your system. Done!"
+# Reboot your system. Done!

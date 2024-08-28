@@ -1,0 +1,44 @@
+// afterload_tf2compfix.cfg v3
+//
+// TF2 Competitive (Valve's version) has a bug, for me, where motion blur and specular shiny is -
+//      - RE-ENABLED after I load into Valve's Competitive, I do not want these on, and as such -
+//          - I bind this script to a key, and press it when I have loaded into it, to fix it.
+
+// Motion blur, and shiny distracting reflective materials, have no place in a competitive game
+
+// You will need to put the following line into your main autoexec, which I must remind you,
+// in TF2 is called custom.cfg in most situations, instead of what you'd expect.
+bind "p" "exec afterload_tf2compfix.cfg"
+
+// The following lines will fix the issue
+
+echo "Started applying afterload_tf2compfix.cfg!"
+
+// fuck motion blur of any kind (make sure to also disable in game's video settings menu)
+mat_motion_blur_percent_of_screen_max 0
+mat_motion_blur_enabled 0
+mat_motion_blur_falling_intensity 0
+// THIS IS CRITICAL, mat_motion_blur_falling_max MUST BE SET TO 0.1
+// IF YOU DO NOT SET mat_motion_blur_falling_max to 0.1 YOU WILL GET AWFUL VISUAL BUGS,
+// INCLUDING VISUAL FLICKERING, RANDOM COLOURS OVERLAYING THE SCREEN, FLASHING, AWFUL. 
+mat_motion_blur_falling_max 0.1
+mat_motion_blur_falling_min 0
+mat_motion_blur_forward_enabled 0
+mat_motion_blur_percent_of_screen_max 0
+mat_motion_blur_rotation_intensity 0
+mat_motion_blur_strength 0
+replay_rendersetting_motionblurenabled 0
+mat_screen_blur_override 0
+mat_fullbright 0
+mat_vignette_enable 0
+mat_motion_blur_falling_max 0.1
+mat_motion_blur_strength 0
+
+// disable specular shiny (ugly, distracting, low-res)
+mat_specular 0
+
+// fix graphical bugs with water/fog sometimes
+fog_enable_water_fog 0
+
+echo "Finished applying afterload_tf2compfix.cfg!"
+echo "Fuck motion blur, and fuck reflections!"

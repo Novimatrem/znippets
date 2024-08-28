@@ -1,0 +1,11 @@
+# log when i wake up, for sleep health, a bash alias for my terminal (put in .bashrc)
+# hopefully, as long as i remember to type this every time i've just gotten up, this will 
+# allow me to keep better track of my sleep time and improve sleep-health somewhat.
+
+# put this into the .bashrc, and restart all open terminals.
+# you will need to change the paths below, if you do not use Dropbox, or not in the default location
+
+alias logwake='echo "A wake-up was logged by $(whoami) at $(date)" >> /home/$(whoami)/Dropbox/logwakes.txt && echo -e '\n' /home/$(whoami)/Dropbox/logwakes.txt'
+
+
+# i wish you good sleep health!

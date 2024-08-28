@@ -1,0 +1,44 @@
+#!/usr/bin/bash
+# attempt to make my GPU work on Linux as well as it does on windows. v5
+
+# script is for manjaro, arch-y stuff is new to me
+# it's not worth researching anything deeper to do with manjaro/arch, YET, 'cos,
+# not having drivers work well on linux means my PC loses 17 years of performance.
+# when I DO have working drivers (hopefully, please) then I will learn more, ofc.
+
+
+sudo pacman -Syu yay
+
+
+yay -S amdgpu-pro-oglp
+yay -S lib32-amdgpu-pro-oglp
+yay -S vulkan-amdgpu-pro
+yay -S lib32-vulkan-amdgpu-pro
+yay -S amf-amdgpu-pro
+yay -S amd-vulkan-prefixes
+
+sudo pacman -S amdgpu-pro-oglp
+sudo pacman -S lib32-amdgpu-pro-oglp
+sudo pacman -S vulkan-amdgpu-pro
+sudo pacman -S lib32-vulkan-amdgpu-pro
+sudo pacman -S amf-amdgpu-pro
+sudo pacman -S amd-vulkan-prefixes
+
+# i hope this fixes it. i'd really love to return to linux, but not
+#   if the GPU performance remains this terrible no matter what I do.
+
+# cmd to test after the reboot.
+# If it returns AMD, then you are running open source driver. 
+# If it returns Advanced Micro Devices, Inc., then you are running proprietary driver. 
+
+#glxinfo | grep "OpenGL vendor string" | cut -f2 -d":" | xargs
+
+# EDIT:
+# After doing all of this, I seemingly get somewhat better performance by launching games with: (no hash)
+#vk_radv steam
+
+# AND, putting the following into the launch options of each game: (no hash)
+#VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json %command%
+
+# still not too amazing though
+

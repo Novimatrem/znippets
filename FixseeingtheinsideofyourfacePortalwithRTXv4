@@ -1,0 +1,8 @@
+# Fix seeing the inside of your face Portal with RTX v4
+
+setmodel weapons/w_bullet
+cl_first_person_uses_world_model 0
+
+# Because having a tiny, basically invisible model, fixes the concern.
+
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+# isaac-flash-random-youtube-spin-characters.sh
+clear
+sleep 4s
+clear
+while true
+do
+xdotool key Right
+xdotool keydown Right
+xdotool keyup Right
+xdotool key Right
+done

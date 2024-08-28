@@ -1,0 +1,11 @@
+# fullterm.sh (put terminal into fullscreen) v10
+sleep 0s
+wmctrl -Fa 'Terminal'
+xdotool windowactivate `xdotool search --onlyvisible --class Terminal`
+sleep 0.1s
+wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
+wmctrl -r "Terminal" -e 0,0,0,1919,1054
+wmctrl -r Terminal -b add,fullscreen
+bash /home/$(whoami)/.bashrc
+
+

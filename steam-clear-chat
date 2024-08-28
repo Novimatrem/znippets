@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# steam-clear-chat.sh
+
+# deps: xdotool
+
+# the invisible unicode character is as follows: ‎  <-- there
+
+clear
+echo "deps: xdotool"
+echo ""
+echo "SWITCH TO WINDOW NOW"
+echo ""
+sleep 3s
+sleep 1s
+
+xdotool type "‎Clearing recent chat buffer for privacy... (please wait)"
+
+while true;
+do
+
+clear
+
+
+
+echo "!"
+echo ""
+
+sleep 0s
+
+count=0
+for i in $(seq $count); do
+    xdotool key 1
+done
+
+sleep 0s
+
+count=0
+for i in $(seq $count); do
+    xdotool key BackSpace
+done
+
+sleep 0s
+
+# code here
+
+sleep 0s
+xdotool type "‎ " # <-- there
+sleep 0s
+
+sleep 0.6s && xdotool key Return # HERE IS WHERE WE SLEEP TO AVOID RATE LIMITING, NO LESS THEN EVERY 0.6s
+
+
+# /code here
+
+sleep 0.1s
+clear
+echo "Done."
+
+
+done

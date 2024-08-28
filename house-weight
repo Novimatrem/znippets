@@ -1,0 +1,85 @@
+# -*- coding: utf-8 -*-
+
+"""
+house-weight.py
+Lets you know the current weight of all of us combined.
+"""
+
+from datetime import datetime
+import random
+
+timefmt = "%H:%M"
+startTime = datetime.strptime("09:40", timefmt)
+currentTime = datetime.strptime("11:52", timefmt)
+endTime = datetime.strptime("13:05", timefmt)
+
+ratio = (currentTime - startTime) / (endTime - startTime)
+needscrop = str(f"{ratio:5.2%}")
+
+domath = needscrop[0:5]
+
+mathdone = float(domath) * 29
+
+randtoadd = random.randint(7, 124)
+
+mathdone = mathdone + randtoadd
+
+"""
+house weight calc bits
+"""
+houseweightfinal = 0
+
+"""
+v EDIT THE WEIGHTS HERE WHEN THEY INCREASE v
+"""
+
+jan = 164.68
+jasmine = 393.00
+theo = 149.91
+zoey = 270.25
+
+
+"""
+^ EDIT THE WEIGHTS HERE WHEN THEY INCREASE ^
+"""
+print ("\n" * 49)
+print ("\n" * 49)
+print ("\n" * 49)
+print ("\n" * 49)
+print ("\n" * 49)
+print ("\n" * 49)
+print("house-weight.py")
+print("")
+print("Lets you know the current weight of all of us combined.")
+print("")
+print("")
+print ("Jan: " + str(jan) + " lbs.")
+print ("Jasmine: " + str(jasmine) + " lbs.")
+print ("Théo: " + str(theo) + " lbs.")
+print ("zoey: " + str(zoey) + " lbs.")
+print ("\n" * 0)
+
+houseweight = jan + jasmine + theo + zoey
+
+houseweightfinal = houseweight
+
+kgs = houseweightfinal/2.2046
+
+weightkgs = str(kgs)
+
+weightkgscrop = weightkgs[0:5]
+
+houseweightfinal = str(houseweightfinal)
+print("")
+print ("House weight: " + houseweightfinal + " lbs.")
+print ("That's " + weightkgscrop + "kg, in kilograms.")
+print ("")
+print("Good job, everybody!")
+print ("\n" * 0)
+print ("\n" * 0)
+
+"""
+EOF
+
+"""
+

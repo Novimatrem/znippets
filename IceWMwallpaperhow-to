@@ -1,0 +1,20 @@
+# icewm-wallpaper-howto.txt
+
+nano ~/.icewm/preferences
+
+# VV place inside of that file; VV
+
+#  Display desktop background centered and not tiled
+DesktopBackgroundCenter=1 # 0/1
+
+#  Support for semitransparent terminals like Eterm or gnome-terminal
+# SupportSemitransparency=1 # 0/1
+
+#  Desktop background scaled to full screen
+DesktopBackgroundScaled=1 # 0/1
+
+#  Desktop background color
+DesktopBackgroundColor="rgb:00/00/00"
+
+#  Desktop background image
+DesktopBackgroundImage="/opt/wallpapername.jpg"

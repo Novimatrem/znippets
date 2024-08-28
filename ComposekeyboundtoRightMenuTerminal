@@ -1,0 +1,5 @@
+# Compose key bound to Right Menu (Terminal)
+
+# Append the following line into your .bashrc
+
+setxkbmap -option 'compose:menu' && echo "Compose key bound to Right Menu." && echo ""

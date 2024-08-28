@@ -1,0 +1,37 @@
+# dvorak-thing.txt v6
+
+# (set your keyboard to Dvorak in the GUI's you'd normally expect.)
+
+# or use this command
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us+dvorak')]"
+
+# (then set up this)
+sudo dpkg-reconfigure keyboard-configuration
+
+# (run this, and maybe put it in some other places like the .bashrc, startup applications)
+setxkbmap dvorak
+
+# either remove the letter labels from your keys or change/swap them to dvorak layout physically
+https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/1200px-KB_United_States_Dvorak.svg.png
+
+# you can buy dvorak key label stickers on amazon
+
+# you can scratch off most key labels with a sharp screwdriver, then sandpaper
+
+# set this wallpaper on all your monitors
+https://www.deviantart.com/0178120181524/art/The-Dvorak-Simplified-Keyboard-86616062
+
+# print out the dvorak layout on paper/card, put it near your desk/where you type
+
+# now live your life dvorak, do your things using it
+
+# play typeracer, the typing of the dead, terminal game typespeed, etc, to improve
+# terminal app dvorak7min seems very useful
+# learn.dvorak.nl is really good for learning
+
+
+
+# (after maybe 6 months, if you feel you are good enough at dvorak you should start to touch type;
+# if you can't stop yourself from looking at the key labels while learning touch-typing dvorak you
+# may need to either buy a no-key labels keyboard like the Das Keyboard 4 Ultimate, or remove your
+# key-labels yourself with DIY [sand-paper recommended])

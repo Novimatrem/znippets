@@ -1,0 +1,28 @@
+# stzoomin and stzoomout functions for st suckless simple terminal
+
+stzoomin () {
+xdotool keydown Control_L
+
+xdotool keydown Shift_L
+
+xdotool key Page_Up
+
+xdotool keyup Control_L
+
+xdotool keyup Shift_L
+}
+
+stzoomout () {
+xdotool keydown Control_L
+
+xdotool keydown Shift_L
+
+xdotool key Page_Down
+
+xdotool keyup Control_L
+
+xdotool keyup Shift_L
+}
+
+# i use this multiple times in my bashrc so I can have it at nethack-size zoom without learning C
+# shrug

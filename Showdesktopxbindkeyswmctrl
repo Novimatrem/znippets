@@ -1,0 +1,18 @@
+# 'Show desktop' (xbindkeys, wmctrl)
+
+# depends on xbindkeys
+sudo apt install -y xbindkeys # ubuntu
+
+touch /home/$(whoami)/.xbindkeysrc
+
+echo '"bash -c "if wmctrl -m | grep 'mode: ON'; then exec wmctrl -k off; else exec wmctrl -k on; fi""' >> /home/$(whoami)/.xbindkeysrc
+echo -e ' \t Control + Alt + D' >> /home/$(whoami)/.xbindkeysrc
+
+xbindkeys_autostart
+
+killall xbindkeys
+pkill xbindkeys
+
+xbindkeys
+
+# Done, the Ctrl+Alt+D show desktop key should now show the desktop.

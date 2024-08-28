@@ -1,0 +1,4 @@
+# download wine alarm clock
+
+cd /home/$(whoami)/Downloads
+wget https://freealarmclocksoftware.com/FreeAlarmClockSetup.exe

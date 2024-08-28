@@ -1,0 +1,39 @@
+# Upgrade to newest Mesa (Fedora) v3
+# Source (very useful): https://copr.fedorainfracloud.org/coprs/xxmitsu/mesa-git/
+
+Use the following commands to create a mesa-git.repo file in /etc/yum.repos.d/ 
+
+sudo touch /etc/yum.repos.d/mesa-git.repo
+sudo nano /etc/yum.repos.d/mesa-git.repo
+
+with the following content:
+
+
+[mesa-git]
+name=Copr repo with mesa built from the official mesa git - x86_64
+baseurl=https://copr-be.cloud.fedoraproject.org/results/xxmitsu/mesa-git/fedora-$releasever-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/xxmitsu/mesa-git/pubkey.gpg
+enabled=1
+enabled_metadata=1
+
+[mesa-git-x86]
+name=Copr repo with mesa built from the official mesa git - i386
+baseurl=https://copr-be.cloud.fedoraproject.org/results/xxmitsu/mesa-git/fedora-$releasever-i386/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/xxmitsu/mesa-git/pubkey.gpg
+enabled=1
+enabled_metadata=1
+
+
+then run full updates (with yolo, or, whatever) to fully update your system.
+
+After that, reboot, you're done!
+ALSO MAYBE IMPORTANT, THOUGH:
+
+# Type this command to install the Mesa vulkan bits.
+sudo dnf install -y mesa-vulkan*
+sudo dnf install -y vulkan*
+

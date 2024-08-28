@@ -1,0 +1,4 @@
+# don't do this unless you're as dumb as me
+
+sudo rm -rf /usr/bin/xterm
+sudo ln -s /usr/bin/mate-terminal /usr/bin/xterm

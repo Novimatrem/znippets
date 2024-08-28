@@ -1,0 +1,19 @@
+// 8fps-intro-maybe.cfg v3
+
+// exec on main-menu, and then also when you're loaded into game
+
+sv_cheats 1
+fps_max 8
+cl_showfps 0
+cl_drawhud 0
+r_drawviewmodel 0
+bind v noclip
+sv_noclipspeed 1.5
+noclip
+gl_disable_forced_vsync 0
+mat_vsync 1
+smoothstairs 0
+sv_stepsize 0
+host_timescale 0.5
+r_WaterDrawReflection 1
+hud_quickinfo 0

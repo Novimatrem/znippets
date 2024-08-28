@@ -1,0 +1,8 @@
+# Low latency mode! "Maximum pre-rendered frames" to 1, VSync disabled, for NVIDIA proprietary
+#  driver, environment-variable, for Linux
+
+__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1
+
+__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 gamename
+
+__GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 %command%

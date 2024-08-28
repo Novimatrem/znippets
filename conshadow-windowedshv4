@@ -1,0 +1,44 @@
+# conshadow-windowed.sh v4.1
+
+# My main system (Arch Linux, Xfce4, AMD GPU) doesn't like playing The Consuming Shadow in a window.
+# This script allows me to force it.
+
+DISP=$(cat /sys/class/graphics/*/virtual_size)
+ACTUAL=$(echo "$DISP"| tr "," "x")
+echo $ACTUAL
+DISPLAYIS="$(echo $ACTUAL)"
+
+var1=${DISPLAYIS%x*}
+var2=${DISPLAYIS#*x}
+
+WIDTH=$var1
+HEIGHT=$var2
+
+echo "!!! $(whoami), SWITCH TO THE GAME WINDOW NOW !!!"
+echo ""
+
+sleep 4s
+echo "Starting... (Toggling windowed/borderless fullscreen mode)"
+
+wmctrl -R "The Consuming Shadow"
+wmctrl -R The Consuming Shadow
+wmctrl -r ':ACTIVE:' -b toggle,fullscreen
+sleep 0.3s
+wmctrl -r "The Consuming Shadow" -e 0,0,0,$WIDTH,$HEIGHT
+wmctrl -r The Consuming Shadow -e 0,0,0,$WIDTH,$HEIGHT
+wmctrl -R "The Consuming Shadow"
+wmctrl -R The Consuming Shadow
+
+echo ""
+echo "Done. You're now in a borderless window."
+echo ""
+echo "You can move the game window around by using your window manager's alt-drag."
+echo "This usually is holding Alt, or Win, and then mouse drag-and-dropping the window."
+echo ""
+echo "DO NOT focus any other window, or switch focus in any way, because there's a"
+echo "chance that causes it to reset to fullscreen, or break the window entirely."
+echo ""
+echo "If you do accidentally, using this script again (once OR twice), will fix it,"
+echo "but only IF you're still able to switch window focus to the game window."
+
+# EOF

@@ -1,0 +1,21 @@
+#!/bin/bash
+# setvol.sh for Haiku
+
+# Script requires havoc to be installed from HaikuDepot
+clear
+clear && havoc -n && clear
+clear
+clear
+echo "setvol.sh for Haiku"
+echo ""
+havoc
+echo ""
+echo "^ Volume is currently ^"
+echo ""
+echo "New level? (just enter the number on its own)"
+echo ""
+read -p "? " QUERY
+havoc --volume $QUERY
+echo ""
+
+# EOF

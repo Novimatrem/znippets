@@ -1,0 +1,16 @@
+#!/bin/bash
+# getvol.sh for Haiku
+
+# Script requires havoc to be installed from HaikuDepot
+clear
+clear && havoc -n && clear
+clear
+clear
+echo "getvol.sh for Haiku"
+echo ""
+havoc
+echo ""
+echo "^ Volume is currently ^"
+echo ""
+
+# EOF

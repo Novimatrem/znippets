@@ -1,0 +1,28 @@
+// mm_execonmenu.cfg v10
+// run after your existing autoexec has already ran on startup.
+echo ""
+echo "fixing your dark messiah of might and magic"
+echo ""
+mat_dxlevel 80
+mat_monitorgamma 3
+mat_antialias 4
+bind a +moveleft
+sensitivity 6
+cl_showfps 0
+// game doesn't alt-tab particularly well at all, or recover, so
+mat_setvideomode 1600 900 1
+bind "w" "+forward; viewmodel_fov 91; r_aspectratio 2"
+mat_setvideomode 1280 1024 1
+r_aspectratio 2
+mat_setvideomode 1760 990 1
+mat_setvideomode 1760 990 1
+r_aspectratio 2
+mat_dxlevel 90 // drastically improves visual quality in many regards
+mat_dxlevel 90
+mat_vsync 1
+sensitivity 6
+closecaption 1
+echo ""
+echo "all done, enjoy."
+echo "(you may need to exec this twice if your window size/menu looks fucky)"
+echo ""

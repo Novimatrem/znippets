@@ -1,0 +1,155 @@
+#!/bin/bash
+# alwaysdesk.sh v9
+
+# deps: wmctrl, xdotool
+
+clear
+echo "deps: wmctrl, xdotool"
+echo ""
+echo "alwaysdesk requires your password, if prompted, to continue..."
+sudo echo "If prompted, enter your password."
+
+xfconf-query -c xfwm4 -p /general/raise_on_focus -s true
+
+rm -rf ~/.window_id
+
+#echo "Killing anydesk..."
+
+#sudo kill -9 $(pgrep -f anydesk)
+#sudo killall anydesk
+#sudo pkill anydesk
+
+sleep 10s
+
+clear
+
+
+while true; do
+
+
+
+#pgrep anydesk
+
+COMPAREPGREP="$(pgrep anydesk)"
+
+
+#echo $COMPAREPGREP
+
+WITHNOSPACES=$(echo $COMPAREPGREP | tr -d ' ')
+	
+#echo $WITHNOSPACES
+
+#echo $COMPAREPGREP
+
+#echo $WITHNOSPACES
+
+
+# Act upon an opened anydesk.
+if ! [[ -z "$WITHNOSPACES" ]]; then echo alwaysdesk
+echo ----------
+echo "Switch your X11 window focus to Anything OTHER THAN AnyDesk, and continue life."
+echo "Script will automatically accept incoming anydesks when it's time."
+echo ""
+echo Waiting... $(date)
+echo ""
+sleep 1s # anti lag
+
+
+# check for an unfocused but ready anydesk here
+
+echo "check for an unfocused but ready anydesk here"
+
+sleep 0.1s
+
+touch ~/.window_id
+
+FILLED=$(cat ~/.window_id)
+
+if [ ! "$FILLED" = "" ]; then
+
+wmctrl -a $(cat ~/.window_id) -i
+
+sleep 0.1s
+xdotool key Super+Tab
+break
+
+fi
+
+
+
+
+echo ""
+echo ""
+# /check for an unfocused but ready anydesk here 
+
+sleep 0.1s
+
+
+# automatic anydesk accept logic
+
+WINDOWNAME=$(xdotool getwindowfocus getwindowname)
+
+if [ "$WINDOWNAME" = "AnyDesk" ]; then
+
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+xdotool key Tab
+sleep 0.1s
+
+sleep 0.1s
+sleep 0.1s
+touch ~/.window_id
+xdotool getactivewindow > ~/.window_id
+sleep 0.1s
+
+#xdotool key Tab #flatpak version/new version differs, no 10th tab.
+wmctrl -N PressKeysInMe
+wmctrl -I PressKeysInMe
+wmctrl -T PressKeysInMe
+sleep 1s
+xdotool key Return
+sleep 1s
+wmctrl -a PressKeysInMe
+sleep 1s
+
+#sleep 3600s # 1 hour in seconds
+
+
+
+
+
+
+fi
+
+fi
+
+# Run anydesk if it's not open.
+#if [[ -z "$WITHNOSPACES" ]]; then sleep 0s && nohup /usr/bin/anydesk %u && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf #/opt/nohup.out && disown & disown
+#echo ""
+#fi
+
+# WE FLATPAK NOW
+# Run anydesk if it's not open.
+if [[ -z "$WITHNOSPACES" ]]; then sleep 0s && nohup /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=anydesk --file-forwarding com.anydesk.Anydesk @@u %u @@ && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown
+echo ""
+echo "Flatpak pend..."
+sleep 10s # stop flatpak's slowness opening a billion of them
+echo "Flatpak sucks."
+fi
+
+done

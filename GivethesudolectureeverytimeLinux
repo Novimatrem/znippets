@@ -1,0 +1,11 @@
+# sudo lecture every time linux
+
+sudo su
+EDITOR=vi visudo /etc/sudoers
+
+# near the bottom of the file, put the following on a new line, then save.
+# (if you don't know how to use vi like the back of your hand, you shouldn't be editing such critical system files)
+
+Defaults lecture=always
+
+# after saving that into the file, any sudo operation will give the full lecture from now on, enjoy

@@ -1,0 +1,13 @@
+# psensor-pos.sh
+
+# yes, all of these lines are required to make it actually go where i want because of bugs
+sleep 0.1
+wmctrl -r psensor -e 0,-10,0,1269,360
+sleep 0.1
+wmctrl -r psensor -e 0,-10,0,1269,360
+sleep 0.1
+wmctrl -r psensor -e 0,-10,0,1270,360
+sleep 0.1
+
+
+# EOF

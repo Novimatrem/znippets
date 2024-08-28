@@ -1,0 +1,57 @@
+// kb-camera_on.cfg source engine v9
+
+// my trackpad / touchpad doesn't work sometimes binds
+unbind i
+unbind j
+unbind k
+unbind l
+unbind leftarrow
+unbind rightarrow
+unbind u
+unbind o
+unbind 8
+//
+bind leftarrow +left
+bind rightarrow +right
+//
+bind j +left
+bind l +right
+bind u +attack
+bind o +attack2
+
+// camera sensitivity
+cl_yawspeed 100
+cl_pitchspeed 100
+
+// you must disconnect before running this script
+disconnect
+cl_mouselook 0
+
+// initial set of binds
+unbind i
+unbind j
+unbind k
+unbind l
+unbind leftarrow
+unbind rightarrow
+unbind u
+unbind o
+unbind 8
+//
+bind leftarrow +left
+bind rightarrow +right
+//
+bind j +left
+bind l +right
+bind u +attack
+bind o +attack2
+bind 8 +zoom
+
+// fix vertical
+cl_mouselook 0
+bind i +lookup
+bind k +lookdown
+
+echo "Script ran. IJKL is camera movement, U is left click, O is right click, 8 is middle mouse button."
+echo "You can change the sensitivity inside of this config file."
+

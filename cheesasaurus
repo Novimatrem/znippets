@@ -1,0 +1,32 @@
+#!/bin/bash
+# cheesasaurus.sh
+clear
+echo "A snowball in July?"
+sleep 0.2s
+clear
+sleep 32s
+sleep 0.8s
+while true; do
+echo -n "Cheesasaurus "
+sleep 0.8s
+echo -n "It's like your "
+sleep 0.8s
+echo -n "favourite Macaroni "
+sleep 0.8s
+echo -n "oni "
+sleep 0.8s
+echo -n "in a packed arena "
+sleep 1.6s
+echo -n "oni "
+sleep 0.8s
+echo -n "Cheesasaurus "
+sleep 1.6s
+echo -n "look who's playing Guitaroni "
+sleep 0.8s
+echo -n "Cheesasaurus "
+sleep 0.8s
+echo -n "Cheese that's flowing "
+sleep 0.8s
+echo -n "Kraft gets your noodle going "
+sleep 1.2s
+done;

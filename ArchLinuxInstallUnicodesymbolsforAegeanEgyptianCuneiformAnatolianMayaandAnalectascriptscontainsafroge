@@ -1,0 +1,13 @@
+# Arch Linux: Install Unicode symbols for Aegean, Egyptian, Cuneiform, 
+#  Anatolian, Maya, and Analecta scripts (contains a froge)
+
+# If you don't already have a way to install from the AUR, then
+# follow this guide here, to install an AUR helper,
+# so you can then use the AUR without being insane: 
+# https://gitlab.com/-/snippets/2567376
+
+# After that, enter the following into a terminal
+
+yay -S ttf-ancient-fonts
+
+

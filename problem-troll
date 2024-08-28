@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# problem-troll.sh
+
+# deps: xdotool
+
+
+while true;
+do
+
+clear
+echo "deps: xdotool"
+echo ""
+echo "SWITCH TO WINDOW NOW"
+echo ""
+sleep 3s
+sleep 1s
+
+
+echo "!"
+echo ""
+
+sleep 0.1s
+
+count=250
+for i in $(seq $count); do
+    xdotool key 1
+done
+
+sleep 0.1s
+
+count=250
+for i in $(seq $count); do
+    xdotool key BackSpace
+done
+
+sleep 0.1s
+
+# code here
+
+sleep 2s && xdotool key Return
+
+sleep 0.1s
+xdotool type "Someone tell zoey there is a problem with my AI"
+sleep 0.1s
+
+sleep 2s && xdotool key Return
+
+
+# /code here
+
+sleep 0.1s
+clear
+echo "Done."
+
+
+done

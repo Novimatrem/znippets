@@ -1,0 +1,2 @@
+alias vlcfs="vlc --qt-fullscreen-screennum 0 $1 --fullscreen --no-osd --no-mouse-events &>/dev/null"
+

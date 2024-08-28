@@ -1,0 +1,6 @@
+# copy this text into a new abh.cfg file in cfg folder of game, open console and type: exec abh
+
+bind MWHEELUP +jump
+bind MWHEELDOWN +jump
+bind MOUSE3 +jump
+bind SPACE +jump

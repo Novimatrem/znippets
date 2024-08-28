@@ -1,0 +1,4 @@
+"xdotool keyup Insert && sleep 0s && xdotool keydown KP_Page_Up && sleep 4.5s && xdotool keyup KP_Page_Up & xdotool keyup KP_Page_Up & sleep 1s && xdotool keyup Insert"
+	 Insert
+"xdotool keyup Delete && sleep 0s && xdotool keydown KP_Right && sleep 4.5s && xdotool keyup KP_Right & xdotool keyup KP_Right & sleep 1s && xdotool keyup Delete"
+	 Delete

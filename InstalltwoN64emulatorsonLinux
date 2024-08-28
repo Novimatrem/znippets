@@ -1,0 +1,14 @@
+# Install two N64 emulators on Linux
+
+# Requires snap to be installed
+# Requires flatpak to be installed
+
+# https://snapcraft.io/mupen64plus-gui
+
+# https://flathub.org/apps/io.github.simple64.simple64
+
+sudo snap install mupen64plus-gui
+
+flatpak install flathub io.github.simple64.simple64
+
+

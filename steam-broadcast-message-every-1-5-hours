@@ -1,0 +1,29 @@
+# steam broadcast message every 1.5 hours
+# steam-broadcast-message-every-1-5-hours.sh
+
+# install transmission-qt on linux
+# add it as a non-steam game to your steam library
+# right click its library entry, create shortcut
+# get its steam game id from editing that shortcut in a text editor
+# put it below in the line there
+# give it a custom name in steam properties for it (being what you want to broadcast)
+# run this script
+#
+# you will now be sending that notif every 1.5 hours
+#
+# it will say YOURNAME is now playing APPNAME to your friends
+#
+
+while true
+do
+  sleep 1s
+  steam steam://rungameid/13661099231149031424
+  sleep 5400s # 1.5 hours in seconds
+  killall transmission-qt
+  pkill transmission-qt
+  sleep 63s
+done
+
+
+
+# EOF

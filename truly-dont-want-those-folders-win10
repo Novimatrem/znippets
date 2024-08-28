@@ -1,0 +1,54 @@
+@echo off
+@title No, I truly don't want those folders I deleted, Windows 10.
+
+REM WARNING: This script deletes the Videos, Pictures, Music, Desktop, and Documents folders entirely, repeatedly.
+REM This is for me cleaning up a system that I want to decommission, soon.
+REM !!!
+REM You will lose data if you run this script.
+REM !!!
+
+echo.
+echo NOTE: ENSURE YOU ARE RUNNING THIS SCRIPT AS ADMIN OR IT WILL NOT WORK.
+echo.
+echo No, I truly don't want those folders I deleted, Windows 10.
+echo.
+echo WARNING: This script deletes the Videos, Pictures, Music, Desktop, and Documents folders entirely, repeatedly.
+echo This is for me cleaning up a system that I want to decommission, soon.
+echo.
+echo MS decided in their infinite wisdom to make folders reappear that I wish to be deleted, automatically.
+echo I wanted otherwise.
+echo.
+echo You will lose data if you run this script.
+echo.
+echo Close the command console by clicking the red X window-button to run away immediately before any damage.
+echo.
+echo To start the script,
+pause
+echo.
+echo Starting...
+echo.
+cls
+echo.
+echo Starting...
+echo.
+:top
+REM the ping is just for timeout/sleep, a small wait
+@ping -n 2 -w 1000 0.0.0.1 > NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+@ping -n 1 -w 1000 0.0.0.1 > NUL 
+
+echo  Deleting those folders I want deleted... (at %date%, %time%)
+echo.
+cd C:\Users\%username%
+rmdir /S /Q Desktop
+rmdir /S /Q Documents
+rmdir /S /Q Music
+rmdir /S /Q Pictures
+rmdir /S /Q Videos
+echo.
+echo  Looping for when they come back...
+echo  If you close this script, the folders will re-appear almost immediately :/
+echo.
+echo [--------------------------------------------------------------------------]
+echo.
+goto top

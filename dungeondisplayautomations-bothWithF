@@ -1,0 +1,8 @@
+F::
+Sleep,0
+send {q down}
+send {q up}
+Sleep,300
+send {r down}
+send {r up}
+Sleep,0

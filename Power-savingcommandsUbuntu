@@ -1,0 +1,24 @@
+# the following will help reduce power usage, to save the environment
+# without causing noticable degradations in computer usage enjoyment
+
+# also useful for laptops and such, or other limited-power scenarios
+
+
+sudo apt install -y tlp
+sudo systemctl enable tlp
+sudo systemctl start tlp
+sudo tlp start
+
+sudo apt install -y powertop
+sudo powertop --calibrate
+sudo powertop --auto-tune
+
+sudo su
+echo 2 | sudo tee /sys/bus/usb/devices/*/power/autosuspend >/dev/null
+echo on | sudo tee /sys/bus/usb/devices/*/power/level >/dev/null
+exit
+
+
+# after finishing all of these commands, restart your machine
+
+# if you're still having problems with power usage, consider using a lighter DE/WM, like Xfce4

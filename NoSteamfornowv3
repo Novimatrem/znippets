@@ -1,0 +1,5 @@
+#!/bin/bash
+# no-steam-for-now.sh v3
+sleep 0.25s && sleep 0.01s && echo "" && while true; do sleep 0.01s && echo "" && killall steam && pkill steam && killall steam && pkill steam && killall steamwebhelper && pkill steamwebhelper && sleep 0.01s && sleep 0.25s; done
+
+# EOF

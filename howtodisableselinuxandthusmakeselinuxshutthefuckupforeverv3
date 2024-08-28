@@ -1,0 +1,17 @@
+# how to disable selinux and thus make selinux shut the fuck up forever v3
+
+# i've been told this is a bad idea to do, and is inadvisable, do as i say, not as i do.
+
+sudo su
+sudo mkdir /selinux
+sudo touch /selinux/enforce
+echo 0 > /selinux/enforce
+sudo setenforce 0
+sudo setenforce Permissive
+sudo nano /etc/sysconfig/selinux
+#(change where it says SELINUX=enforcing to SELINUX=disabled)
+
+#(you need to reboot for your changes to take effect)
+sudo reboot now
+
+#(all done!)

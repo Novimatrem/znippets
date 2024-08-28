@@ -1,0 +1,17 @@
+# wise-reminder-linux-wine.sh v2
+
+sudo chown $USER /opt/
+sudo chown $USER /opt
+sudo chown $USER /opt/*
+cd /opt/
+wget https://downloads.wisecleaner.com/soft/WRMSetup_1.3.7.92.exe
+wine-development /opt/WRMSetup_1.3.7.92.exe
+
+zenity --warning --text "Done! It should be in your start menu now."
+
+# and to set it as a startup program, add something SIMILAR TO the following
+# to your "startup programs" gui menu, or whatever.
+#
+# wine-development "/home/zoeymeowy/.wine/drive_c/Program Files (x86)/Wise/Wise Reminder/WiseReminder.exe"
+#
+

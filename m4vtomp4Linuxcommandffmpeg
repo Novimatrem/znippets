@@ -1,0 +1,3 @@
+# Depends on ffmpeg as a required dependency
+
+ffmpeg -i input.m4v -vcodec copy -acodec copy output.mp4

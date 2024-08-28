@@ -1,0 +1,15 @@
+# Install FeedReader with Snap
+
+
+# Ensure Snap is already installed
+
+snap --version
+
+
+# If it is, continue
+
+sudo snap install feedreader
+
+
+(Snap package page: https://snapcraft.io/feedreader )
+

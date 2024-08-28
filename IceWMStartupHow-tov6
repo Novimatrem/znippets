@@ -1,0 +1,79 @@
+# icewm-startup-howto.txt v6
+
+gedit ~/.icewm/startup
+
+# {{{VV place inside of that file, edit and add to where needed; VV}}}
+
+
+
+
+#!/bin/bash
+
+[ -x ~/.icewm/restart ] && source ~/.icewm/restart
+
+sleep 5s
+sleep 1 &&
+nm-applet &
+sleep 5s
+
+sleep 1 &&
+killall dnfdragora-updater &
+
+sleep 1 &&
+killall dnfdragora &
+
+sleep 1 &&
+dino --gapplication-service &
+
+sleep 1 &&
+dino &
+
+sleep 1 &&
+steam &
+
+sleep 1 &&
+playonlinux --run "escargot70" &
+
+sleep 1 &&
+snap run telegram-desktop &
+
+sleep 1 &&
+xfce4-appfinder &
+
+sleep 1 &&
+flatpak run com.skype.Client &
+
+sleep 1 &&
+snap run discord &
+
+sleep 1 &&
+flatpak run im.riot.Riot &
+
+sleep 1 &&
+dnfdragora &
+
+sleep 1 &&
+dnfdragora-updater &
+
+sleep 1 &&
+dropbox start -i &
+
+sleep 1 &&
+dropbox autostart y &
+
+sleep 1 &&
+dropbox start &
+
+sleep 1 &&
+gnome-calendar &
+
+exit 0
+
+
+
+
+# {{{AFTER YOU HAVE DONE THAT, AND SAVED THE FILE, CLOSE GEDIT AND ENTER THESE COMMANDS:}}}
+sudo chmod +x ~/.icewm/startup
+sudo chown $USER ~/.icewm/startup
+
+# All done! Reboot, and your startup programs will work!

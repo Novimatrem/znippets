@@ -1,0 +1,8 @@
+# Potential Proton game performance improvement / also sometimes crash fix launch option
+
+Some Windows games run better on Linux for me with these command line arguments:
+
+PROTON_USE_WINED3D=1 %command%
+
+
+Try it out!

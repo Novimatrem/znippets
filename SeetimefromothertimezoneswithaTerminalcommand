@@ -1,0 +1,14 @@
+# See time from other timezones with a Terminal command
+
+# awoo~
+TZ=Australia/NSW date
+
+# meow~
+TZ=Europe/London date
+
+# Set TZ and call date; check /usr/share/zoneinfo. but this is mostly timezones and not locations
+# If the zone doesn't exist, some implementations of date will put it in the output and use UTC or local time behind your back. (rude implementations!)
+
+# (thanks lily whoops [@ilylily@witches.live] for all this!)
+
+# you can use this wherever, in your terminal's rc (.bashrc), even

@@ -1,0 +1,15 @@
+# Attempt to install Xfce in Crostini (Chromebook)
+[Doesn't launch, but its apps are still useful and runnable.]
+
+sudo apt install tasksel -y
+sudo tasksel install xfce-desktop
+sudo apt install -y task-xfce-desktop
+sudo apt install -y xfce4
+sudo apt install -y task-xfce-desktop
+sudo apt install -y xfwm4
+sudo apt install -y xfdesktop4
+sudo apt install -y xfce4-whiskermenu-plugin
+sudo apt install -y xfce4-session
+sudo apt install -y xfce4-goodies
+sudo apt install -y xfce4-appfinder
+

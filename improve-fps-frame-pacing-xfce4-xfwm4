@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# improve-fps-frame-pacing-xfce4-xfwm4.sh
+
+# Improve fps/frame pacing xfce4 xfwm4
+
+xfconf-query -c xfwm4 -p /general/unredirect_overlays -s true
+
+xfconf-query -c xfwm4 -p /general/use_compositing -s false
+
+xfconf-query -c xfwm4 -p /general/vblank_mode -s off
+
+echo "Done."
+
+

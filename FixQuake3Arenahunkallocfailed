@@ -1,0 +1,7 @@
+Open the console (~) and enter this command, and after that, restart your game.
+If it's being set by your config file, then perhaps you'll have to type this every time.
+
+/seta com_hunkmegs 256
+
+Or, you may have to append this to your game's shortcut with something like this instead;
++seta com_hunkmegs 256 +com_hunkmegs 256

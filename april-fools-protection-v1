@@ -1,0 +1,36 @@
+@echo off
+:top
+REM April fools protection Windows v1
+@title April fools protection Windows v1
+timeout /t 1 >NUL
+echo.
+echo v1
+echo Ensure you run as ADMIN!
+timeout /t 1 >NUL
+echo Killing some processes that could cause harm...
+timeout /t 1 >NUL
+echo.
+taskkill /f /im steamwebhelper.exe
+taskkill /f /im Taskmgr.exe
+taskkill /f /im Skype.exe
+taskkill /f /im GameOverlayUI.exe
+taskkill /f /im "Everything.exe"
+taskkill /f /im "wallpaper32.exe"
+taskkill /f /im "flux.exe"
+taskkill /f /im "msedge.exe"
+taskkill /f /im "SearchIndexer.exe"
+taskkill /f /im "Launchy.exe"
+taskkill /f /im "firefox.exe"
+taskkill /f /im "steam.exe"
+taskkill /f /im "discord.exe"
+taskkill /f /im "telegram.exe"
+taskkill /f /im "gajim.exe"
+taskkill /f /im "element.exe"
+timeout /t 1 >NUL
+echo.
+echo Cleaned up, enjoy your sanity!
+echo.
+timeout /t 1 >NUL
+echo Looping in 5..,
+timeout /t 5 >NUL
+goto top

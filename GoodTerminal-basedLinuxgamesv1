@@ -1,0 +1,9 @@
+# Good Terminal-based Linux games v1
+# (and how to install them on Ubuntu)
+
+sudo apt install -y moon-buggy
+sudo apt install -y nsnake
+sudo apt install -y typespeed
+sudo apt install -y vitetris
+
+

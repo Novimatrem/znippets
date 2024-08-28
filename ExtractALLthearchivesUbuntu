@@ -1,0 +1,5 @@
+# Extract all the archives (Ubuntu).
+
+sudo apt -y install unrar zip unzip p7zip-full p7zip-rar rar unace sharutils uudeview mpack arj cabextract file-roller
+
+# (may update with more over time)

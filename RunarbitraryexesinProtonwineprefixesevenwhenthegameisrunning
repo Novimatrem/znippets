@@ -1,0 +1,5 @@
+# How to open a Wine CMD in an arbitrary Proton wineprefix, without interrupting the main game executable from working:
+env WINEPREFIX="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/211420/pfx" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/novicutie/.steam/steam" STEAM_COMPAT_DATA_PATH="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/211420/pfx" WINEPATH="/home/novicutie/.steam/steam/steamapps/common/Proton 7.0/dist/bin/wine64" "/home/novicutie/.steam/steam/steamapps/common/Proton 7.0/proton" run cmd.exe /c start cmd.exe
+
+# How to open an exe in an arbitrary Proton wineprefix, without interrupting the main game executable from working:
+env WINEPREFIX="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/211420/pfx" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/novicutie/.steam/steam" STEAM_COMPAT_DATA_PATH="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/211420/pfx" WINEPATH="/home/novicutie/.steam/steam/steamapps/common/Proton 7.0/dist/bin/wine64" "/home/novicutie/.steam/steam/steamapps/common/Proton 7.0/proton" run "/mnt/WD_HDD_1TB/SteamLibrary/steamapps/common/Dark Souls Prepare to Die Edition/DATA/DSCM.exe"

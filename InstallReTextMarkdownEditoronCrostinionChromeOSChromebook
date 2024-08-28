@@ -1,0 +1,13 @@
+# Install ReText Markdown Editor on Crostini on ChromeOS (Chromebook)
+
+sudo apt install -y pip
+sudo apt install -y python3-pip
+pip install ReText
+sudo pip install ReText
+sudo apt install -y retext
+
+All done. It is launchable from the Terminal with the command retext
+It will appear in the Start Menu after some time, which allows you to pin it to the shelf.
+
+It may require a PC restart to have it appear in the start menu, if it does not.
+

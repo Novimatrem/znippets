@@ -1,0 +1,11 @@
+# Back up .minecraft to OneDrive automatically (Windows)
+
+# Open cmd as admin, run
+
+mkdir C:\Users\TheNo\OneDrive\MinecraftDot\
+
+mklink /J C:\Users\TheNo\OneDrive\MinecraftDot\.minecraft C:\users\TheNo\AppData\Roaming\.minecraft
+
+# As long as OneDrive is running and working, you're all good.
+
+# Obviously change the paths before running the commands, because your username will differ.

@@ -1,0 +1,7 @@
+// disable-physics-source.cfg
+
+cl_phys_props_enable 0
+cl_phys_timescale 0
+phys_timescale 0
+cl_ragdoll_collide 0
+

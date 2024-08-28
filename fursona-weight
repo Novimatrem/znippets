@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+
+"""
+fursona-weight.py
+Lets you know the current weight of my fursona.
+"""
+
+from datetime import datetime
+import random
+
+timefmt = "%H:%M"
+startTime = datetime.strptime("09:40", timefmt)
+currentTime = datetime.strptime("11:52", timefmt)
+endTime = datetime.strptime("13:05", timefmt)
+
+ratio = (currentTime - startTime) / (endTime - startTime)
+needscrop = str(f"{ratio:5.2%}")
+
+domath = needscrop[0:5]
+
+mathdone = float(domath) * 29
+
+randtoadd = random.randint(7, 124)
+
+mathdone = mathdone + randtoadd
+
+print ("\n" * 49)
+print ("\n" * 49)
+print ("\n" * 49)
+print ("She's currently " + str(mathdone) + " lbs. Yes, truly.")
+print ("\n" * 0)
+
+kgs = mathdone/2.2046
+
+weightkgs = str(kgs)
+
+weightkgscrop = weightkgs[0:5]
+
+print ("That's " + weightkgscrop + "kg, in kilograms.")
+
+print ("\n" * 0)
+print ("\n" * 0)
+

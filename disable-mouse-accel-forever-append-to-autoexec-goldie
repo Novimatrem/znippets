@@ -1,0 +1,25 @@
+// disable-mouse-accel-forever-append-to-autoexec-goldie.cfg
+
+// USE THESE AS A PART OF YOUR LAUNCH OPTIONS:
+// +exec autoexec.cfg -noforcemaccel -noforcemparms -noforcemspd +exec custom.cfg -autoexec
+
+// console availability
+bind f11 toggleconsole
+
+// vsync causes input lag so disable it
+mat_vsync 0
+gl_vsync 0
+gl_disable_forced_vsync 1
+
+// mouse
+m_rawinput 1
+m_filter 0
+m_filter2 0
+
+// how fast you aim when scoped vs normal
+zoom_sensitivity_ratio "1.0"
+
+// ensure hardware mouse
+cl_software_cursor 0
+
+// eof

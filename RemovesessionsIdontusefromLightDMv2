@@ -1,0 +1,12 @@
+# Remove sessions I don't use from LightDM v2
+
+sudo rm -rf /usr/share/xsessions/ubuntu.desktop
+sudo rm -rf /usr/share/xsessions/ubuntu-xorg.desktop
+sudo rm -rf /usr/share/xsessions/xfce.desktop
+
+sudo apt remove -y gnome-session-bin
+sudo apt remove -y gnome-session-common
+sudo apt remove -y ubuntu-session
+
+echo "Done."
+

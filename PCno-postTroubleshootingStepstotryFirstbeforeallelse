@@ -1,0 +1,12 @@
+PC no-post Troubleshooting Steps to try First before all else.
+
+
+Clear your CMOS, if you can. On my board, you seemingly can't opt to do this manually.
+
+Re-seat your RAM, but in a staggered way. Meaning: 
+1: Take out one stick, then re-power and boot the system as far as it will go. 
+2: Then turn it off again, take out the other stick.
+3: Put both sticks back in, and boot it, you should get a CMOS reset + new hardware detected message.
+Other than being a good idea to ensure it's in, the act can cause the CMOS to clear itself, which helps.
+[the PC should work, now, hopefully!]
+

@@ -1,0 +1,18 @@
+# ig-textpost.sh v3
+# deps: toilet, figlet, lolcat
+clear
+
+contents="text goes here, and it supports
+multiple lines, because that is
+very important, 4 lines maximum
+fitting the insta aspect ratio!"
+
+echo "‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
+echo "$contents" | toilet -f term -F border --gay | lolcat
+echo "_______________________________________________________________________________"
+echo "MAKE SURE YOU ZOOM IN ALL THE WAY TO GET THE FULL RESOLUTION"
+echo "and here is the version for you to copy into the ig description field:"
+echo ""
+echo "$contents"
+echo ""
+echo "end of script. (v3)"

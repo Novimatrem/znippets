@@ -1,0 +1,4 @@
+# Switch back to qwerty temporarily if needed v3 (Linux)
+
+setxkbmap -layout us -variant ,qwerty
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us+qwerty')]"

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# sniff-imagecount.sh
+
+echo jpeg:
+find . -mindepth 1 -type f -name "*.jpeg" -printf x | wc -c
+
+echo ""
+
+echo jpg:
+find . -mindepth 1 -type f -name "*.jpg" -printf x | wc -c
+
+echo ""
+
+echo png:
+find . -mindepth 1 -type f -name "*.png" -printf x | wc -c
+

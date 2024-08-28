@@ -1,0 +1,6 @@
+# Run Crispy Doom flatpak with the DOOM.WAD in your home folder.
+
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=crispy-doom io.github.fabiangreffrath.Doom -iwad /home/$(whoami)/DOOM.WAD
+
+# obviously change the wad name to whatever you'd like, though keep it in the same place.
+# (flatpak is weird about where it's allowed to read files from)

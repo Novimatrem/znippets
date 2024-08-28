@@ -1,0 +1,9 @@
+CS:GO on Linux crash-on-launch & trusted mode enable launch options
+
+CS:GO crashes on Linux by default, -nojoy fixes it.
+
+CS:GO on Linux is not launching Trusted Mode by default, which may cause your Trust Score to be "negatively affected" so you might see more cheaters and terrible people, -trusted fixes it.
+
+Launch options: (enter in Right-click CS:GO in Steam > properties > set launch options)
+
+-trusted -nojoy

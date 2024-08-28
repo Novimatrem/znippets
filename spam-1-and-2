@@ -1,0 +1,1 @@
+while true; do sleep 0.01s && xdotool key 1 && sleep 0.01s && xdotool key 2 && echo "Ctrl+C to stop it"; done

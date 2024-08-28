@@ -1,0 +1,3 @@
+mkdir /home/$(whoami)/images
+
+find . -name '*' -exec file {} \; | grep -o -P '^.+: \w+ image' | cut -d':' -f1 | xargs -I{} cp -v {} /home/$(whoami)/images

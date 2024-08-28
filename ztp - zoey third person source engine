@@ -1,0 +1,21 @@
+# copy this text into a new ztp.cfg file in cfg folder of game, open console and type: exec ztp
+
+# don't type the command again if you are already successfully in third-person, or it can cause issues.
+
+# if typing exec ztp doesn't work, it's fine, most of the script has worked, just go console and
+# type thirdpersonshoulder (and if that doesn't work, type thirdpersonshoulder AGAIN for a second time)
+
+
+sv_cheats 1
+thirdperson 1
+thirdpersonshoulder 1
+c_thirdpersonshoulder 1
+c_thirdpersonshoulderdist 20
+c_thirdpersonshoulderaimdist 120.0
+c_thirdpersonshoulderheight 15
+c_thirdpersonshoulderoffset 20.0
+cam_idealpitch 0
+cam_idealyaw 0
+cam_collision 1
+cam_ideallag 0
+c_thirdpersonshouldersnapto 1

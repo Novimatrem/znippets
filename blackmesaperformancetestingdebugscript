@@ -1,0 +1,6 @@
+net_graph 1
+net_graphproportionalfont 1
+// perform graphics tweaks now before continuing
+map bm_c2a5g
+sv_cheats 1
+setpos -459.408386 -680.316895 352.031250;setang 22.798981 -72.086891 0.000000

@@ -1,0 +1,20 @@
+// gmod-parkour.cfg
+sv_cheats 1
+sv_gravity 1150
+cl_legs 0
+cl_legs_vehicle 0
+sv_noclipspeed 3
+closecaption 0
+cc_subtitles 1
+sv_accelerate 4
+sv_noclipaccelerate 0
+r_drawvgui 0
+give weapon_parkour
+use weapon_parkour
+suitvolume 0
+mp_falldamage 0
+sv_cheats 1
+buddha 1
+god 1
+
+

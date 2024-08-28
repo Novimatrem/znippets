@@ -1,0 +1,65 @@
+# cutegirlbashrcaddition
+# Requires: lolcat
+# Usage: drop in /opt, and then put this in your .bashrc: bash /opt/cutegirlbashrcaddition.sh | lolcat
+clear && neofetch --stdout --disable distro theme icons wm de term resolution shell packages uptime kernel | grep -v Host | lolcat
+while true;
+do
+var=$((var+1))
+echo -ne "$pixel"
+sleep 0s
+pixel="❤"
+if [ "$var" -eq "80" ]; then
+echo "❤"
+break
+fi
+if [ "$var" -eq "159" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "238" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "317" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "396" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "475" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "554" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "633" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "712" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "791" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "870" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "949" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "1028" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "1107" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "1186" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "1265" ]; then
+echo "❤"
+fi
+if [ "$var" -eq "1344" ]; then
+echo "❤"
+break
+fi
+done
+#/cutegirlbashrcaddition

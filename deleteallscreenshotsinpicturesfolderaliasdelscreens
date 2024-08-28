@@ -1,0 +1,7 @@
+# delete all screenshots in pictures folder, alias, delscreens
+
+# command
+cd /home/$(whoami)/Pictures && find  . -name 'Screenshot*.png' -exec rm {} \;
+
+# alias for bashrc
+alias delscreens="cd /home/$(whoami)/Pictures && find  . -name 'Screenshot*.png' -exec rm {} \;"

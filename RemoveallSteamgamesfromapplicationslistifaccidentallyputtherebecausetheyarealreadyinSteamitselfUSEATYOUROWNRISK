@@ -1,0 +1,22 @@
+#!/bin/bash
+# removesteamslaunchers.sh
+
+# Remove all Steam games from applications list if accidentally put there
+# because they are already in Steam itself
+
+# Fixes how messy my applications list was after accidentally telling Steam to put shortcuts there.
+
+# USE AT YOUR OWN RISK UNDER THE TERMS OF THE GNU GPL V3
+
+rm -rf /tmp/to-delete.txt
+
+grep -rlw "steam://*" /home/$(whoami)/.local/share/applications > /tmp/to-delete.txt
+
+cat /tmp/to-delete.txt | while read f
+do
+ rm "$f"
+done
+
+rm -rf /tmp/to-delete.txt
+
+echo "Done."

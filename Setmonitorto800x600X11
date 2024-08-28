@@ -1,0 +1,29 @@
+# Set monitor to 800x600 (X11)
+
+# command
+cvt 800 600 60
+
+# makes this line
+Modeline "800x600_60.00"   38.25  800 832 912 1024  600 603 607 624 -hsync +vsync
+
+# use this line in this command	
+xrandr --newmode "800x600_60.00"   38.25  800 832 912 1024  600 603 607 624 -hsync +vsync
+
+# then add this mode to the display, replacing NAME with the name of your display, so, usually its connector
+xrandr --addmode NAME "800x600_60.00"
+
+# you can get what NAME is by seeing it in the output of	
+xrandr --listactivemonitors
+
+# mine ends up being 
+xrandr --addmode HDMI-0 "800x600_60.00"
+
+# for me specifically, i have to type these commands in order;
+xrandr --newmode "800x600_60.00"   38.25  800 832 912 1024  600 603 607 624 -hsync +vsync
+xrandr --addmode HDMI-0 "800x600_60.00"
+
+# then go into your regular display control panel, monitor preferences, etc, and you will see a new option.
+# select that, apply it, and your display will now work properly. yay!
+
+# hopefully that worked! enjoy~
+

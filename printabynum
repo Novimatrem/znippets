@@ -1,0 +1,35 @@
+@echo off
+
+REM required for my style of batch code to work
+setlocal ENABLEDELAYEDEXPANSION
+
+set QUERY=
+set /P query=how many? 
+set DONE=0
+
+if not defined query goto error
+echo.
+
+:top
+
+
+set /A turncounter=%turncounter% + 0
+
+REM add one
+set /A turncounter=%turncounter% + 1
+
+
+echo a
+
+REM do an if count = (querynumber) then goto done
+if %turncounter% EQU %query% set /A done=1
+
+if %done% EQU 1 goto donezo
+
+
+goto top
+
+:donezo
+echo.
+echo Done.
+pause

@@ -1,0 +1,7 @@
+// l4d2brightnessfix.cfg
+// l4d2 brightness fix
+
+mat_monitorgamma 2.200000
+mat_monitorgamma_tv_enabled 0
+echo "Brightness set."
+

@@ -1,0 +1,2 @@
+clear && sudo pacman -Ss bluetooth | grep -v "installed" | grep -v "deprecated" | grep -v "audio" | grep -v "cups" | grep -v "printers" | grep / | grep -v "libraries" | grep -v "indicator" | grep -v "switchboard" | grep -v "python" | grep -v "qt"
+

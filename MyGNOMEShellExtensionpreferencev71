@@ -1,0 +1,33 @@
+~ My GNOME Shell Extension preference v71 (some may change over time) ~
+
+https://extensions.gnome.org/
+https://github.com
+https://gitlab.com
+
+
+(run this command first: 
+
+gsettings set org.gnome.shell disable-extension-version-validation true
+
+)
+
+
+Extensions I use;
+
+Dash to Dock by michele_g - https://extensions.gnome.org/extension/307/dash-to-dock/
+
+Disable unredirect fullscreen windows by kazimieras.vaina - https://extensions.gnome.org/extension/1873/disable-unredirect-fullscreen-windows/
+
+Extensions Sync by alperenelhan - https://extensions.gnome.org/extension/1486/extensions-sync/
+
+Fix Fullscreen Tearing by tclark - https://extensions.gnome.org/extension/1445/fix-fullscreen-tearing/
+
+Flash Fullscreen Fix by philippetroin - https://extensions.gnome.org/extension/851/flash-fullscreen-fix/
+
+Fullscreen Notifications by sorrow.about.alice - https://extensions.gnome.org/extension/1610/fullscreen-notifications/
+
+Tray Icons by zhangkaizhao - https://extensions.gnome.org/extension/1503/tray-icons/
+
+SimpleTray by Claderoki - https://extensions.gnome.org/extension/1483/simpletray/
+
+TopIconsFix by aleskva - https://extensions.gnome.org/extension/1674/topiconsfix/

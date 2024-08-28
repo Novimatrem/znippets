@@ -1,0 +1,11 @@
+# Disable Vsync in Minecraft Bedrock
+
+Go to %LOCALAPPDATA%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftpe\
+Open options.txt
+Change gfx_vsync:1 to gfx_vsync:0 to disable V-sync.
+
+AND
+
+Force Vsync off through the GPU control panel, in the entry for the game.
+
+Then you should be fine to play without feeling sick.

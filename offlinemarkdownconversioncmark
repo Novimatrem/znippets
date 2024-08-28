@@ -1,0 +1,5 @@
+# offline markdown conversion (cmark)
+
+sudo dnf install -y cmark
+
+cmark --help

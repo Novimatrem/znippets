@@ -1,0 +1,13 @@
++mat_powersavingsmode 1 +fps_max 25
+
+
+desperate mode:
++sv_cheats 1 +mat_powersavingsmode 1 +fps_max 25 +mat_drawwater 0 +mat_showlowresimage 1 +hud_quickinfo 0
+
+
+sv_cheats 1
+mat_powersavingsmode 1
+fps_max 25
+mat_drawwater 0
+mat_showlowresimage 1
+hud_quickinfo 0

@@ -1,0 +1,8 @@
+
+
+volume 0
+mat_setvideomode 640 480 1
+fps_max 30
+mat_powersavingsmode 1
+
+

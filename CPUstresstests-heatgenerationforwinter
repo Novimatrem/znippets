@@ -1,0 +1,13 @@
+# CPU stress tests/heat generation for winter
+
+
+# one
+cat /dev/urandom | xz -T 0 > /dev/null
+
+
+# two
+flatpak install flathub org.mersenne.mprime
+
+flatpak run org.mersenne.mprime
+
+

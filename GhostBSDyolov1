@@ -1,0 +1,3 @@
+# GhostBSD 'yolo' v1 for .bashrc
+
+alias yolo='sudo pkg autoremove && sudo pkg clean && sudo pkg update && sudo pkg upgrade && sudo pkg autoremove && sudo pkg clean'

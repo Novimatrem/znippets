@@ -1,0 +1,22 @@
+# Potential Cyberpunk 2077 FPS fix for AMD on Linux (Steam Launch option)
+
+# Open your launch options in the properties for the game
+# Put this in there, if empty, or prepend it if you already have stuff in there.
+
+
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json %command%
+
+
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+
+
+# OR ALERNATIVELY, TRY USING THIS ONE:
+
+
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json %command%
+
+
+VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.i686.json:/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+
+# Been reported to boost your FPS dramatically, by at least 80. Huh.
+# Also, if you're simply crashing on startup, put --launcher-skip after your %command% 

@@ -1,0 +1,25 @@
+
+DEBUGGING: TALOS BENCH RESULTS AND COMMENTS 19/DEC/2022 - [6700 XT]
+
+Talos Benchmark 60 secs (with my new 6700 XT)
+
+
+
+OpenGL, Linux Native: 77.8fps
+OpenGL, Proton: 69.0fps
+
+Vulkan, Linux Native: 114.0fps
+Vulkan, Proton: 114.2fps
+
+DirectX9, Proton: 118.2fps
+DirectX11, Proton: 118.9fps
+DirectX12, Proton: 102.7fps
+
+
+
+I need to do further testing in a different game of my OpenGL performance, specifically. :(
+Hope everything is fine with my OpenGL performance in general....!!
+(I HAVE HEARD that the update that added Vulkan greatly improved Linux performance in Talos, so
+    it may just be specific to this game that the OpenGL perf isn't anywhere near as equal.)
+
+

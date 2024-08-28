@@ -1,0 +1,5 @@
+# Install the MVPS HOSTS file on Linux.
+
+sudo su
+wget https://winhelp2002.mvps.org/hosts.txt && echo $(cat hosts.txt) >> /etc/hosts
+rm -rf hosts.txt # cleanup

@@ -1,0 +1,4 @@
+# List most recently installed apt/apt-get/dpkg packages command
+
+grep " install " /var/log/dpkg.log
+

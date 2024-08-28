@@ -1,0 +1,48 @@
+# isaac-resize.sh v2
+
+# My main system (Arch Linux, Xfce4, AMD GPU) lags sometimes, playing Flash Isaac.
+# Let's reduce its resolution to as low as possible.
+
+# Script is designed to target "Santa's Big Adventure" (Linux version) on Steam, with the Isaac SWF from
+# the Humble Store loaded into it with Ctrl+F and then Ctrl+O. If you're using any other Isaac Flash, you will
+# need to change the name of the Window Title it is looking for in the script below.
+
+clear
+echo ""
+DISP=$(cat /sys/class/graphics/*/virtual_size)
+ACTUAL=$(echo "$DISP"| tr "," "x")
+echo $ACTUAL
+DISPLAYIS="$(echo $ACTUAL)"
+
+var1=${DISPLAYIS%x*}
+var2=${DISPLAYIS#*x}
+
+WIDTH=$var1
+HEIGHT=$var2
+
+# Isaac override
+WIDTH=782
+HEIGHT=614
+
+echo "!!! $(whoami), SWITCH TO THE GAME WINDOW NOW !!!"
+echo ""
+
+sleep 4s
+echo "Starting..."
+
+wmctrl -R "Adobe Flash Player 11,2,202,442"
+wmctrl -R Adobe Flash Player 11,2,202,442
+sleep 0.3s
+wmctrl -r "Adobe Flash Player 11,2,202,442" -e 0,0,0,$WIDTH,$HEIGHT
+wmctrl -r Adobe Flash Player 11,2,202,442 -e 0,0,0,$WIDTH,$HEIGHT
+wmctrl -R "Adobe Flash Player 11,2,202,442"
+wmctrl -R Adobe Flash Player 11,2,202,442
+
+echo ""
+echo "Done. You're now in the lowest possible resolution."
+echo ""
+echo "You can move the game window around by using your window manager's alt-drag."
+echo "This usually is holding Alt, or Win, and then mouse drag-and-dropping the window."
+echo ""
+
+# EOF

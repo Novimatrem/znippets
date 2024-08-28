@@ -1,0 +1,13 @@
+# How to fix misaligned mouse cursor on second screen in Windows
+
+If your mouse is accurately clicking where it shows on your first screen, but not on your second, this will help.
+It sounds very odd, but, it truly does.
+
+Go into the Mouse Properties screen, otherwise known as "Change Mouse Settings".
+Go into the Pointer Options tab, and under 'Visibility' enable "Display Pointer Trails", and then set the Length to the lowest amount.
+This turns your mouse into using Software-rendered mouse mode, which means it fixes the problem, and will now be accurate.
+
+Weird, huh? But, it works, so now I can use my second monitor properly.
+Hope this helped!
+
+NOTE: This option can frequently randomly disable itself again, because Microsoft. If you have the issue again, check the setting's on!!

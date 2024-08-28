@@ -1,0 +1,17 @@
+// hlstweaks.cfg v2
+// required tweaks for half-life: source, execute after load
+//
+// heavily recommended to run this after having ran with my source autoexec.cfg script
+//
+mat_filtertextures 0
+mat_picmip -1
+mat_specular 0
+mat_mipmaptextures 0
+developer 0
+//mat_monitorgamma_tv_enabled 1
+cl_predictweapons 0
+r_newflashlight 0
+gl_texturemode GL_NEAREST_MIPMAP_LINEAR
+gl_ansio "0"
+gl_round_down "0"
+gl_texturemode gl_nearest

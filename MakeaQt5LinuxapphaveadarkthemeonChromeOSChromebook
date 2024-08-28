@@ -1,0 +1,42 @@
+# Make a Qt5 Linux app have a dark theme on ChromeOS (Chromebook)
+
+In the Linux Terminal, type: 
+sudo apt install -y qt5ct
+
+Launch it from the Linux Terminal with the command: QT_QPA_PLATFORMTHEME=qt5ct qt5ct
+
+Under Palette, select Custom, and set the colour scheme dropdown: darker
+
+Press Apply, and then Press OK
+
+Then type the following commands, in order:
+touch /home/$(whoami)/.profile
+echo 'QT_QPA_PLATFORMTHEME="qt5ct"' >> /home/$(whoami)/.profile
+echo 'export QT_QPA_PLATFORMTHEME="qt5ct"' >> /home/$(whoami)/.profile
+
+sudo chown $USER /etc/environment
+sudo touch /etc/environment
+sudo chown $USER /etc/environment
+sudo su
+sudo echo 'QT_QPA_PLATFORMTHEME="qt5ct"' >> /etc/environment
+sudo echo 'export QT_QPA_PLATFORMTHEME="qt5ct"' >> /etc/environment
+
+touch /home/$(whoami)/.bashrc
+echo 'QT_QPA_PLATFORMTHEME="qt5ct"' >> /home/$(whoami)/.bashrc
+echo 'export QT_QPA_PLATFORMTHEME="qt5ct"' >> /home/$(whoami)/.bashrc
+
+Type this command, and scroll down to the 5th line:
+nano ~/.config/qt5ct/qt5ct.conf
+Change where it says style=Fusion into saying style=darker
+then press Ctrl+X, Y, and then Enter, to save and quit the nano text editor.
+
+Shut down and restart your Chromebook.
+
+To launch a Qt5 app with a dark theme, use the following command:
+
+QT_QPA_PLATFORMTHEME=qt5ct application-name
+
+For example:
+
+QT_QPA_PLATFORMTHEME=qt5ct plasma-discover
+

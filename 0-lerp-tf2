@@ -1,0 +1,8 @@
+// 0-lerp-tf2.cfg
+sv_client_max_interp_ratio 0
+sv_client_min_interp_ratio 0
+cl_interp 0
+cl_interp_ratio 0
+cl_updaterate 100000
+net_graph 1
+

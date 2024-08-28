@@ -1,0 +1,25 @@
+# Chocolatey software install commands that I run after installing Windows v3
+choco feature enable -n allowGlobalConfirmation
+
+# Grammarly
+choco install grammarly-for-windows -y
+
+# Caffeine
+choco install caffeine -y
+
+# Furmark
+choco install furmark -y
+
+# WinCDEmu
+choco install wincdemu -y
+
+# Process Hacker
+choco install processhacker.install -y
+
+# PowerToys
+choco install powertoys -y
+
+# RSSOwl
+choco install rssowl -y
+
+# If you save this text into a file ending in the .ps1 extension, and then execute it with ./scriptname.ps1, it will auto-install all.

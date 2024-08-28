@@ -1,0 +1,8 @@
+# awesome gay rainbow clock linux command
+
+# requires toilet, figlet, lolcat
+
+while true; do date | toilet --gay --termwidth | lolcat && sleep 0.5s && clear | lolcat; done
+
+
+# i made this because it's easier to see and camera record large rainbow text on the screen.

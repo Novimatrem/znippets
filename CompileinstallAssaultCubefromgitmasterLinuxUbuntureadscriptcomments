@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# compile and install assaultcube from git master linux ubuntu v1
+
+# make this script into a .sh file and run it with bash
+
+# tested working on ubuntu 20.04, xubuntu 20.04
+# will probably work fine anywhere even slightly debian-ish
+
+# i've played assaultcube since 2011-ish, it was one of my first PC FPS's, after i got my first desktop, it's great fun
+
+# IF YOU CANNOT CONNECT TO MULTIPLAYER AFTER INSTALL, WITH AN ERROR OF "failed to resolve host ms.cubers.net",
+# LAUNCH THE GAME WITH THE FOLLOWING COMMAND INSTEAD- IT SEEMS TO RESOLVE THE ISSUE;
+# sh assaultcube.sh -m167.114.49.127
+#
+# YOU MAY WISH TO EDIT THE FOLLOWING .DESKTOP FILE WITH THIS CHANGE FOR EASIER WORKING LAUNCHING;
+# /home/$(whoami)/.local/share/applications/assaultcube_dev.desktop
+# [ add -m167.114.49.127 to the end of assaultcube.sh after a space, in there, in the 'Exec=' key ]
+#
+# (thank you grenadier of the AssaultCube Forum for this)
+
+sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y
+
+sudo apt install -y git
+sudo apt install -y zenity
+mkdir /opt/
+sudo chown $USER /opt/
+mkdir /opt/assaultcube-install
+cd /opt/assaultcube-install
+git clone https://github.com/assaultcube/AC
+sudo apt install -y libsdl1.2debian libsdl-image1.2 zlib1g libogg0 libvorbis0a libopenal1 libcurl4
+sudo apt install -y libsdl1.2-dev libsdl-image1.2 libsdl-image1.2-dev libopenal-dev libvorbis-dev libcurl4-openssl-dev
+sudo apt install -y build-essential
+sudo apt install -y clang
+sudo apt install -y libsdl2-dev
+sudo apt install -y apt-file
+sudo apt install -y libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libjpeg-dev
+sudo apt install -y libsdl1.2-dev
+
+sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y
+
+
+cd AC
+cd source
+cd src
+sudo make install
+cd /opt/assaultcube-install/AC/
+bash /opt/assaultcube-install/AC/install_or_remove_menuitem.sh
+
+cd /opt/assaultcube-install
+
+touch /opt/assaultcube-install/compile-date-README-note.txt
+echo "This build was compiled from git master by you on $(date)" >> /opt/assaultcube-install/compile-date-README-note.txt
+
+echo ""
+echo "AssaultCube installed. Launch it from your regular application menu/launcher."
+echo ""
+zenity --warning --text "AssaultCube installed. Launch it from your regular application menu/launcher."
+
+exit

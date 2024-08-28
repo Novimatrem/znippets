@@ -1,0 +1,7 @@
+# Fix weapon/viewmodel flickering/flashing in Source Engine games (Valve games, etc.)
+
+# If your viewmodel/weapon/hands etc is flickering and flashing in Source/Valve games,
+# running the following command will fix it. Put it in your autoexec.cfg, please.
+
+cl_threaded_bone_setup 0
+

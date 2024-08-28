@@ -1,0 +1,24 @@
+#!/bin/bash
+# purge the pantheon desktop (elementary OS)
+
+echo "Working..."
+
+sudo dpkg --configure -a && sudo apt-get -f install && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo apt clean -y && sudo dpkg --configure -a && sudo apt-get -f install && sudo journalctl --flush && sudo journalctl --rotate && sudo journalctl --vacuum-time=1s && sudo journalctl --vacuum-size=200M && sudo journalctl --flush
+
+sudo apt-get purge -y pantheon
+sudo apt-get purge -y pantheon-shell
+sudo apt-get purge -y pantheon-xsession-settings
+sudo apt-get purge -y appstream-data-pantheon-icons-hidpi
+sudo apt-get purge -y appstream-data-pantheon-icons
+sudo apt-get purge -y appstream-data-pantheon
+sudo apt-get purge -y libpantheon-files-core0
+sudo apt-get purge -y pantheon-agent-polkit
+sudo apt-get purge -y pantheon-files
+sudo apt-get purge -y pantheon-photos
+sudo apt-get purge -y switchboard-plug-pantheon-shell
+
+sudo dpkg --configure -a && sudo apt-get -f install && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo apt clean -y && sudo dpkg --configure -a && sudo apt-get -f install && sudo journalctl --flush && sudo journalctl --rotate && sudo journalctl --vacuum-time=1s && sudo journalctl --vacuum-size=200M && sudo journalctl --flush
+
+echo "Done. Reboot now, and then install Xfce."
+
+

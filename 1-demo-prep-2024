@@ -1,0 +1,18 @@
+// 1-demo-prep-2024.cfg
+
+cl_interp 0
+// if you want to smoothly record NPC's, you need cl_interp to 0.1 instead, but that breaks JUMPING..
+cl_interp_ratio 0.4
+cl_updaterate 128
+mat_setvideomode 1280 960 0
+cc_subtitles 1
+disconnect
+fps_max 98
+mat_powersavingsmode 0
+demo_quitafterplayback 1
+demo_interpolateview 1
+sv_client_predict 0 // if movement playback strange/broken, sv_client_predict 1 (not in black mesa)
+demo_interplimit 10242048
+sv_client_min_interp_ratio -1
+
+

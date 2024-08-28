@@ -1,0 +1,48 @@
+#!/bin/bash
+# kill-processes-constantly.sh v4
+
+while true; do
+clear
+echo ""
+echo "Killing processes..."
+echo ""
+sleep 0.7s
+
+
+sleep 1s
+killall telegram
+killall telegram-desktop
+
+killall Discord
+killall discord
+killall discordapp
+
+killall steam
+killall steamwebhelper
+
+killall wire-desktop
+
+killall firefox
+killall gajim
+killall dino
+killall dino-im
+
+killall skype
+killall skypeforlinux
+
+echo ""
+echo "All done!"
+echo ""
+
+sleep 0.7s
+clear
+echo ""
+echo "Killing processes..."
+echo ""
+echo "Looping..."
+echo ""
+sleep 0.4s
+echo "Looping..."
+done
+
+# eof

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# delete-text-editors-i-dont-want.sh (Ubuntu) v3
+
+echo "Starting..."
+
+sudo apt remove -y gedit
+sudo apt remove -y vim
+sudo apt remove -y abiword
+sudo apt remove -y libreoffice*
+sudo apt remove -y libreoffice
+sudo apt remove -y libreoffice-writer
+sudo apt remove -y mousepad
+sudo apt remove -y calibre
+sudo flatpak remove -y io.brackets.Brackets
+
+echo "Okay, installing the one I DO want."
+
+sudo apt install -y featherpad
+
+echo "All done."
+
+

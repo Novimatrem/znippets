@@ -1,0 +1,8 @@
+# This is for running inside of the _posts folder of the blog
+# Change the file format of the files you wish to affect
+# For example, if you wish to change it on websites you own, make it .html
+# etc
+
+find . -type f -name '*.markdown' -exec sed -i 's/zoey Whitehat/zoey Globe/g' {} \;
+
+

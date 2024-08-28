@@ -1,0 +1,14 @@
+ensure you cd into the repo's folder, and then run these commands
+
+
+
+
+grep --include={*.html,*.css} -rnl './' -e "novinewpleaseleavemealonelinkONE" | xargs -i@ sed -i 's/novinewpleaseleavemealonelinkONE/novinewpleaseleavemealonelinkTWO/g' @
+
+grep --include={*.html,*.css} -rnl './' -e "holdernyaihavedonenothingwrongNewDesign" | xargs -i@ sed -i 's/holdernyaihavedonenothingwrongNewDesign/holdernyaihavedonenothingwrongNewDesignTWO/g' @
+
+grep --include={*.html,*.css} -rnl './' -e "headerpfp" | xargs -i@ sed -i 's/headerpfp/headerpfpTWO/g' @
+
+
+
+

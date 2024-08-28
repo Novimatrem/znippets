@@ -1,0 +1,23 @@
+if you're into writing blog posts or other written content in markdown, ReText, a Markdown Editor, is a good choice
+the GNU image manipulation program (with the unfortunate package name: gimp ) is a great image editor for linux
+the package 'cheese' is a good webcam program
+minigalaxy is a client for playing games from GOG (good old games)
+kdenlive is a great video editor
+libreoffice is a great office suite, basically MS office alternative
+transmission is a good torrent client
+vlc is a good video and audio player
+synaptic is a good package manager gui for installing more software
+abiword is a good microsoft word alternative
+bleachbit is a good ccleaner alternative
+calibre is good for reading pdf's and ebooks
+command-not-found helps you use the terminal by suggesting install of the packages for the commands you type
+gnome-software is a great app store for finding more apps to install
+plasma-discover is another great app store for finding more apps to install
+gedit is the world's best text editor
+atril is a good and useful document viewer
+baobab helps you see the things taking up disk space, in a GUI way
+ncdu helps you see the things taking up disk space, in a CLI way
+gnumeric is a good MS excel alternative
+pavucontrol is useful for controlling your sound
+
+

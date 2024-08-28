@@ -1,0 +1,23 @@
+# elementary OS - Stop the Kernel from updating (because NVIDIA sucks ass) v1
+
+# pin-kernel-elementary-nvidia-sucks.sh
+
+sudo apt-mark hold linux-image-generic linux-headers-generic
+echo linux-image-generic hold | sudo dpkg --set-selections
+echo linux-generic hold | sudo dpkg --set-selections
+sudo apt-get remove linux-image linux-image-generic -y
+sudo apt-mark hold $(uname -r)
+sudo apt-mark hold linux-generic linux-image-generic linux-headers-generic
+sudo -S apt-mark hold linux-generic linux-image-generic linux-headers-generic
+sudo apt-mark hold linux-image-generic linux-headers-generic
+
+sudo tee /etc/apt/preferences.d/nolinuxupgrades <<EOF
+Package: linux-*
+Pin: version *
+Pin-Priority: -1
+EOF
+
+# eof
+exit
+
+

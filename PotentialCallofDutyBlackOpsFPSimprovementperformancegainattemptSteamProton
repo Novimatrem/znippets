@@ -1,0 +1,12 @@
+# Potential Call of Duty: Black Ops FPS improvement performance gain attempt (Steam, Proton)
+
+# you will need to change the paths to where the proton you're using for the game, and your game, is installed.
+
+sudo apt install -y winetricks
+sudo dnf install -y winetricks
+
+env WINEPREFIX="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/42700/pfx" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/novicutie/.steam/steam" STEAM_COMPAT_DATA_PATH="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/211420/pfx" WINEPATH="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/common/Proton - Experimental/dist/bin/wine64" winetricks glsl=disabled
+
+env WINEPREFIX="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/42700/pfx" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/novicutie/.steam/steam" STEAM_COMPAT_DATA_PATH="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/211420/pfx" WINEPATH="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/common/Proton - Experimental/dist/bin/wine64" winetricks shader_backend=arb
+
+# Done, should be better now!!?

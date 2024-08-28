@@ -1,0 +1,34 @@
+#!/bin/bash
+
+doSpeak () {
+  espeak -p 66 -s 150 "... $INPUT.. ... ."
+}
+
+INPUT="A question for you.. - from zoey.
+
+I have a question I’d like to ask you to answer that’d help me quite a bit to get answers to, ... and because I’m bad at combining data from various sources, I put it in the form of a Google Form. ... basically it is: ...
+
+‘What can I ... [zoey] ... (... novee-maytrem, ,  .) ... do ... to be ... and look ... more feminine/girly?’
+
+sorry for doing it this way but I am silly and lose track of things, but, it’d be really helpful to get an answer or a few.
+
+Feel free to let me know via alternative methods, if submitting via a Google Form is a problem for you.
+
+This question is coming from a place of worry at the supply of my hormones, and If I was to happen to run out of estrogen.
+
+Please let me know of ... any ... and ... all ... things that come to mind on how I could be, act, look, and appear, more feminine, girly, etc, on the form.
+
+I didn’t get the childhood I should’ve had to teach me all of this. So, please go ahead and answer if you have any ideas that’d help.
+
+Please visit ... novee-maytrem, dott, you kay ... slash fem-form - the link is in the description. ... ...
+
+... Repeat: ... novee-maytrem, dott, you kay ... slash fem ... form ...
+
+Thank you so much.
+"
+
+doSpeak
+
+
+
+# EOF

@@ -1,0 +1,4 @@
+// fixjaggies_execonmenu.cfg (source)
+mat_aaquality 0
+mat_setvideomode 1920 1080 1
+mat_antialias 8

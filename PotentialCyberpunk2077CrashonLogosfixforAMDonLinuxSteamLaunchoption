@@ -1,0 +1,19 @@
+# Potential Cyberpunk 2077 Crash on Logos fix for AMD on Linux (Steam Launch option) 
+
+# Open your launch options in the properties for the game
+# Put this in there, if you DON'T have any launch options.
+
+VKD3D_CONFIG=host_import_fallback %command% --launcher-skip
+
+
+
+# If you DO have launch options, 
+
+# prepend this to it (put it at the start)
+VKD3D_CONFIG=host_import_fallback
+
+# AND append this to it (put it at the end) 
+--launcher-skip
+
+
+# You shouldn't crash now. Yay

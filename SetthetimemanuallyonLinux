@@ -1,0 +1,6 @@
+# Set the time manually on Linux
+
+sudo timedatectl set-ntp false
+sudo timedatectl set-time 08:58:00
+
+

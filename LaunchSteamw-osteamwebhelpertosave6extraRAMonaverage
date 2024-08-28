@@ -1,0 +1,8 @@
+# Launch Steam w/o steamwebhelper to save 6% extra RAM on average
+
+Append the following to the Target/command of your Steam shortcut, and then hit OK/save;
+
+-no-browser +open steam://open/minigameslist
+
+To undo this, close Steam, and put your shortcut back how it was.
+Steam will only launch without webhelper if you launch it via this shortcut you created.

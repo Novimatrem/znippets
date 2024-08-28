@@ -1,0 +1,19 @@
+// call of duty black ops 1 config and config_mp additions v2
+// copy the following at the end of both config files, and then save:
+
+seta r_dof_enable "0"
+seta cg_brass "0"
+seta r_distortion "0"
+seta cg_motionblur_duration "0"
+seta cg_motionblur_fadeout "0"
+seta r_blur_allowed "0"
+seta r_motionblur_maxblur "0"
+seta r_motionblur_numberOfSamples "0"
+seta r_vsync "0"
+seta snaps "30"
+seta cl_maxpackets "100"
+seta rate "25000"
+seta sv_maxRate "25000"
+seta cl_mouseAccel "0"
+bind 8 "cg_fov 95"
+

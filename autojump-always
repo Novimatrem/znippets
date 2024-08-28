@@ -1,0 +1,22 @@
+#!/bin/bash
+# autojump-always.sh
+
+clear
+
+echo "autojump-always.sh"
+
+read -p "Have you ever ran this script on this system install before (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  echo "" && echo "Running." && echo "";
+else
+  echo "" && echo "Installing requirements." && sudo dnf install -y xdotool && exit;
+fi
+
+
+while true
+do
+
+xdotool key space
+echo "Jumped! (Ctrl+C in this Terminal quickly to quit)"
+
+done

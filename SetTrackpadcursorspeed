@@ -1,0 +1,16 @@
+# Set Trackpad cursor speed
+
+# I heavily recommend disabling mouse acceleration, first, before also doing this, for more consistent, accurate, raw mouse movements;
+# https://novimatrem.gitlab.io/blog/2020/08/22/how-to-fully-properly-disable-mouse-acceleration-in-most-linux-distros-and-de.html
+
+# See current Trackpad speed value
+synclient | grep MaxSpeed
+synclient | grep MinSpeed
+synclient | grep AccelFactor
+
+# Set Trackpad speed value
+synclient MaxSpeed=1
+synclient MinSpeed=1
+synclient AccelFactor=0
+
+# depending on various factors, this may not have any effect on your hardware. YMMV.

@@ -1,0 +1,3 @@
+flatpak install flathub org.mersenne.mprime
+
+flatpak run org.mersenne.mprime

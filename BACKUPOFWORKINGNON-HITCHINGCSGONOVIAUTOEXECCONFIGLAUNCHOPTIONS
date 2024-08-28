@@ -1,0 +1,1273 @@
+// BACKUP OF WORKING NON-HITCHING CSGO NOVI AUTOEXEC CONFIG + LAUNCH OPTIONS
+// otherwise known as
+// My source (+goldsrc) engines generic autoexec.cfg v365
+// backed up in its current form in case something breaks it again.
+
+// I use this autoexec config and launch options in every source game I own.
+// It works in Source, GoldSrc, even Quake games to a degree
+
+// Thanks to Budi (nickbudi) for inspiration and some of these lines (CSS related)
+
+// Launch options: __GL_SYNC_TO_VBLANK=0 __GL_MaxFramesAllowed=1 %command% -console -w 1920 -h 1080 -fullscreen -high -novid -trusted -nojoy +exec autoexec.cfg -forcenovsync -noforcemaccel -noforcemparms -noforcemspd +exec custom.cfg -secure -sillygibs -autoexec -hltv +default_fov 106 -oldgameui -num_edicts 4096 -tickrate 128 -condebug -dxlevel 81
+
+// zoey, do not define a heapsize, it causes crashes.
+
+// BE SURE TO SET ALL OF YOUR SETTINGS IN THE GUI, AS WELL AS USING..
+//  ..THIS AUTOEXEC, MAKE SURE IT'S ALL AS YOU WISH.
+
+// If you're setting up TF2, and intend to play Valve's competitive, you will need
+// this additional script in your cfg folder, and will need to press the P key,
+// every time you've loaded into a competitive game, otherwise you will have motion blur and
+// ugly distracting specular reflections;
+// My afterload_tf2compfix.cfg - https://gitlab.com/-/snippets/2111536 
+
+// the consistency of working from a solid consistent reliable base
+exec config_default.cfg
+
+// graphics and lower spec tweaks
+mat_dxlevel 81
+sv_cheats 0
+r_lod -1
+mat_picmip 1
+cl_ejectbrass 1
+muzzleflash_light 0
+cl_detaildist 0
+cl_show_splashes 1
+sv_cheats 0
+mat_picmip 1
+mat_filtertextures 1
+g_ragdoll_lvfadespeed 1
+g_ragdoll_fadespeed 1
+violence_agibs "0"
+violence_hgibs "0"
+violence_hblood "0"
+violence_ablood "0"
+cl_ragdoll_collide "1"
+g_ragdoll_lvfadespeed "1"
+g_ragdoll_fadespeed "1"
+g_ragdoll_maxcount "1"
+g_ragdoll_important_maxcount "1"
+cl_ragdoll_collide 1
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// make sure the console is accessible
+bind f11 toggleconsole
+
+// rage quit
+bind del exit
+
+// kill
+bind k kill
+echo "kill is now bound to k"
+
+// bind v noclip
+bind v noclip
+
+// less input lag
+mat_vsync "0"
+
+// multicore
+mat_queue_mode 1
+gmod_mcore_test 0
+cl_threaded_bone_setup 0
+cl_threaded_client_leaf_system 1
+r_threaded_client_shadow_manager 1
+r_threaded_particles 1
+r_threaded_renderables 1
+r_queued_ropes 1
+studio_queue_mode 1
+mat_specular 1
+
+// this game is blinding
+mat_monitorgamma 1.4
+mat_monitorgamma_tv_enabled 0
+mat_hdr_level "2"
+mat_disable_bloom "1"
+mat_bloomscale ".20"
+mat_phong 1
+mat_hdr_uncapexposure 0
+
+// tryhard
+cl_ragdoll_physics_enable "1" // ragdolls
+cl_forcepreload "0"
+cl_ejectbrass "1" // bullet shells
+r_aspectratio 2
+
+// hud 
+crosshair 1
+hud_showtargetid "1"
+hud_fastswitch "0"
+cl_righthand "1"
+cl_autowepswitch "0"
+cl_showpos "0"
+cl_showfps "0"
+net_graph "0"
+net_graphproportionalfont "0" // small netgraph font
+net_graphpos "2" 
+cl_crosshair 1
+cl_dynamiccrosshair 0
+safezonex 1
+safezoney 1
+commentary_available 0
+commentary 0
+
+// Misc
+con_enable "1"
+cl_downloadfilter "all"
+cl_autohelp "0"
+cl_showhelp "0"
+cl_disablefreezecam 0
+cl_freezecameffects_showholiday 0
+cl_disablehtmlmotd "1"
+cl_autowepswitch "0" // auto weapon switch on pickup
+cl_hudhint_sound "0"
+menu_cleanupgmas // deletes unsubscribed addons
+tf_contract_progress_show 0
+cl_disablehtmlmotd 1
+cl_cloud_settings 1
+r_drawdecals 1
+cl_autoweaponpickup 0
+cl_predictweapons 1
+cl_clanid 33208266
+// FatAnime clan tag
+r_aspectratio 2
+cl_autohelp 0
+cl_showhelp 0
+hud_showtargetid 1
+gameinstructor_enable 0
+sv_gameinstructor_disable 1
+mm_dedicated_search_maxping 1
+sv_pure 1
+sv_cheats 0
+sv_pure_kick_clients 1
+sv_consistency 0
+sv_autobunnyhop 1
+sv_enablebunnyhop 1
+mp_ignore_round_win_conditions 0
+mp_respawn_on_death_ct 1
+mp_respawn_on_death_t 1
+commentary_available 0
+commentary 0
+r_drawtracers 1
+r_drawtracers_firstperson 1
+mat_picmip 1
+mat_filtertextures 1
+r_decals 8192
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// NETWORKING
+rate "1048576"
+cl_updaterate 128
+cl_cmdrate 128
+sv_maxrate 128
+sv_maxcmdrate 128
+sv_mincmdrate 128
+sv_minupdaterate 128
+sv_maxupdaterate 128
+sv_maxrate 128
+sm_cvar sv_maxcmdrate 128
+sv_mincmdrate 128
+sv_minupdaterate 128
+sm_cvar sv_maxupdaterate 128
+
+// sound
+volume 1
+dsp_slow_cpu "1"
+snd_surround_speakers "0" // audio output
+snd_musicvolume "0.4"
+snd_legacy_surround "0" // emulated surround sound
+snd_mixahead "0.05" // sound delay
+sv_ignoregrenaderadio 1
+ignorerad
+bind "M" "ignorerad"
+ignoremsg
+bind "N" "ignoremsg"
+cl_bob 0
+cl_bobup 0
+snd_menumusic_volume 0
+snd_menumusic_volume "0.0"
+snd_deathcamera_volume "0.0"
+snd_mapobjective_volume "0.4"
+snd_menumusic_volume "0.0"
+snd_roundend_volume "0.0"
+snd_roundstart_volume "0.0"
+snd_tensecondwarning_volume "0.4"
+snd_mvp_volume "0.4"
+snd_dzmusic_volume 0
+snd_mute_losefocus 0 // do not mute the audio on loss of window focus
+snd_mute_mvp_music_live_players 1 // if players are still alive on both teams, mute MVP music
+cl_predictweapons 1
+
+// fuck motion blur of any kind (make sure to also disable in game's video settings menu)
+mat_motion_blur_enabled 0
+mat_motion_blur_falling_intensity 0
+// THIS IS CRITICAL, mat_motion_blur_falling_max MUST BE SET TO 0.1
+// IF YOU DO NOT SET mat_motion_blur_falling_max to 0.1 YOU WILL GET AWFUL VISUAL BUGS,
+// INCLUDING VISUAL FLICKERING, RANDOM COLOURS OVERLAYING THE SCREEN, FLASHING, AWFUL. 
+mat_motion_blur_falling_max 0.1
+mat_motion_blur_falling_min 0
+mat_motion_blur_forward_enabled 0
+mat_motion_blur_percent_of_screen_max 0
+mat_motion_blur_rotation_intensity 0
+mat_motion_blur_strength 0
+replay_rendersetting_motionblurenabled 0
+mat_screen_blur_override 0
+mat_fullbright 0
+mat_vignette_enable 0
+
+// cap fps
+fps_max 85
+fps_max_menu 99
+fps_max_splitscreen 99
+mat_powersavingsmode 0
+fps_override 1
+gl_vsync 0
+mat_frame_sync_enable 0
+mat_forcehardwaresync 1
+
+// mouse
+m_rawinput 1
+m_filter 0
+
+m_customaccel "0"
+m_mouseaccel1 "0"
+m_mouseaccel2 "0"
+zoom_sensitivity_ratio "1.0"
+
+// graphics tweaks
+mat_dxlevel 81
+gl_disable_forced_vsync 1
+cl_c4dynamiclight 1
+mat_bloomscale "0"
+mat_disable_fancy_blending 1
+cl_forcepreload 0
+r_dynamic 0
+r_decal_cover_count "4"
+r_decal_cullsize "1"
+r_decal_overlap_area "0.4"
+r_decal_overlap_count "3"
+r_decals 8192
+r_decalstaticprops "1
+mp_decals 8192
+mat_vignette_enable 0
+mat_phong 1
+r_drawtracers 1
+r_drawtracers_firstperson 1
+cl_himodels 1
+cl_hlmodels 1
+mat_fastspecular 1 // must be 1 or certain props will be unlit-black-non-textured black mesa
+mat_bumpmap 1
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+engine_no_focus_sleep 10
+cl_predictweapons 1
+rope_smooth 0 // stop rope flickering+improve rope appearance
+mat_picmip 1
+mat_filtertextures 1
+g_ragdoll_lvfadespeed 1
+g_ragdoll_fadespeed 1
+violence_agibs "0"
+violence_hgibs "0"
+violence_hblood "0"
+violence_ablood "0"
+cl_ragdoll_collide "1"
+g_ragdoll_lvfadespeed "1"
+g_ragdoll_fadespeed "1"
+g_ragdoll_maxcount "1"
+g_ragdoll_important_maxcount "1"
+cl_ragdoll_collide 1
+mat_mipmaptextures "0"
+cl_predictweapons 1
+
+// disable chat (both text chat and voice chat) because very awful people exist in it.
+// there are lots of racists, transphobes, homophones, etc in chat. ruins chat for the good ppl.
+hud_saytext_time 0
+hud_saytext 0
+cl_mute_enemy_team 1
+cl_chatfilters "0"
+cl_mute_all_but_friends_and_party "1"
+lobby_voice_chat_enabled "0"
+tv_nochat "1"
+voice_enable 0
+voice_scale 0
+mp_chattime 0
+cl_voice 0
+sv_voice 0
+sv_voiceenable 0
+
+// ^ be sure to disable voice chat in the settings menu too.
+
+developer 0
+
+// fov
+default_fov 106
+fov_desired 95
+_fov 95
+fov 95
+cl_viewmodelfovsurvivor 73
+cl_fov 110
+viewmodel_fov 73
+// 73 is max viewmodel_fov i can have without noticable issues.
+bind w "+forward"
+viewmodel_offset_y 6
+demo_fov_override 90
+viewmodel_fov_demo 73
+background_fov 90
+sv_restrict_aspect_ratio_fov 0
+r_aspectratio 2
+
+// fix bugs
+mat_hdr_level 2
+tf_party_leave
+sv_motd_unload_on_dismissal "1"
+alias closed_htmlpage ""; echo BLOCKED an attempted html wait timer"
+cl_disablehtmlmotd 1
+r_drawviewmodel 1
+mat_postprocess_enable 0
+sv_autosave 1
+mat_vignette_enable 0
+mat_tonemapping_occlusion_use_stencil 1
+mat_motion_blur_falling_max 0.1
+mat_phong 1
+commentary_available 0
+commentary 0
+r_drawtracers 1
+r_drawtracers_firstperson 1
+save_screenshot 0
+cl_predictweapons 1
+r_decals 8192
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// Fix calling MEDIC in TF2 (uncomment if the game is TF2)
+// bind e "voicemenu 0 0"
+
+// flashlight even when possibly unsupported
+mat_supportflashlight 1
+mp_flashlight 1
+r_flashlight_version2 0
+r_flashlightambient 0.0
+r_flashlightclip 0
+r_flashlightconstant 0.0
+r_flashlightculldepth 1
+r_flashlightdepthres 1024
+r_flashlightdepthtexture 1
+r_flashlightdrawclip 0
+r_flashlightdrawdepth 0
+r_flashlightdrawfrustum 0
+r_flashlightdrawfrustumbbox 0
+r_flashlightdrawsweptbbox 0
+r_flashlightfar 750.0
+r_flashlightfov 45.0
+r_flashlightladderdist 40.0
+r_flashlightlinear 100
+r_flashlightlockposition 0
+r_flashlightmodels 1
+r_flashlightnear 4.0
+r_flashlightnodraw 0
+r_flashlightoffsetx 10.0
+r_flashlightoffsety -20.0
+r_flashlightoffsetz 24.0
+r_flashlightquadratic 0.0
+r_flashlightrender 1
+r_flashlightrendermodels 1
+r_flashlightrenderworld 1
+r_flashlightscissor 1
+r_flashlightshadowatten 0.35
+r_flashlightupdatedepth 1
+r_flashlightvisualizetrace 0
+r_dynamic 0
+r_dynamiclighting 0
+bind f "impulse 100"
+bind x "impulse 100; create_flashlight"
+
+// fix potential lag with low cost
+mat_picmip 1
+r_rootlod -1
+mat_forcemanagedtextureintohardware 1
+sv_forcepreload 0
+cl_predictweapons 1
+
+// less sads
+violence_ablood 0 
+violence_agibs 0
+violence_hblood 0
+violence_hgibs 0
+cl_ragdoll_fade_time 1
+cl_ragdoll_forcefade 1
+cl_ragdoll_physics_enable 1
+g_ragdoll_fadespeed 0
+g_ragdoll_lvfadespeed 0
+ragdoll_sleepaftertime 5.0f
+cl_ragdoll_collide 1
+cl_burninggibs 0
+g_ragdoll_important_maxcount 0
+g_ragdoll_maxcount 0
+ai_force_serverside_ragdoll 0
+cl_corpsestay 0
+cl_phys_props_enable 1
+cl_phys_props_max 0
+props_break_max_pieces -1
+r_propsmaxdist 1
+bm_gib_on_health_below -10000
+g_ragdoll_lvfadespeed 1
+g_ragdoll_fadespeed 1
+violence_agibs "0"
+violence_hgibs "0"
+violence_hblood "0"
+violence_ablood "0"
+cl_ragdoll_collide "1"
+g_ragdoll_lvfadespeed "1"
+g_ragdoll_fadespeed "1"
+g_ragdoll_maxcount "1"
+g_ragdoll_important_maxcount "1"
+cl_ragdoll_collide 1
+
+// viewmodel
+cl_righthand 1
+viewmodel_offset_x 2.5
+viewmodel_offset_y -2
+viewmodel_offset_z -2
+cl_bobamt_lat 0.1
+cl_bobamt_vert 0.1
+cl_viewmodel_shift_left_amt 0.5
+cl_viewmodel_shift_right_amt 0.5
+default_fov 106
+fov_desired 95
+_fov 95
+fov 95
+cl_viewmodelfovsurvivor 73
+cl_fov 110
+viewmodel_fov 73
+// 73 is max viewmodel_fov i can have without noticable issues.
+bind w "+forward"
+mat_vignette_enable 0
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// crosshair
+cl_crosshair_drawoutline "1.000000"
+cl_crosshair_dynamic_maxdist_splitratio "0"
+cl_crosshair_dynamic_splitalpha_innermod "1"
+cl_crosshair_dynamic_splitalpha_outermod "0.300000"
+cl_crosshair_dynamic_splitdist "6"
+cl_crosshair_friendly_warning "1"
+cl_crosshair_outlinethickness "2.000000"
+cl_crosshair_sniper_show_normal_inaccuracy "0"
+cl_crosshair_sniper_width "2"
+cl_crosshair_t "0.000000"
+cl_crosshairalpha "150.000000"
+cl_crosshaircolor "5.000000"
+cl_crosshaircolor_b "0.000000"
+cl_crosshaircolor_g "255.000000"
+cl_crosshaircolor_r "0.000000"
+cl_crosshairdot "1.000000"
+cl_crosshairgap "-2.000000"
+cl_crosshairgap_useweaponvalue "0"
+cl_crosshairsize "-0.300000"
+cl_crosshairstyle "4.000000"
+cl_crosshairthickness "1.500000"
+cl_crosshairusealpha "1"
+cl_fixedcrosshairgap "-100"
+
+// damage readout (disabled right now, causes spam across screen in tf2 comp)
+developer "0"
+con_filter_text "Damage"
+con_filter_text_out "Player:"
+con_filter_enable "2"
+
+// death replay (cs)
+tv_enable 0
+spec_replay_enable 1
+spec_replay_autostart 0 // disable, death replays are bad
+spec_replay_bot 1
+spec_replay_on_death 0 // this needs to stay 0, else it bugs out and you don't respawn when meant to.
+replay_death 1
+r_replay_post_effect 0
+
+// portal 2
+sv_use_bendy_model 0
+r_portal_use_dlights 1
+firstperson
+mat_vignette_enable 0
+mat_motion_blur_strength 0
+portal_draw_ghosting 1
+crosshair 1
+// in portal 2 you need tv_enable set to 0 or nobody can connect
+tv_enable 0
+// THIS IS CRITICAL, mat_motion_blur_falling_max MUST BE SET TO 0.1
+// IF YOU DO NOT SET mat_motion_blur_falling_max to 0.1 YOU WILL GET AWFUL VISUAL BUGS,
+// INCLUDING VISUAL FLICKERING, RANDOM COLOURS OVERLAYING THE SCREEN, FLASHING, AWFUL. 
+mat_motion_blur_falling_max 0.1
+
+// TF2
+mat_phong 1
+// mat_phong 1 fixes certain props being dark/unlit 
+tf_use_min_viewmodels 1
+tf_scoreboard_ping_as_text 1
+cl_ask_blacklist_opt_out 0
+cl_ask_favorite_opt_out 0
+cl_new_impact_effects 0
+tf_matchmaking_join_in_progress 0
+tf_particles_disable_weather 1
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// HL2
+commentary_available 0
+commentary 0
+// commentary nodes show up despite me not choosing them, this fixes it.
+cl_predictweapons 1
+
+// CSGO
+r_drawtracers 1
+r_drawtracers_firstperson 1
+// I need to draw tracers in firstperson to be able to aim with certain suppressing fire weapons
+cl_predictweapons 1
+
+// bots
+bot_join_after_player 1
+spec_replay_bot 0
+bot_quota 22
+bot_difficulty 2
+bot_quota_mode fill
+bot_join_team any
+
+// enable sprays for the source games that allow them
+cl_allowdownload 1
+cl_allowupload 1
+cl_playerspraydisable 0
+r_spray_lifetime 2
+cl_customsounds 1
+r_drawmodeldecals 1
+r_drawbatchdecals 1
+sv_allowdownload 1
+sv_allowupload 1
+r_decal_cover_count "4"
+r_decal_cullsize "1"
+r_decal_overlap_area "0.4"
+r_decal_overlap_count "3"
+r_decalstaticprops "1
+cl_predictweapons 1
+r_decals 8192
+
+// extra graphics gfx tweaks
+mat_picmip 1
+r_lod -1
+cl_new_impact_effects 0
+mat_specular 1
+mat_picmip 1
+mat_filtertextures 1
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// graphics and lower spec tweaks
+sv_cheats 0
+r_lod -1
+mat_picmip 1
+cl_ejectbrass 1
+muzzleflash_light 0
+cl_detaildist 0
+cl_show_splashes 1
+sv_cheats 0
+lod_Enable 1
+lod_enable 1
+mat_bloom 0
+r_maxdlights 8
+mat_blur 0
+cl_lagcompensation 1
+map_background none
+mat_picmip 1
+mat_filtertextures 1
+g_ragdoll_lvfadespeed 1
+g_ragdoll_fadespeed 1
+violence_agibs "0"
+violence_hgibs "0"
+violence_hblood "0"
+violence_ablood "0"
+cl_ragdoll_collide "1"
+g_ragdoll_lvfadespeed "1"
+g_ragdoll_fadespeed "1"
+g_ragdoll_maxcount "1"
+g_ragdoll_important_maxcount "1"
+cl_ragdoll_collide 1
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// graphics i'm okay with
+net_graph 0
+mat_forceaniso 16
+mat_trilinear 1
+mat_software_aa_strength 0
+mat_software_aa_strength_vgui 0
+mat_fxaa_enabled 0
+mat_fxaa_enable 0
+mat_antialias 4
+mat_aaquality 0
+mat_picmip 1
+mat_filtertextures 1
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// fix graphical issues
+fog_enable_water_fog 1
+fog_override 0
+cl_predictweapons 1
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// black mesa/some gmod, unlit objects fix
+mat_specular 1
+mat_fastspecular 1 // must be 1 or certain props will be unlit-black-non-textured black mesa
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// black mesa extra
+mat_chromatic_damage_enable 0
+vr_debug_nochromatic 1
+r_pixelfog 0
+cl_ironsight_sticky 1
+cl_ironsight_classic 1
+cl_weapon_autoswitch 0
+sv_houndeye_tinnitus 0
+cl_view_roll 1.25
+mat_bloomscale_vgui 0
+host_thread_mode 0 // needs to be 0, else you can't walk at all.
+sv_client_predict 0 // must be set to 0 or movement is strange and broken (black mesa)
+
+// gmod is far too bright fix
+pp_colormod 1
+pp_colormod_brightness -0.05
+pp_colormod_contrast 0.9
+
+// crosshair more visible sometimes
+hud_draw_fixed_reticle 1
+
+// afterload_tf2compfix
+bind "p" "exec afterload_tf2compfix.cfg"
+echo "afterload_tf2compfix is now bound to P"
+
+// goldsrc brightness fix
+brightness 2
+mat_fullbright 0
+r_fullbright 0
+gamma 3
+
+// cs16
+alias swagg "connect swagg.net:27015"
+con_notifytime 9
+
+// big water improvements
+r_WaterDrawRefraction 1
+r_WaterDrawReflection 1
+r_waterforceexpensive 1
+r_waterforcereflectentities 0 // FAR too heavy/demanding, keep 0
+fog_enable_water_fog 1
+
+// half-life 1 fixes
+gl_zmax 8192
+sv_zmax 8192
+gl_ztrick 0
+gl_ztrick_old 0
+unbind f10
+gl_polyoffset 0.1
+cl_weather 1
+developer 0
+
+// subtitles / closed captions / etc.
+cc_subtitles 0
+closecaption 1
+cc_lang english
+
+// for some reason the viewmodel was lost to jank, here's me re-stating it again
+cl_righthand 1
+cl_viewmodel_shift_left_amt "0.500000"
+cl_viewmodel_shift_right_amt "0.250000"
+viewmodel_fov "54"
+viewmodel_offset_x "2.5"
+viewmodel_offset_y "-2.0"
+viewmodel_offset_z "-2.0"
+viewmodel_presetpos "0"
+viewmodel_recoil "0"
+cl_bob_lower_amt "5.000000"
+cl_bobamt_lat "0.100000"
+cl_bobamt_vert "0.100000"
+cl_predictweapons 1
+
+// csgo buybinds counter-strike global offensive
+bind "kp_end" "buy vesthelm;"
+bind "kp_downarrow" "buy defuser;"
+bind "kp_pgdn" "buy smokegrenade;"
+
+bind "kp_leftarrow" "buy flashbang;"
+bind "kp_5" "echo null"
+bind "kp_rightarrow" "echo null"
+
+// black mesa source viewmodel fixes
+cl_viewmodel_lag 0
+cl_bobup 0
+cl_bobside 0
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// black mesa source fix performance issues black perf
+mat_unlock_gfx_highend_unsupported 0
+nr_lights_quality 1 //must be set to 1 or above, causes big visual artifacts randomly if not.
+nr_shadow_quality 0
+nr_shadow_active 0
+np_active 0
+np_quality 0
+nr_shadow_max_passes_per_frame 0
+nr_shadow_filter_quality 0
+muzzleflash_light 0
+np_gr_quality 0
+r_waterforcereflectentities 0 // FAR too heavy/demanding, keep 0
+mat_geiger_noise_enable 0
+bms_lf_enabled 0
+cl_csm_qualitymode 0
+cl_csm_memoryusage 0
+mat_unlock_gfx_potato 1
+mat_easymenu_quality_level 4
+mat_levelflush 1
+cl_always_flush_models 1
+sv_forcepreload 0
+cl_forcepreload 0
+mat_queue_mode 1
+host_thread_mode 0 // needs to be 0, else you can't walk at all.
+sv_client_predict 0 // must be set to 0 or movement is strange and broken (black mesa)
+nr_debug_cull_deferred_lights 1
+
+// bind k kill command on k key button
+bind k kill
+
+// more black mesa
+mat_hdr_level 2
+mat_tonemapping_occlusion_use_stencil 1
+mat_fullbright 0
+host_thread_mode 0 // needs to be 0, else you can't walk at all.
+sv_client_predict 0 // must be set to 0 or movement is strange and broken (black mesa)
+
+// black mesa bug fixes
+cl_auto_crouch_jump 0
+nr_lights_quality 1 //must be set to 1 or above, causes big visual artifacts randomly if not.
+sv_unlockedchapters 99
+host_thread_mode 0 // needs to be 0, else you can't walk at all.
+sv_client_predict 0 // must be set to 0 or movement is strange and broken (black mesa)
+mat_fastspecular 1 // must be 1 or certain props will be unlit-black-non-textured black mesa
+
+// final reasonable settings in menu
+mat_colorcorrection 1
+r_shader_srgb 0 // must stay at 0 for consistency between different games
+mat_reducefillrate 0 // shader detail high, yes, the command is *THAT* for some reason
+
+// okay, fine, re-enable the slightest amount of chat.
+hud_saytext_time 12
+hud_saytext 12
+cl_chatfilters "63"
+mp_chattime 12
+bind y messagemode
+bind u messagemode2
+bind enter messagemode
+bind kp_enter messagemode
+
+// day of defeat: source dod bugfixes, viewmodel, weapon, iron sight, aim down sight
+cl_wpn_sway_interp 0
+cl_wpn_sway_scale 2.6
+cl_gunlowerspeed 0.6
+cl_bobcycle 2147483647 //must be at this or ADS/iron sight will be broken in day of defeat source
+
+// day of defeat source dods extra tweaks
+cl_dod_freezecam 0
+
+// normal switch weapon binds
+bind "mwheelup" invprev
+bind "mwheeldown" invnext
+unbind mouse3
+
+// misc hud tweaks
+hud_draw_fixed_reticle 0
+hud_quickinfo 1
+
+// portal 2 tweaks
+bind mouse4 "cl_fov 105;viewmodel_offset_y 11"
+
+// portal 1 tweaks
+r_aspectratio 2
+
+// sadly disable csgo hrtf for better fps on big maps (dz_) D:
+snd_hwcompat 1
+cl_predictweapons 1
+
+// csgo extra
+r_player_visibility_mode 1
+cl_predictweapons 1
+
+// name
+name novichan
+setinfo name novichan
+hostname novichan
+
+// infinite aux power suit power
+sv_infinite_aux_power 1
+// ^ for infinite flashlight, sadly it allows other things that are slightly sus (in singleplayer)
+
+// controller
+joy_response_move 0
+
+// garry's mod gmod gareth's modification
+gmod_mcore_test 0
+cl_threaded_bone_setup 0
+cl_threaded_client_leaf_system 1
+r_threaded_client_shadow_manager 1
+r_threaded_particles 1
+r_threaded_renderables 1
+r_queued_ropes 1
+studio_queue_mode 1
+menu_cleanupgmas // deletes unsubscribed addons
+menu_cleanupgmas
+physgun_timetoarrive 0
+physgun_timetoarriveragdoll 0
+cl_threaded_bone_setup 0
+cl_threaded_client_leaf_system 1
+r_threaded_client_shadow_manager 1
+r_threaded_particles 1
+r_threaded_renderables 1
+r_queued_ropes 1
+r_queued_decals 1
+r_queued_post_processing 1
+studio_queue_mode 1
+gmod_mcore_test 0
+host_thread_mode 0 // needs to be 0, else you can't walk at all.
+r_radiosity 4
+cl_predictweapons 1
+mat_picmip 1
+mat_filtertextures 1
+r_decals 8192
+
+// no controller please
+joystick 0
+joy_enable 0
+unbind "A_BUTTON"
+unbind "B_BUTTON"
+unbind "X_BUTTON"
+unbind "Y_BUTTON"
+unbind "L_SHOULDER"
+unbind "R_SHOULDER"
+unbind "POV_UP"
+unbind "POV_RIGHT"
+unbind "POV_DOWN"
+unbind "POV_LEFT"
+unbind "L_TRIGGER"
+unbind "R_TRIGGER"
+unbind "START"
+unbind "BACK"
+unbind "STICK1"
+unbind "STICK2"
+unbind "S1_UP"
+unbbind "S2_UP"
+unbind "UP"
+unbind "DOWN"
+unbind "LEFT"
+unbind "RIGHT"
+unbind "S2_UP"
+unbind "Z AXIS POS"
+unbind "Z AXIS NEG"
+unbind "JOY1"
+unbind "JOY2"
+unbind "JOY3"
+unbind "JOY4"
+unbind "JOY5"
+unbind "JOY6"
+unbind "JOY7"
+unbind "JOY8"
+unbind "JOY10"
+unbind "JOY9"
+
+// smooth
+m_filter 1
+mat_filterlightmaps 1
+cl_predict 1
+cl_smooth 1
+smoothstairs 1
+cl_lagcompensation 1
+cl_predictweapons 1
+cl_interpolate 1
+mat_picmip 1
+mat_filtertextures 1
+sv_alternateticks 0
+mat_fastnobump 0
+developer 0
+mat_filtertextures 1
+mat_mipmaptextures 0
+mat_specular 1
+sv_robust_explosions 1
+mat_parallaxmap 1
+mat_fastspecular 1
+mat_bloom_scalefactor_scalar 0
+mat_bloomamount_rate 0
+mat_bloomscale 0
+mat_non_hdr_bloom_scalefactor 0
+mem_force_flush 1
+r_bloomtintexponent 0
+con_filter_enable 1
+con_filter_text_out "error"
+tf_colorblindassist 1
+cl_vote_ui_active_after_voting 1
+cl_mvm_wave_status_visible_during_wave 1
+dsp_enhance_stereo 1
+dsp_room 1
+dsp_water 1
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// okay black mesa is horrible without any AA at all, enable its only working one (FXAA)
+mat_fxaa_enabled 1
+
+// decal fixes
+r_drawdecals 1
+r_drawmodeldecals 1
+r_drawbatchdecals 1
+r_decals 8192
+r_decalstaticprops 1
+r_maxmodeldecal 50
+r_drawflecks 1
+r_decal_cullsize 5
+r_queued_decals 1
+r_decal_cover_count "4"
+r_decal_overlap_area "0.4"
+r_decal_overlap_count "3"
+mp_decals 8192
+cl_predictweapons 1
+r_decals 8192
+cl_predictweapons 1
+
+// finally an accurate gamma
+mat_monitorgamma 1.6
+mat_monitorgamma_tv_enabled 0
+mat_monitorgamma_tv_exp 1.25
+mat_monitorgamma_tv_range_max 290
+mat_monitorgamma_tv_range_min 0
+r_shader_srgb 0 // must stay at 0 for consistency between different games
+pp_colormod 1
+pp_colormod_brightness -0.05
+pp_colormod_contrast 0.9
+
+// bind fix
+unbind LEFTARROW
+unbind RIGHTARROW
+
+// vram video memory extreme paranoia video ram limit per frame
+mat_texture_limit -1
+//mat_texture_limit 2097151.937 DO NOT USE
+//  limit max VRAM usage per each FRAME. entered in kilobytes.
+// (defaults to -1)
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// 0 is clearer but more pixely textures, good in hl: source, but bad everywhere else. set to 1.
+mat_filtertextures 1
+mat_picmip 1
+mat_filtertextures 1
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// new smooth
+cl_smoothtime .03 // Correct for prediction errors within one game frame, if enabled Def. 0.1
+net_chokeloop 0
+anim_3wayblend 1
+flex_smooth 1
+snd_mix_async 1 // Use another thread to mix sounds Def. 0
+snd_mixahead .05 // How many seconds of the 44100 sample rate should we mix. Value chosen as lowest sample count that can be mixed. Def. 0.1
+snd_noextraupdate 1 // Do not update sound twice Def. 0
+cl_autowepswitch 0 //Disable auto-switch weapon Def. 1
+bind "t" "impulse 201"
+sbox_maxprops 100
+mat_filtertextures 1
+mat_picmip 1
+mat_filtertextures 1
+cl_predictweapons 1
+
+// logging
+log on
+developer 0
+log_verbose_enable 1
+
+cl_predictweapons 1
+
+// l4d2
+cl_ragdoll_limit 50
+
+// goldsrc hd
+_sethdmodels 1
+
+// black mesa less sads
+bm_gib_on_health_below -10000
+
+// fix bad bind breakages fucking (alt stuck strafe fix)
+unbind alt
+unbind ALT
+unbind ralt
+unbind RALT
+
+// actually usable spy menu tf2
+tf_simple_disguise_menu 0
+// this *enables* simple regardless of its name/var
+
+// finally a truly accurate gamma
+mat_monitorgamma 1.6
+mat_monitorgamma_tv_enabled 0
+mat_monitorgamma_tv_exp 1.25
+mat_monitorgamma_tv_range_max 290
+mat_monitorgamma_tv_range_min 0
+
+// final accurate gamma fixes
+mat_monitorgamma_tv_exp 1.15
+mat_monitorgamma_tv_range_max 310
+r_shader_srgb 0 // must stay at 0 for consistency between different games
+pp_colormod 1
+pp_colormod_brightness -0.05
+pp_colormod_contrast 0.9
+mat_monitorgamma_tv_enabled 0
+
+// new volume for new setup
+volume 1
+snd_musicvolume 1
+
+// ensure mat_monitorgamma_tv_enabled is off by default, because in some games it's non configurable
+mat_monitorgamma_tv_enabled 0
+
+// reasonable detail settings
+con_filter_enable 0
+cl_detaildist 2400
+cl_detailfade 2400
+
+// fix weapon viewmodel flickering flashing
+cl_threaded_bone_setup 0
+
+// mild help with tiny enemies in the far distance
+sk_allow_autoaim 1
+sk_autoaim_mode 2
+
+// tf2 viewmodel verification
+tf_use_min_viewmodels 1
+cl_flipviewmodels 0
+r_drawviewmodel 1
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// reduced input lag in big picture console with mouse scenarios
+cl_software_cursor 0
+
+// i am only english
+english 1
+cc_lang english
+x360_audio_english 1
+cl_language english
+
+// we are not a controller or a console
+gameui_xbox 0
+joy_xcontroller_cfg_loaded 0
+sc_disable 1
+
+// set difficulty to normal because i am pro gamer uwu
+skill 2
+
+// set hl2's 357 magnum revolver to do more reasonable damage
+sk_plr_dmg_357 "70"
+sk_npc_dmg_357 "70"
+
+// fixes
+disconnect
+cl_predictweapons 1
+cmd2 cl_predictweapons 1
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+mat_mipmaptextures "0"
+cl_predictweapons 1
+
+// dods medic bind
+bind "mouse5" "say_team !medic"
+
+// final graphical pass, do not modify, will ruin performance if you change.
+// seriously do not change these you will have severe performance issues if you do.
+r_lod -1
+mat_picmip 1
+r_dynamiclighting 0
+r_dynamic 1
+clockwindow 0
+r_rootlod -1
+cl_new_impact_effects 0
+r_WaterDrawReflection 0
+r_WaterDrawRefraction 1 // yes, 1 for some reason, 1 gives much better fps..
+r_waterforceexpensive 1 // causes severe graphics issues even with non-water if not set to 1
+r_waterforcereflectentities 0 // must be 0, or your performance will DIE
+fps_max 62
+fps_max_menu 62
+water_drips_mod_enable 0
+g_ragdoll_lvfadespeed 1
+g_ragdoll_fadespeed 1
+violence_agibs "0"
+violence_hgibs "0"
+violence_hblood "0"
+violence_ablood "0"
+cl_ragdoll_collide "1"
+g_ragdoll_lvfadespeed "1"
+g_ragdoll_fadespeed "1"
+g_ragdoll_maxcount "1"
+g_ragdoll_important_maxcount "1"
+cl_ragdoll_collide 1
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// fix garry's mod visual issues
+cl_new_impact_effects 0
+
+// fix garry's mod slowdown/delay on my servers specifically
+sv_client_predict 0 // whoops, nvm
+
+// fix flicker on jumping in half-life 2, this is required
+sv_client_predict 0
+
+// make focus loss less bad
+engine_no_focus_sleep 0
+r_shader_srgb 0
+cl_showfps 0
+net_graph 0
+
+// it keeps clicking on another monitor randomly wtf??
+// doing this renders as many frames as possible so it has as many chances to grab mouse
+mat_vsync 0
+gl_disable_forced_vsync 1
+fps_max 999
+
+// fuck tearing
+mat_vsync 1
+gl_disable_forced_vsync 1
+
+// fix flares in episode 1
+r_dynamic 1
+
+// thanks to the steam deck related updates, you can now max your fov to 120
+// in many source games. this is way better than the previous maxiumum of 90
+// it's useful for seeing more, notably in the antlion tunnels bit in ep2 
+fov_desired 110
+
+// fix antlion tunnel this vortal coil lag due to amount of bodies
+g_ragdoll_lvfadespeed 1
+g_ragdoll_fadespeed 1
+violence_agibs "0"
+violence_hgibs "0"
+violence_hblood "0"
+violence_ablood "0"
+cl_ragdoll_collide "1"
+g_ragdoll_lvfadespeed "1"
+g_ragdoll_fadespeed "1"
+g_ragdoll_maxcount "1"
+g_ragdoll_important_maxcount "1"
+cl_ragdoll_collide 1
+
+// fix potentially seeing wireframes a lot in gmod
+no_error_hitboxes 0
+
+// actually good mousefeel non-vomit mode, reduce input lag
+mat_vsync 0
+
+// minimal viable graphics because computers silly
+fps_max 61
+mat_antialias 4
+mat_powersavingsmode 0
+mat_motion_blur_percent_of_screen_max 0
+mat_motion_blur_enabled 0
+mat_motion_blur_falling_intensity 0
+mat_motion_blur_falling_max 0.1
+mat_motion_blur_falling_min 0
+mat_motion_blur_forward_enabled 0
+mat_motion_blur_percent_of_screen_max 0
+mat_motion_blur_rotation_intensity 0
+mat_motion_blur_strength 0
+replay_rendersetting_motionblurenabled 0
+mat_screen_blur_override 0
+mat_fullbright 0
+mat_vignette_enable 0
+mat_motion_blur_falling_max 0.1
+mat_motion_blur_strength 0
+mat_specular 0
+fog_enable_water_fog 0
+mat_mipmaptextures "0"
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+cl_predictweapons 1
+
+// fix tf2 weapons being black (unlit)
+mat_mipmaptextures "0"
+mat_phong 1
+mat_bumpmap 1
+mat_managedtextures 0
+mat_forcemanagedtextureintohardware 0
+r_flashlightdepthtexture 1
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// make sure tf2 has a skybox, fix tf2 skybox
+mat_use_compressed_hdr_textures 1
+
+// fix issues in tf2
+mat_compressedtextures 1 // must be 1 or weapons and engineer buildings will be black in tf2
+
+// never run or script the run of the snd_restart command or you crash HARD.
+
+// tf2 misc
+tf_medigun_autoheal 1
+hud_medicautocallers 1
+hud_medichealtargetmarker 1
+
+// final 2022 graphical quality pass
+mat_picmip 0
+mat_antialias 4
+mat_setvideomode 1920 1080 0
+mat_monitorgamma_tv_range_min 5
+mat_monitorgamma_tv_exp 1.20
+cl_predictweapons 1
+
+// css correct sens
+sensitivity 1
+
+// csgo make bullets shoot properly and not twice in one instant (important)
+cl_predictweapons 1
+
+// Aug 2022 performance pass
+mat_antialias 4
+mat_setvideomode 1920 1080 0
+mat_enable_uber_shaders 1 // keep an eye on this one.
+fps_max 58
+sv_competitive_minspec 1
+
+// finishing up notice
+clear
+echo ""
+echo " _   _            _                 _                      "
+echo "| \ | |          (_)               | |                     "
+echo "|  \| | _____   ___ _ __ ___   __ _| |_ _ __ ___ _ __ ___  "
+echo "| . ` |/ _ \ \ / / | '_ ` _ \ / _` | __| '__/ _ \ '_ ` _ \ "
+echo "| |\  | (_) \ V /| | | | | | | (_| | |_| | |  __/ | | | | |"
+echo "\_| \_/\___/ \_/ |_|_| |_| |_|\__,_|\__|_|  \___|_| |_| |_|"
+echo ""
+echo ""
+echo "!!! Novimatrem autoexec.cfg COMPLETED RUNNING !!!"
+echo ""
+echo "~~~ CONFIG VERSION v365 ~~~"
+echo "MINIMAL VIABLE GRAPHICS [EDITION]"
+echo ""
+play items/nvg_on
+
+echo "!!! DO NOT RUN THIS AUTOEXEC WHEN IN-GAME, OR IT WILL CAUSE ISSUES !!!"
+echo "!!! IT SHOULD ONLY BE EXECUTED BY THE GAME, AT GAME STARTUP TIME !!!"
+echo ""
+startupmenu
+//map_background background01 //causes crashing on joining games in demanding games
+
+// make sure it works
+host_writeconfig
+host_writeconfig full
+host_writeconfig config
+host_writeconfig custom
+// no mat_savechanges, that fucks everything up
+

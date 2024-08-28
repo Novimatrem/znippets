@@ -1,0 +1,19 @@
+
+<style>
+html {
+  filter: invert(1.0);
+}
+body {
+  filter: invert(0.0);
+}
+img {
+  filter: invert(1.0);
+}
+pre {
+  filter: invert(1.0);
+}
+iframe {
+  filter: invert(1.0);
+}
+</style>
+

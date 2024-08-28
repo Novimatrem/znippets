@@ -1,0 +1,9 @@
+# DXVK FPS limit/cap games
+
+# Put the following into the launch options of a Steam game to cap to 30fps for example.
+# Feel free to change the number to the framerate you'd want to cap at/limit to
+# Of course that game has to be running with DXVK for it to take effect.
+
+DXVK_FRAME_RATE=30 %command%
+
+

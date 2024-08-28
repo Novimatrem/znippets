@@ -1,0 +1,12 @@
+# 'yolo' Ubuntu "fix-all" fully-update packages/system maintenance command for .bashrc v4 (use with slight caution)
+
+alias yolo='sudo dpkg --configure -a && sudo apt-get -f install && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo apt clean -y && sudo dpkg --configure -a && sudo apt-get -f install && flatpak update -y --noninteractive && sudo flatpak update -y --noninteractive && flatpak uninstall --unused && sudo snap refresh && sudo journalctl --flush && sudo journalctl --rotate && sudo journalctl --vacuum-time=1s && sudo journalctl --vacuum-size=200M && sudo journalctl --flush'
+
+# Feel free to copy this 'yolo' command alias into your .bashrc if you use Ubuntu or similar,
+# it attempts to be a quick and easy "fix-all" command to fully update the system and all packages,
+# while also cleaning-up some sometimes problematic log files, because, 
+# as the name suggests, you only live once, and I don't want to spend 99% of my time searching for
+# how to wrangle dpkg, apt, and system logging tools into doing what I want, 
+# and usually this command fixes it.
+
+# Depends on dpkg and apt (of course), and also flatpak & snap.

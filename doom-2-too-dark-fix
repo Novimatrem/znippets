@@ -1,0 +1,14 @@
+#!/bin/bash
+# doom-2-too-dark-fix.sh
+
+killall redshift-gtk
+killall redshift
+pkill redshift
+pkill redshift-gtk
+clear
+
+while true; do sleep 0.01s && xgamma -gamma 2.6 && echo "" && echo "Ctrl+C to stop it, run this command once you're done to reset to default:" && echo "xgamma -gamma 1.1" && echo ""; done
+
+# Ctrl+C to stop it, run this command once you're done to reset to default:
+xgamma -gamma 1.1
+

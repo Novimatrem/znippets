@@ -1,0 +1,1 @@
+ffmpeg -i input.opus -c:a pcm_s24le output.wav

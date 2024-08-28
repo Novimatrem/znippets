@@ -1,0 +1,12 @@
+# The following command should fix it:
+
+sudo systemctl restart networking.service
+
+
+# alternatively, if that doesn't work, doing this may help, (says reddit)
+
+Go to crosh. (Ctrl+Alt+T from a ChromeOS Chrome tab)
+Run vmc start termina This will get you into the outer VM layer.
+Run lxc network attach lxdbr0 penguin
+Crostini should now be able to access the internet!
+

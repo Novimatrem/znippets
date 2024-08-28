@@ -1,0 +1,44 @@
+# (WINDOWS) Synaptics touchpad/trackpad, 
+# potential solutions to allow moving mouse while typing/using keyboard. Lets gaming work.
+
+# thank you kind forum users
+
+# three potential solutions; have fun, good luck
+
+
+
+    Hit WINDOWS + R and type "regedit" 
+    Navigate to "HKEY_LOCAL_MACHINE\SOFTWARE\Synaptics\SynTP\Defaults"
+    Set all keys starting with "PalmKms" to 0 (I had 21 of it)
+    Navigate to "HKEY_LOCAL_MACHINE\SOFTWARE\Synaptics\SynTP\Install"
+    Set "DeleteUserSettingsOnUpgrade" to 0
+    Navigate to "HKEY_LOCAL_MACHINE\SOFTWARE\Synaptics\SynTPCpl"
+    Set "RestoreAllDefaults" to 0
+    Restart the computer
+
+
+
+
+
+"Hit windows key+R, type "regedit" inside of it expand these folders: HKEY_CURRENT_USER > Software > Microsoft > Windows > CurrentVersion > PrecisionTouchPad
+After clicking on the "PrecisionTouchPad" folder search for "AAPThreshold" on the right part of the window and double click it or right click it and click modify. Change the value from whatever it is (probably 2 or 3) to 0 and click OK. Restart you computer and it should work.
+I guess that settings for synaptics touchpad are different in windows 10 from previous versions in a way that when you set smart sense to "min" it's still works but with a very small sensitivity (the value being 2 insted of 0, like it was in win 7/8)."
+
+
+
+
+
+1) Type in search bar "regedit" and hit enter
+
+2) after allowing the app to make changes to your device proceed with the following
+
+3) HKEY_LOCAL_MACHINE > SOFTWARE > Synaptics > SynTP  and then click on TouchPad
+
+4) From there double-click "PalmDetectConfig"
+
+5) For "Value Data" enter 0 into either Hexadecimal or Decimal values and click "Okay"
+
+6) Restart computer and BAM!!! Everything will work as you have wanted for however long you've been trying to fix this issue for. 
+
+
+# hope that worked.

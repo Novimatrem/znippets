@@ -1,0 +1,9 @@
+# trackmania nations forever steam version linux proton ultra-low quality textures fix
+
+# obviously change this path to where your compatdata folder is
+
+# you set it to 1024 regardless of your actual VRAM size, because the game doesn't work with
+#   large amounts of VRAM. so keep it 1024.
+
+WINEPREFIX="/mnt/WD_HDD_1TB/SteamLibrary/steamapps/compatdata/11020/pfx" winetricks videomemorysize=1024
+

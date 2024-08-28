@@ -1,0 +1,12 @@
+# gmod LUA memory usage meter
+
+# install the addon BlinkGC | No more Out of LUA Memory!
+# https://steamcommunity.com/sharedfiles/filedetails/?id=1081414406
+
+# type the following two commands
+
+bind "mwheelup" "developer 1; blink_gc_luamemory; blink_gc_memory 200000; echo '|'"
+bind "mwheeldown" "developer 1; blink_gc_luamemory; blink_gc_memory 200000; echo '|'"
+
+# spam your mousewheel up and down in game while walking around, 
+# if your memory usage keeps going up, you have a leak due to a bad addon.

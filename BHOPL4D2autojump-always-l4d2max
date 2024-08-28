@@ -1,0 +1,22 @@
+#!/bin/bash
+# BHOP_L4D2_autojump-always-l4d2max.sh
+
+clear
+
+echo "BHOP_L4D2_autojump-always-l4d2max.sh"
+
+read -p "Have you ever ran this script on this system install before (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  echo "" && echo "Running." && echo "";
+else
+  echo "" && echo "Installing requirements." && sudo dnf install -y xdotool && exit;
+fi
+
+
+while true
+do
+sleep 0.30s
+xdotool key space
+echo "Jumped [L4D2]! (Ctrl+C in this Terminal quickly to quit)"
+
+done

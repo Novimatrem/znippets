@@ -1,0 +1,11 @@
+# set-maximum-pre-rendered-frames-to-1-NVIDIA-graphics-environment-variable-linux.txt 
+
+# Set Maximum Pre-Rendered Frames to 1 
+# for NVIDIA proprietary graphics driver
+# environment variable for Linux
+
+__GL_MaxFramesAllowed=1
+
+__GL_MaxFramesAllowed=1 gamename
+
+__GL_MaxFramesAllowed=1 %command%

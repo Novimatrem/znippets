@@ -1,0 +1,15 @@
+@echo off
+REM Killing steamwebhelper to reduce RAM usage.
+@title Killing steamwebhelper to reduce RAM usage.
+timeout /t 1 >NUL
+echo Killing steamwebhelper to reduce RAM usage...
+timeout /t 1 >NUL
+echo.
+taskkill /f /im steamwebhelper.exe
+timeout /t 1 >NUL
+echo.
+echo Cleaned up, enjoy your extra RAM!
+echo.
+timeout /t 1 >NUL
+echo To close,
+pause

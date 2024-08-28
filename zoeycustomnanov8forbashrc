@@ -1,0 +1,2 @@
+alias nano="read -rep 'Tip:Copy w/ Alt+6, Paste w/ Ctrl+u, Cut w/ Ctrl+k, Undo w/ Alt+u, Redo w/ Alt+e to delete current line: Make sure Cut to end is disabled with Alt+k, then Ctrl+k' && nano --zap --mouse --linenumbers --indicator --autoindent --nohelp $1"
+

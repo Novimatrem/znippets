@@ -1,0 +1,10 @@
+#!/bin/bash
+# render-text-readable-form-autism.sh
+
+clear
+
+echo "--"
+fold -w 80 -s the.txt
+echo "--"
+sleep 3s
+bash render-text-readable-form-autism.sh

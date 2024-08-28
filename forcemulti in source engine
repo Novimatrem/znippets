@@ -1,0 +1,26 @@
+// forcemulti.cfg v1
+
+// source engine force multiplayer script
+// in theory will allow you to play singleplayer games in multiplayer
+// other players will need to use the command: connect your.ip.address.here
+// you will probably need to have port-forwarded port 27015
+
+mp_transition_time "45"
+mp_transition_percent "68"
+
+sv_vote_enable "1"
+sv_vote_interval "10"
+sv_vote_percent_map "67"
+sv_vote_percent_difficulty "67"
+sv_vote_percent_kick "67"
+sv_vote_percent_restore "67"
+
+hostport 27015
+clientport 27005
+
+coop 1
+
+disconnect
+net_start
+maxplayers 4
+sv_lan 0

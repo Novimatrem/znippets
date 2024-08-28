@@ -1,0 +1,5 @@
+What quality do you stream in?
+
+I stream at 2000kbps, 720p30, as it's the best my internet can take- using the default 
+ software x264 encoder. [Ensuring that I only have 1 encoder going, by locally recording in
+  the exact same quality I stream in, until the yellow text warning disappears.]

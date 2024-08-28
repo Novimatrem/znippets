@@ -1,0 +1,30 @@
+#!/bin/bash
+# hhhgreg.sh
+clear
+echo "A snowball in July?"
+sleep 0.2s
+clear
+sleep 32s
+sleep 0.8s
+while true; do
+echo -n "hhhgreg "
+sleep 0.8s
+echo -n "Panasonic "
+sleep 0.8s
+echo -n "Blu-ray "
+sleep 0.8s
+echo -n "99 dollars "
+sleep 0.8s
+echo -n "32-inch LCD TV "
+sleep 1.6s
+echo -n "299 "
+sleep 0.8s
+echo -n "LG 42-inch HD TV "
+sleep 1.6s
+echo -n "489 "
+sleep 1.2s
+echo -n "Everything's on sale "
+sleep 1.2s
+echo -n "during Christmas in "
+sleep 1.2s
+done;

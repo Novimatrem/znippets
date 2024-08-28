@@ -1,0 +1,8 @@
+# Install CJK fonts on Arch Linux v2
+
+sudo pacman -S noto-fonts
+sudo pacman -S noto-fonts-cjk
+sudo pacman -S noto-fonts-emoji
+sudo pacman -S noto-fonts-extra
+sudo pacman -S ttf-noto-nerd
+

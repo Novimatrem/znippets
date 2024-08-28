@@ -1,0 +1,80 @@
+/*
+; final-fantasy-1-autobattle-ice-boss-better.ahk
+
+; USAGE:
+; Cursor memory should be ENABLED.
+; Flee should be the last action you took as all 4 of your characters.
+; Holy should be the last spell you cast on your white mage.
+: Execute after the boss fight starts, on your first turn.
+*/
+
+; Start
+; Focus game
+WinActivate, FINAL
+sleep, 2000 ; wait 2 second
+
+
+
+
+; Kaili
+Send {Left}
+sleep, 200 ; wait
+
+Send {Up}
+sleep, 200 ; wait
+
+Send {Enter}
+sleep, 200 ; wait
+
+Send {Enter}
+sleep, 200 ; wait
+
+
+
+
+; Rukus
+Send {Left}
+sleep, 200 ; wait
+
+Send {Up}
+sleep, 200 ; wait
+
+Send {Enter}
+sleep, 200 ; wait
+
+Send {Down}
+sleep, 200 ; wait
+
+
+Send {Down}
+sleep, 200 ; wait
+
+Send {Enter}
+sleep, 200 ; wait
+
+
+
+; Glitz
+Send {Left}
+sleep, 200 ; wait
+
+Send {Enter}
+sleep, 200 ; wait
+
+Send {Enter}
+sleep, 200 ; wait
+
+Send {Enter}
+sleep, 200 ; wait
+
+
+; Arael
+Send {Up}
+sleep, 200 ; wait
+
+
+Send {Enter}
+sleep, 200 ; wait
+
+
+

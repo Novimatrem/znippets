@@ -1,0 +1,258 @@
+#!/bin/bash
+# catmode_linux-bash_v3.sh
+
+# requirements: xclip, xsel
+
+replace() {
+    eval $(echo $(fc -ln -1) | eval "sed 's/${1}/${2}/g'") #compact form
+}
+
+clear
+echo "[START]"
+echo "Catifying the clipboard..."
+echo ""
+sleep 0.166s
+echo ---
+ORIGINALSTRING="$(xclip -o -selection clipboard)"
+echo "$ORIGINALSTRING"
+echo ---
+sleep 0.166s
+echo ""
+REALPATH="$PWD"
+sleep 0.1
+cd /tmp
+xclip -i /dev/null
+touch blank
+xclip -selection clipboard blank
+sleep 0.1 && rm -rf blank
+xsel -bc
+cd $REALPATH
+sleep 0.1
+
+line="$ORIGINALSTRING"
+
+# ================================================================================================================
+# conv happens here
+
+
+echo ""
+sleep 0.166s
+clear
+
+
+# [FIRST ONE IS SPECIAL DO NOT COPY ME]
+# word-change [FIRST ONE IS SPECIAL DO NOT COPY ME]
+sleep 0.166s
+replacementWord="nya"
+result=$(echo "$line" | sed "s/na/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# word-change
+# [FIRST ONE IS SPECIAL DO NOT COPY ME]
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="mew"
+result=$(echo "$result" | sed "s/you/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="anynyan"
+result=$(echo "$result" | sed "s/anyone/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="lesbnyan"
+result=$(echo "$result" | sed "s/lesbian/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="meowning"
+result=$(echo "$result" | sed "s/morning/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="paw"
+result=$(echo "$result" | sed "s/hand/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="paw"
+result=$(echo "$result" | sed "s/foot/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="paws"
+result=$(echo "$result" | sed "s/feet/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="purrfect"
+result=$(echo "$result" | sed "s/perfect/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="purretty"
+result=$(echo "$result" | sed "s/pretty/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="meowbidly"
+result=$(echo "$result" | sed "s/morbidly/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="claw"
+result=$(echo "$result" | sed "s/nail/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="paw"
+result=$(echo "$result" | sed "s/finger/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="paw"
+result=$(echo "$result" | sed "s/thumb/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="meowment"
+result=$(echo "$result" | sed "s/moment/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="oppurrtunities"
+result=$(echo "$result" | sed "s/opportunities/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="oppurrtunity"
+result=$(echo "$result" | sed "s/opportunity/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="claw"
+result=$(echo "$result" | sed "s/nyail/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+
+
+# The start of a word-change block
+sleep 0.166s
+replacementWord="purrplexing"
+result=$(echo "$result" | sed "s/perplexing/$replacementWord/g")
+echo "$result" | xclip -sel clip
+sleep 0.166s
+# /The end of a word-change block
+
+
+
+
+
+# (conv is work in progress, more words soon.)
+# conv over now
+# ================================================================================================================
+
+echo "[DONE]"
+echo ---
+echo "$result"
+echo ""
+echo ""
+echo "(copied to clipboard)"
+echo ""
+# done
+
+
+exit

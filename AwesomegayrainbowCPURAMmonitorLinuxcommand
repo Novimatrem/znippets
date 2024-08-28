@@ -1,0 +1,8 @@
+# awesome gay rainbow cpu & ram monitor linux command
+
+# requires neofetch, toilet, figlet, lolcat
+
+while true; do neofetch --stdout | grep "Memory" | toilet --gay --termwidth | lolcat && lscpu | grep "MHz" | grep 'CPU MHz:' | tr -d " \t\n\r" | toilet --gay --termwidth | lolcat && sleep 1.5s && clear | lolcat; done
+
+
+# i made this because it's easier to camera record large rainbow text on the screen, than it is small-font in top/htop

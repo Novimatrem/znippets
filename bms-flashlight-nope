@@ -1,0 +1,10 @@
+// bms-flashlight-nope.cfg
+mat_fullbright 1
+mat_monitorgamma 999
+mat_monitorgamma_tv_enabled 1
+mat_monitorgamma_tv_exp 0
+mat_monitorgamma_tv_range_max 128
+mat_monitorgamma_tv_range_min -2
+
+echo "sigh"
+

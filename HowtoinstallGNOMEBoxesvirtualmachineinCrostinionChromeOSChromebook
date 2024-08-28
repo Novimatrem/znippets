@@ -1,0 +1,57 @@
+# How to install GNOME Boxes virtual machine in Crostini on Chrome OS (Chromebook)
+
+# Not a script, follow this manually, yourself.
+
+# Enter the following three commands:
+sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon nano
+sudo apt install -y gedit
+sudo apt install -y gnome-boxes
+
+# Then we're going to edit a config file to be as we'd wish
+cd /etc/libvirt
+sudo chown $USER qemu.conf 
+gedit qemu.conf
+
+# Scroll down to around lines 519 to 523, and look for the line that says:
+# "Since a sequence of digits is a valid user name"
+# once you're there, you should see two commented out lines that look like:
+# #user = "root"
+# and then, slightly below that,
+# #group = "root"
+#...you will want to UNCOMMENT these lines, so they are set, (remove #) and save the file.
+
+# So, those lines should look like:
+user = "root"
+# and then, the one nearby under it,
+group = "root"
+
+# and then you're to save it.
+
+# Now type simply:
+cd
+# (on its own) to return to the home folder. Just cd
+
+# Once you're there,
+# To allow the virtual machine to work, you need to type the following command:
+xhost +
+
+# You should see a line that says:
+# access control disabled, clients can connect from any host
+
+# Now you're ready to launch and use GNOME Boxes, type:
+sudo gnome-boxes
+
+# It should now launch and be fully usable.
+# BUT, do not use it yet.
+# Close GNOME Boxes and the Terminal, and any other open tasks, and
+# SHUT DOWN AND RE-START YOUR CHROMEBOOK.
+
+# After that, to launch GNOME Boxes, 
+# an icon to start it is in the Start Menu, either directly, as Boxes,
+# or it may be inside of the Linux Apps folder,
+# you can pin it to the shelf, too.
+# Enjoy!
+
+# (actually teaching you how to *USE* GNOME Boxes is outside of the scope of this guide)
+# (look elsewhere for tutorials on the actual usage of the program itself)
+

@@ -1,0 +1,1 @@
+cat /dev/urandom | xz -T 0 > /dev/null

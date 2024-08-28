@@ -1,0 +1,2 @@
+sudo apt search plymouth | grep plymouth | grep / | grep -v theme | grep -v lib | grep -v config | grep plymouth
+

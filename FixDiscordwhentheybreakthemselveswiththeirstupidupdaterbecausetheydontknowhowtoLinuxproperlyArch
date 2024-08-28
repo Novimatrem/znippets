@@ -1,0 +1,5 @@
+# Fix Discord when they break themselves with their stupid updater because they don't know how to Linux properly (Arch)
+
+sudo pacman -Sy discord
+
+

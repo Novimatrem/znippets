@@ -1,0 +1,5 @@
+# Fix missing music/sound effects in Source Engine games on Fedora
+
+sudo su
+sudo setsebool -P selinuxuser_execheap 1
+

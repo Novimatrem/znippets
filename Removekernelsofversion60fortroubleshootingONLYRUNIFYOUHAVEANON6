@@ -1,0 +1,8 @@
+# Remove kernels of version 6.0, for troubleshooting. 
+# ONLY RUN IF YOU HAVE A NON 6.0 KERNEL INSTALLED TOO!! 
+# (can be used to help fix nvidia driver + wifi driver issues)
+
+sudo dnf remove $(rpm -qa | grep ^kernel-core | grep 6\.0)
+
+# Then follow these steps to stop it from just redownloading that again:
+# (Fedora) Stop the Kernel from updating https://gitlab.com/-/snippets/2459469

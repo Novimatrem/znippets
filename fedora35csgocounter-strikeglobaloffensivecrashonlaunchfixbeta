@@ -1,0 +1,25 @@
+# fedora 35 csgo counter-strike global offensive crash on launch fix beta
+
+Put this in your CS:GO launch options or you will crash: -nojoy -novid -high -trusted
+AND THEN type the following, dependant on your games' location (change path if needed)
+
+sudo su
+dnf install gperftools-libs
+cd ~/.steam/steam/steamapps/common/Counter-Strike\ Global\ Offensive/bin/linux64/
+mv libtcmalloc_minimal.so.0 libtcmalloc_minimal.so.0.bak
+mv libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4.bak
+cp /usr/lib64/libtcmalloc_minimal.so.4.5.9 libtcmalloc_minimal.so.0
+
+
+# the path for my hard-drive specifically,
+sudo su
+dnf install gperftools-libs
+cd "/mnt/HDD_1TB_WD/SteamLibrary/steamapps/common/Counter-Strike Global Offensive/bin/linux64"
+mv libtcmalloc_minimal.so.0 libtcmalloc_minimal.so.0.bak
+mv libtcmalloc_minimal.so.4 libtcmalloc_minimal.so.4.bak
+cp /usr/lib64/libtcmalloc_minimal.so.4.5.9 libtcmalloc_minimal.so.0
+
+# your game will now function, enjoy~
+
+# Note: you will need to re-run this every single time the game updates.
+# valve pls fix

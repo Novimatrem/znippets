@@ -1,0 +1,18 @@
+# Open pavucontrol with Pause/Break key
+
+# depends on xbindkeys
+sudo apt install -y xbindkeys # ubuntu
+
+touch /home/$(whoami)/.xbindkeysrc
+
+echo '"pavucontrol"' >> /home/$(whoami)/.xbindkeysrc
+echo -e ' \t Pause' >> /home/$(whoami)/.xbindkeysrc
+
+xbindkeys_autostart
+
+killall xbindkeys
+pkill xbindkeys
+
+xbindkeys
+
+# Done, the Pause/Break key should now open pavucontrol.

@@ -1,0 +1,6 @@
+# performance stats NOW (for debugging problems with my awful awful computers)
+
+alias psn="st -- sh -c 'htop' & st -- sh -c 'sudo iotop' & st -- sh -c 'watch -n 0.1 nvidia-smi'"
+
+# requires you use st as your terminal, and have nvidia graphics.
+# opens htop, iotop, and also watched 0.1 nvidia-smi, all at once

@@ -1,0 +1,73 @@
+#!/bin/bash
+# autoclick-cookies.sh
+
+# this script tries to be fair, and doesn't click above my own CPS.
+# in order to preserve my mouse, and not aggravate my RSI related arthritis-like symptoms.
+# i'm not a cheater.
+
+clear
+
+echo "autoclick-cookies.sh"
+echo ""
+echo "this script tries to be fair, and doesn't click above my own CPS."
+echo "in order to preserve my mouse, and not aggravate my RSI related arthritis-like  symptoms."
+echo "i'm not a cheater."
+echo ""
+
+read -p "Have you ever ran this script on this system install before (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  echo "" && echo "Running." && echo "";
+else
+  echo "" && echo "Installing requirements." && sudo dnf install -y xdotool && exit;
+fi
+
+clear
+echo "Switch to game and Put your mouse over the cookie NOW!!"
+echo "To quit, QUICKLY alt+tab to the terminal and then Ctrl+C"
+echo ""
+sleep 5s
+
+while true
+do
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+xdotool click 1
+sleep 0.06667s
+
+echo "Autoclicking at zoey's average CPS! [6CPS]"
+echo "(Ctrl+C in this Terminal quickly to quit)"
+echo ""
+
+done

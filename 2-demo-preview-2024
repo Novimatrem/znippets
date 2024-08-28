@@ -1,0 +1,5 @@
+// 2-demo-preview-2024.cfg
+
+demo_interplimit 10242048
+playdemo "novidemo53"
+

@@ -1,0 +1,134 @@
+# fill-with-dots-with-rightalign.sh
+clear
+while true;
+do
+
+var=$((var+1))
+
+echo -ne "$pixel"
+echo -ne "$cell"
+
+sleep 0s
+
+pixel="."
+
+if [ "$var" -eq "80" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "159" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "238" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "317" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "396" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "475" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "554" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "633" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "712" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "791" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "870" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "949" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "1028" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "1107" ]; then
+echo "|"
+fi
+
+
+if [ "$var" -eq "1186" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "1265" ]; then
+echo "|"
+fi
+
+if [ "$var" -eq "1344" ]; then
+echo "|"
+fi
+
+
+if [ "$var" -eq "1423" ]; then
+echo "|"
+fi
+
+
+
+if [ "$var" -eq "1502" ]; then
+echo "|"
+fi
+
+
+
+
+if [ "$var" -eq "1581" ]; then
+echo "|"
+fi
+
+
+
+if [ "$var" -eq "1660" ]; then
+echo "|"
+fi
+
+
+
+if [ "$var" -eq "1739" ]; then
+echo "|"
+fi
+
+
+if [ "$var" -eq "1818" ]; then
+echo "|"
+fi
+
+
+
+if [ "$var" -eq "1897" ]; then
+
+read -p "|" nullignore
+sleep 10242048s
+while true;
+do
+sleep 10242048s
+done
+sleep 10242048s
+fi
+
+
+done
+

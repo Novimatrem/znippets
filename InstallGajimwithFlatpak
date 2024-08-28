@@ -1,0 +1,15 @@
+# Install Gajim with Flatpak
+
+
+# Ensure Flatpak is already installed
+
+flatpak --version
+
+
+# If it is, continue
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+flatpak install org.gajim.Gajim -y --noninteractive
+
+

@@ -1,0 +1,3 @@
+# Clear all GNOME Web (epiphany) data
+
+rm -rf /home/$(whoami)/.var/app/org.gnome.Epiphany

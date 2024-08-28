@@ -1,0 +1,44 @@
+# the-8fps-intro-arranger.sh
+
+# requires xdotool, wmctrl, and an OBS bound in such a way to switch to the mentioned scenes
+
+# Switch to your OBS in the time this wait is happening, and get ready.
+clear
+echo "FOCUS SWITCH TO YOUR OBS STUDIO WINDOW NOW IF IT DOESN'T AUTOMATICALLY."
+wmctrl -a "OBS"
+sleep 4s
+
+# Switch to a completely black scene to prepare to be ready
+sleep 1s
+echo "Switching to black screen."
+xdotool key KP_1
+sleep 5s
+
+# Start recording
+sleep 1s
+echo "Starting recording."
+xdotool key KP_Multiply
+
+# Switch to the scene with the intro keyed over the game
+sleep 1s
+echo "Switching to keyed intro."
+xdotool key KP_2
+
+# Show the cool intro graphic for an amount of time, and then fade to just the game
+sleep 5s
+echo "Switching to game fully."
+xdotool key KP_3
+
+# Switching to the game now
+echo "Forcing a switch to your game on the primary monitor."
+# set this to your game's name, and the coords of its window on your system rn
+wmctrl -a "Unreal Tournament"
+sleep 0.3s
+xdotool mousemove 2000 480 click 1
+sleep 0.3s
+
+# When you're done recording, manually
+# press Numpad 1 to fade to black yourself, and then Numpad * to end.
+clear
+echo "Stop recording with Num 1 to fade out, and then Num * (when you're done)."
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+# alwaysdesk-runner-zoey-run-at-startup.sh v2
+chown $USER /opt/
+chown $USER /opt/*
+chown $USER /opt/alwaysdesk.sh
+xfce4-terminal -e "bash /opt/alwaysdesk-looper.sh"

@@ -1,0 +1,31 @@
+How to reset CS:GO to absolute defaults (to the best of my knowledge and ability) v1
+
+Disable Steam Cloud synchronization in the properties for the game.
+
+Clean out the launch options in Properties for the game, replace them with the following, and run the game once:
+
+-default -autoconfig -dxlevel 90
+
+When in game, open the console and type the following four commands.
+exec config_default
+exec default.cfg
+exit
+
+Uninstall the game from Steam, AND THEN delete the entire game's folder from steamapps.
+
+Delete the contents of the folder ~/.steam/steam/userdata/<your steam id number>/730
+In that folder, create an empty 0 byte file named remotecache.vdf, after that. (using the touch command or some right-click menus)
+
+Close Steam, open Steam again.
+
+Reinstall CS:GO.
+
+Launch the game again.
+When in game, open the console and type the following three commands.
+exec config_default
+exec default.cfg
+exit
+
+Go into your launch options and empty them out entirely.
+
+Your CS:GO is now reset. Enjoy playing!

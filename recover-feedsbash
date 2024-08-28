@@ -1,0 +1,5 @@
+# recover-feeds
+
+grep -oP "https://\K[^']+" FILENAMEOFLIST | cut -f1 -d'"' | sed -e 's|^|https://|'
+grep -oP "http://\K[^']+" FILENAMEOFLIST | cut -f1 -d'"' | sed -e 's|^|http://|'
+

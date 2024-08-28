@@ -1,0 +1,17 @@
+// General Steam game performance-gain launch option for my PC's v2
+
+// Made with NVIDIA's proprietary Linux drivers and Feral's gamemode, in mind.
+
+// Also modded to work in other situations, will probably work okay for you?? YMMV
+
+__GL_MaxFramesAllowed=1 vblank_mode=0 __GL_SYNC_TO_VBLANK=0 gamemoderun %command%
+
+
+
+// This *used* to make use of torkel104's GitLab version of libstrangle,
+// this, specifically: https://gitlab.com/torkel104/libstrangle 
+// but that started not working for me, after a long time,
+// and had started causing games to not launch, sadly.
+// Previous versions of this launch option had the following included, 
+// but it was crashing, keeping it here just in case; STRANGLE_VSYNC=0 strangle 57 %command%
+// yes I was capping at specifically 57 fps, my hardware has very special issues.

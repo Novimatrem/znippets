@@ -1,0 +1,97 @@
+#!/bin/bash
+# no-mic-video.sh v5
+
+#requires toilet to be installed from the AUR, if not already.
+#yay -S toilet
+
+# run this script, then KEY the section of the terminal that has
+# the text in it, on-top of your OBS captured video of you playing
+
+cd "$(dirname "$0")"
+rm -rf ./a.txt
+clear
+i=1; while [ $i -lt 257 ] ; do echo $i >> a.txt; (( i = $i + 1 )) ; done
+toilet -f future $(cat a.txt)
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+echo ""
+while true
+do
+read -p "Say: " INPUT
+echo ""
+echo "Len:"
+echo "$(echo $INPUT | awk '{print length($0)}')"
+LEN=$(echo "$(echo $INPUT | awk '{print length($0)}')")
+echo ""
+if [ $LEN -ge 27 ]; then
+	echo "Error: Line too long to fit in screen. 26 characters or less only."
+	sleep 0s
+ 	bash no-mic-video.sh
+fi
+
+if [ $LEN -le 0 ]; then
+	echo "Error: Line too short."
+	sleep 0s
+ 	bash no-mic-video.sh
+fi
+
+echo ""
+doSpeak () {
+  toilet -f future $INPUT && espeak -p 66 -s 150 "... $INPUT.. ... ."
+}
+
+doSpeak
+
+done
+
+# EOF
+

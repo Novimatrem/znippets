@@ -1,0 +1,25 @@
+# Further attempts to install KDE in Crostini (Chromebook)
+
+sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y
+
+sudo apt install -y task-kde-desktop
+sudo apt install -y dolphin
+sudo apt install -y papirus-icon-theme
+sudo apt install -y plasma-discover
+sudo apt install -y plasma-discover-common
+sudo apt install -y kde-baseapps
+sudo apt install -y kde-tools-cli
+sudo apt install -y kde-cli-tools-data
+sudo apt install -y kde-full
+sudo apt install -y kde-plasma-desktop
+sudo apt install -y kde-standard
+sudo apt install -y kded5
+sudo apt install -y kdeplasma-addons-data
+sudo apt install -y xdg-desktop-portal-kde
+sudo apt install -y xsettings-kde
+sudo apt install -y kde-full
+sudo apt install -y kde-standard
+sudo apt install -y kde-plasma-desktop
+
+sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y
+

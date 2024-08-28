@@ -1,0 +1,13 @@
+# performance-governor-max-power-ubuntu.txt
+
+sudo su
+sudo apt-get install cpufrequtils
+echo 'GOVERNOR="performance"' | sudo tee /etc/default/cpufrequtils
+sudo systemctl disable ondemand
+echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+sudo apt install -y gamemode
+
+# make a startup program that runs: gamemoded
+
+# Put the following into all of your Steam game's launch options;
+# gamemoderun %command%

@@ -1,0 +1,14 @@
+# disable-proton-NATIVE-ONLY.sh
+echo "disable-proton-NATIVE-ONLY.sh"
+killall steam
+pkill steam
+cd /home/$(whoami)
+cd .local
+rm -rf $(find -iname "compat.vdf" | head -n 1)
+rm -rf $(find -iname "compat.vdf" | head -n 1)
+rm -rf $(find -iname "compat.vdf" | head -n 1)
+rm -rf $(find -iname "compat.vdf" | head -n 1)
+rm -rf $(find -iname "compat.vdf" | head -n 1)
+echo "Done."
+
+

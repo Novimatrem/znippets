@@ -1,0 +1,10 @@
+-- misskey inspired cat-mode toot text manipulation lua script (catmode.lua)
+-- thank you to binarycat for making this for me and explaining how it works
+
+-- simply run the script, type your post, and press enter, then your clipboard will
+--  have the nyaified version ready to paste
+
+s = string.gsub(io.read("l"), "na", "nya")
+io.popen("xclip -i -selection clipboard", "w"):write(s)
+
+-- to run, use `lua catmode.lua` (no quotes), you can even alias it in your bashrc for easy access

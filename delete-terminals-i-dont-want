@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# delete-terminals-i-dont-want.sh (Ubuntu)
+
+echo "Starting..."
+
+sudo apt remove -y cool-retro-term
+sudo apt remove -y byobu
+sudo apt remove -y io.elementary.terminal
+
+echo "Okay, installing the one I DO want."
+
+sudo apt install -y xfce4-terminal
+
+echo "All done."
+
+

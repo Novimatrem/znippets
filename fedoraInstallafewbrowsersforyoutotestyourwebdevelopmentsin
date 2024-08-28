@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "(for fedora)"
+echo "(also make sure flatpak is installed)"
+echo "Installing browsers for you to test your web developments in."
+
+sudo dnf install -y firefox
+sudo dnf install -y chromium
+sudo dnf install -y links
+sudo dnf install -y torbrowser-launcher
+flatpak install flathub org.gnome.Epiphany
+
+echo "Done, get coding."

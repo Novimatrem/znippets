@@ -1,0 +1,15 @@
+# (Fedora) Stop the Kernel from updating
+
+
+sudo nano /etc/dnf/dnf.conf
+
+add the line
+
+exclude=kernel-core,kernel,kernel-modules,kernel-modules-extra
+
+then save the file
+
+
+# BONUS
+# Here is how to Remove kernels of version 6.0, for troubleshooting- in case you need that:
+# https://gitlab.com/-/snippets/2459456

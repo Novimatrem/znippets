@@ -1,0 +1,111 @@
+# amogus.sh
+echo "amogus.sh"
+echo "switch FOCUS ONTO THE GAME and OPEN CHAT"
+
+sleep 3s
+
+sleep 1s
+xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣶⣦⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀"
+sleep 1s
+ 
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠋⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠈⢻⣿⣿⡄⠀⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⣸⣿⡏⠀⠀⠀⣠⣶⣾⣿⣿⣿⠿⠿⠿⢿⣿⣿⣿⣄⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⣿⣿⠁⠀⠀⢰⣿⣿⣯⠁⠀⠀⠀⠀⠀⠀⠀⠈⠙⢿⣷⡄⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⣀⣤⣴⣶⣶⣿⡟⠀⠀⠀⢸⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣷⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⢰⣿⡟⠋⠉⣹⣿⡇⠀⠀⠀⠘⣿⣿⣿⣿⣷⣦⣤⣤⣤⣶⣶⣶⣶⣿⣿⣿⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⢸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⣸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠉⠻⠿⣿⣿⣿⣿⡿⠿⠿⠛⢻⣿⡇⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠸⣿⣧⡀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠃⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠛⢿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⣰⣿⣿⣷⣶⣶⣶⣶⠶⠀⢠⣿⣿⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⣿⣿⡇⠀⣽⣿⡏⠁⠀⠀⢸⣿⡇⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⣿⣿⡇⠀⢹⣿⡆⠀⠀⠀⣸⣿⠇⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⢿⣿⣦⣄⣀⣠⣴⣿⣿⠁⠀⠈⠻⣿⣿⣿⣿⡿⠏⠀⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+
+sleep 1s
+xdotool key T && sleep 0.1s && xdotool type --delay 15 "⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⠿⠿⠿⠿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+sleep 1s
+  
+xdotool key Return
+sleep 0.3s
+

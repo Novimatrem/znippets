@@ -1,0 +1,17 @@
+# change-default-applications-update-alternatives-command-linux.sh
+
+# Sometimes, the GUI doesn't allow you to change the defaults for all you'd wish
+# this command will allow you to change all the defaults you wish, easily.
+
+sudo update-alternatives --all
+
+
+# (if you'd just wish to change the default text editor, this will probably suffice);
+sudo update-alternatives --config editor
+
+
+# GNOME 3 advice;
+# If a file will NOT open with the right editor by default;
+# If your app opens normally with an editor you don't wish
+# if using the Right click > Open with other application doesn't let you set the default, then use
+# Right click > Properties, go to the third 'Open With' Tab, and set the default application in there.

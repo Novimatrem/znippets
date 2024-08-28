@@ -1,0 +1,29 @@
+// 3-demo-encode-2024.cfg
+cl_interp 0
+// if you want to smoothly record NPC's, you need cl_interp to 0.1 instead, but that breaks JUMPING..
+cl_interp_ratio 0.4
+cl_updaterate 128
+mat_setvideomode 1280 960 0
+cc_subtitles 1
+disconnect
+fps_max 49
+mat_powersavingsmode 0
+demo_quitafterplayback 1
+demo_interpolateview 1
+sv_client_predict 0 // if movement playback strange/broken, sv_client_predict 1 (not in black mesa)
+demo_interplimit 10242048
+sv_client_min_interp_ratio -1
+
+// and then, export demo to webm
+startmovie novidemo53 webm; playdemo novidemo53
+// (you may need to quickly type viewmodel_fov 80 in the console if your viewmodel is too zoomed)
+
+// ENSURE THAT YOU close the game after processing your demo, to properly close the file.
+
+// IF YOU MUST RECORD THE DEMO USING OBS (some games export is broken) MAKE SURE IT'S SET 720p60fps
+
+// ensure your demo recording file does not go over 2GB, or it will corrupt.
+
+// demos and output can be found in the game's internal folder, on the same level as
+// cfg and gameinfo.txt, as novidemo53.dem and then novidemo53.webm after processing
+

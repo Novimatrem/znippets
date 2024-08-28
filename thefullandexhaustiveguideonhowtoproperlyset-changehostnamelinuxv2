@@ -1,0 +1,48 @@
+# the full and exhaustive guide on how to properly set/change hostname linux v2
+
+# this is why they say to never try to change your hostname, 
+#   don't do this unless you really need to.
+
+
+# so, think of a new hostname, and remember it.
+
+
+# use this command, replacing the REPLACEME with the hostname you wish;
+sudo hostnamectl set-hostname REPLACEME
+
+# then type THE SAME THING, AS THE HOSTNAME, replacing the old one in this file with it,
+sudo nano /etc/hosts
+
+
+# then, *THIS* file should contain nothing but your hostname text on a single line, make it the same.
+sudo touch /etc/hostname
+sudo nano /etc/hostname
+
+
+# then, use the hostname command with the same name once again.
+sudo hostname REPLACEME
+
+# then use nmcli to set it, also, using the same name as before.
+sudo nmcli general hostname REPLACEME
+
+# then use sysctl to set it, same name.
+sudo sysctl kernel.hostname=REPLACEME
+
+# then these three commands, with the same name also.
+sudo hostnamectl set-hostname --pretty REPLACEME
+sudo hostnamectl set-hostname --transient REPLACEME
+sudo hostnamectl set-hostname --static REPLACEME
+
+# and do this one too
+sudo su
+echo "HOSTNAME=REPLACEME" >> /etc/sysconfig/network
+
+# reload a systemd bit to make sure it sticks
+sudo systemctl restart systemd-hostnamed
+
+# and so selinux doesn't complain,
+sudo su
+sudo touch /.autorelabel
+
+# finally, you must reboot your system to reflect your changes.
+sudo reboot now

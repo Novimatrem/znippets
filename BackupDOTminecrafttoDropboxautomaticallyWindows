@@ -1,0 +1,11 @@
+# Back up .minecraft to Dropbox automatically (Windows)
+
+# Open cmd as admin, run
+
+mkdir C:\Users\TheNo\Dropbox\MinecraftDot\
+
+mklink /J C:\Users\TheNo\Dropbox\MinecraftDot\.minecraft C:\users\TheNo\AppData\Roaming\.minecraft
+
+# As long as Dropbox is running and working, you're all good.
+
+# Obviously change the paths before running the commands, because your username will differ.

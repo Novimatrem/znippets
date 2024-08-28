@@ -1,0 +1,13 @@
+# Bind MOUSE BROWSER FORWARD to Shift+N (for YouTube)
+
+touch /home/$(whoami)/.xbindkeysrc
+echo '"xdotool key Shift+N"' >> /home/$(whoami)/.xbindkeysrc
+echo -e ' \t b:9' >> /home/$(whoami)/.xbindkeysrc
+
+xbindkeys_autostart
+
+killall xbindkeys
+pkill xbindkeys
+
+xbindkeys
+

@@ -1,0 +1,1 @@
+clear && neofetch --stdout --disable distro theme icons wm de term resolution shell packages uptime kernel | grep -v Host

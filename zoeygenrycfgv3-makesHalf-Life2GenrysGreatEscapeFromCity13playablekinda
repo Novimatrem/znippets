@@ -1,0 +1,14 @@
+// zoey_genry.cfg v3
+// makes 'Half-Life 2: Genry's Great Escape From City 13' playable, kinda.
+
+// may need to execute mid-game, too, because sometimes it resets to default for some reason.
+
+// additionally, you may need my 'fix AI' script, for if you get the "AI Disabled" problem..
+// find that here: https://gitlab.com/-/snippets/2324447
+
+volume 0.3
+cl_drawhud 1
+crosshair 1
+sensitivity 4.8
+hud_quickinfo 1
+r_WaterDrawReflection 1

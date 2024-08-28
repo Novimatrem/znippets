@@ -1,0 +1,47 @@
+#!/bin/bash
+# novi-backup.sh v7
+
+echo "Please enter your sudo password to begin backup."
+sudo echo "Starting..."
+
+cd /
+
+mkdir /home/$(whoami)/backed_up_data_folder
+mkdir /home/$(whoami)/backed_up_data_folder/opt/
+
+sudo rsync -av --progress /opt/ /home/$(whoami)/backed_up_data_folder/opt/
+
+cd /home/$(whoami)/
+
+sudo rm -rf /home/$(whoami)/exclude-list.txt
+
+touch exclude-list.txt
+
+echo "backed_up_data_folder" >> exclude-list.txt
+echo "Games" >> exclude-list.txt
+echo "Videos" >> exclude-list.txt
+echo ".local" >> exclude-list.txt
+echo 'GOG Games' >> exclude-list.txt
+echo ".PlayOnLinux" >> exclude-list.txt
+echo ".config" >> exclude-list.txt
+echo "Downloads" >> exclude-list.txt
+echo "Documents" >> exclude-list.txt
+echo ".wine" >> exclude-list.txt
+echo ".cache" >> exclude-list.txt
+echo ".minecraft" >> exclude-list.txt
+echo "snap" >> exclude-list.txt
+echo "Applications" >> exclude-list.txt
+echo ".mozilla" >> exclude-list.txt
+echo ".paradoxlauncher" >> exclude-list.txt
+echo ".icons" >> exclude-list.txt
+echo ".themes" >> exclude-list.txt
+echo ".itch" >> exclude-list.txt
+echo ".var" >> exclude-list.txt
+
+sudo rsync -av --progress --exclude-from="exclude-list.txt" /home/$(whoami)/ /home/$(whoami)/backed_up_data_folder
+
+sudo rm -rf /home/$(whoami)/exclude-list.txt
+sudo rm -rf /home/$(whoami)/backed_up_data_folder/exclude-list.txt
+
+echo "All done."
+echo ""

@@ -1,0 +1,32 @@
+@echo off
+
+REM start-all-i-use-WIN.bat v1
+
+echo Starting all the stuff I use...
+
+REM -------------------------------------------------------
+echo Itch
+start "" "C:\Users\%username%\AppData\Local\itch\itch-setup.exe" --prefer-launch --appname itch
+REM -------------------------------------------------------
+
+REM -------------------------------------------------------
+echo Gajim
+start "" "C:\Program Files\Gajim\bin\Gajim.exe"
+REM -------------------------------------------------------
+
+REM -------------------------------------------------------
+echo Jasmine folder
+start "" "explorer" C:\Jasmine
+REM -------------------------------------------------------
+
+REM -------------------------------------------------------
+echo Steam
+start "" "C:\Program Files (x86)\Steam\Steam.exe"
+REM -------------------------------------------------------
+
+REM -------------------------------------------------------
+echo Firefox
+start "" "C:\Program Files\Mozilla Firefox\firefox.exe"
+REM -------------------------------------------------------
+
+echo Done.

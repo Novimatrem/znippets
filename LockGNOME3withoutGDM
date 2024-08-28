@@ -1,0 +1,10 @@
+# Lock GNOME 3 without GDM having to be installed and used. Lets you use any login screen you wish.
+
+# Gotten from here;
+https://unix.stackexchange.com/a/533316
+
+# Command to lock (regardless of DM/login screen);
+dm-tool lock
+
+
+# tl;dr use the 'dm-tool lock' command, maybe bind it to a useful key, too.

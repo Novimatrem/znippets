@@ -1,0 +1,30 @@
+# fuckedQoS hack
+
+# My forced-to-be-used ISP-provided modem/router combo unit, does NOT support QoS, and as such
+#   one process running on one client can steal 100% of the bandwidth, breaking the
+#       internet for anything else on the whole network. For example, uploading a YouTube video
+#           means that both me and my family cannot do anything on the internet until it is complete.
+#   This series of commands caps the bandwidth in such a way that it FIXES THAT!! yay :3
+#
+# You will have to apply this fix on all the computers (linux installs) that you expect to use lots
+#   of bandwidth, else it will not fully fix the issue.
+
+# You will need wondershaper installed before this will work.
+# My computers automatically have wondershaper by default.
+# Follow this guide if you do not: https://vitux.com/how-to-limit-network-bandwidth-in-ubuntu/
+
+# You have to apply this to all network interfaces listed under `ifconfig`, these are just mine.
+# 2048 is 2mbps in K
+
+# The Fix (run all of these commands before any big network operation, once every boot)
+sudo systemctl enable wondershaper.service
+sudo systemctl start wondershaper.service
+sudo wondershaper -a enp0s31f6 -d 2048 -u 2048
+sudo wondershaper -a ifb0 -d 2048 -u 2048
+sudo wondershaper -a lo -d 2048 -u 2048
+sudo wondershaper -a wlp5s0 -d 2048 -u 2048
+sudo wondershaper -a wlp1s0 -d 2048 -u 2048
+sudo wondershaper -a enp37s0 -d 2048 -u 2048
+
+# This fix allows me to download Steam games and upload YouTube videos again, w/o upsetting people.
+# I am very happy I figured this out. 

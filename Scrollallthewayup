@@ -1,0 +1,11 @@
+# Scroll all the way up
+
+sleep 4s
+
+while true
+do
+  sleep 0.166s
+  xdotool key Page_Up
+done
+
+

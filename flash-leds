@@ -1,0 +1,12 @@
+#!/bin/bash
+# flash-leds.sh
+
+# deps xdotool
+
+echo Wheee~
+while true;
+do
+sleep 0.0925s
+xdotool key Caps_Lock
+xdotool key Num_Lock
+done

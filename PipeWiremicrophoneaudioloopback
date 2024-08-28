@@ -1,0 +1,1 @@
+pw-loopback -m '[[FL FR]]' --capture-props='[media.class=Audio/Sink]'

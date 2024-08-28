@@ -1,0 +1,45 @@
+# install-ALL-the-KDE-ubuntu.sh
+
+# Install ALL the KDE!!1 (Ubuntu)
+
+echo ""
+echo "Installing ALL the KDE..."
+echo ""
+
+sudo dpkg --configure -a && sudo apt-get -f install && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo apt clean -y && sudo dpkg --configure -a && sudo apt-get -f install
+
+sudo apt install -y kde-full
+
+sudo apt install -y kde-standard
+
+sudo apt install -y kde-plasma-desktop
+
+sudo apt install -y plasma-desktop
+
+sudo apt install -y kubuntu-desktop
+
+sudo apt install -y sddm
+
+sudo systemctl enable sddm
+
+sudo apt install -y tasksel
+
+sudo tasksel install kubuntu-desktop
+
+sudo tasksel install kubuntu-full
+
+sudo apt install -y kubuntu-settings-desktop
+
+sudo apt install -y kde-config-gtk-style
+
+sudo dpkg --configure -a && sudo apt-get -f install && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && sudo apt clean -y && sudo dpkg --configure -a && sudo apt-get -f install
+
+sudo update-alternatives --all
+
+sudo update-alternatives --config editor
+
+echo ""
+echo "Installed ALL the KDE."
+echo ""
+echo "You should probably restart your whole computer, now,"
+echo "and then log into the new desktop."

@@ -1,0 +1,6 @@
+while :
+do
+  clear
+  ping jabbering-queer.net
+  sleep 1
+done

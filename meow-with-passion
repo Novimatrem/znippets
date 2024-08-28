@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# meow with passion
+
+# meow-with-passion.sh
+
+# deps: xdotool
+clear
+echo "deps: xdotool"
+echo ""
+echo "SWITCH TO WINDOW NOW"
+echo ""
+sleep 3s
+sleep 1s
+
+
+echo "Meowing..."
+
+sleep 0.1s
+
+count=250
+for i in $(seq $count); do
+    xdotool key 1
+done
+
+sleep 0.1s
+
+count=250
+for i in $(seq $count); do
+    xdotool key BackSpace
+done
+
+sleep 0.1s
+
+xdotool key m
+
+sleep 0.1s
+
+xdotool key e
+
+sleep 0.1s
+
+xdotool key o
+
+sleep 0.1s
+
+xdotool key w
+
+sleep 0.1s
+
+xdotool key Return
+
+sleep 0.1s
+clear
+echo "Meowed."
+

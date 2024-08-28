@@ -1,0 +1,45 @@
+[wine+playonlinux experience required to follow this guide atm, i may
+ make this into a more friendly blog post down the line, rather than just
+  a snippet, we'll see]
+
+from my research, wine 3.8 32bit (x86) seems to work best.
+use this version specifically in playonlinux. ( tools > manage wine versions )
+
+[do these in a 32-bit prefix only]
+[it only actually works in a 32-bit prefix only]
+
+make a 32-bit wineprefix
+
+enter a shell inside of it
+
+winetricks wsh56 wsh57 jscript vcrun2013 mfc42
+winetricks ie8
+winetricks vcrun6
+winetricks riched30 wsh57 vcrun2013 ie8 gdiplus_winxp ogg ole32
+
+winetricks ie8_kb2936068
+[after running the previous line, after you have clicked through the IE8 update installer,
+ and after it has CLEARLY FINISHED, open system monitor and kill the process IE8-WindowsXP-KB2936068-x86-ENU.exe 
+  and then continue]
+
+winetricks mfc42 gdiplus vcrun2008 vcrun2013 wsh57 ogg ole32 riched30 msls31 ie8
+
+[fully close out of wine everything and playonlinux after these have installed, and then open playonlinux again]
+
+install byond with its installer, now, running its installer exe in wine.
+DO NOT RUN THE GAME WHEN OFFERED AT THE END OF THE INSTALLER.
+
+go to
+~/.byond_client/drive_c/Program Files/BYOND/directx
+and install directx by running the exe in Wine.
+
+you can now run the game, it should work fine!
+to use the app, you require a system tray/notification area to pop it up. GNOME lacks this by default.
+
+make a shortcut to byond.exe, and have fun~
+
+
+OPTIONAL, UNTESTED: maybe also run this in a shell for fonts: 
+winetricks corefonts
+winetricks tahoma
+

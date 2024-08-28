@@ -1,0 +1,57 @@
+; catmode-2023-windows_version13.ahk
+; work in progress, more soon.
+
+; copy some text you'd like to catify, to the clipboard, then,
+; run this script, and quickly switch to where you want to type it.
+
+; i feel like an awful cat for not being able to come up with these more on the fly.
+; i do a lot of the time, though, but, this script just HELPS, a bit.
+
+; SOON ENOUGH, EVERYTHING I EVER TYPE WILL GO THROUGH THIS.
+
+; script;start
+
+Sleep 2000
+Sleep 275
+
+; conv
+NewStr := StrReplace(Clipboard, "na", "nya")
+NewStr := StrReplace(NewStr, "you", "mew")
+NewStr := StrReplace(NewStr, "anyone", "anynyan")
+NewStr := StrReplace(NewStr, "lesbian", "lesbnyan")
+NewStr := StrReplace(NewStr, "morning", "meowning")
+NewStr := StrReplace(NewStr, "hand", "paw")
+NewStr := StrReplace(NewStr, "foot", "paw")
+NewStr := StrReplace(NewStr, "feet", "paws")
+NewStr := StrReplace(NewStr, "perfect", "purrfect")
+NewStr := StrReplace(NewStr, "pretty", "purretty")
+NewStr := StrReplace(NewStr, "morbidly", "meowbidly")
+NewStr := StrReplace(NewStr, "nail", "claw")
+NewStr := StrReplace(NewStr, "finger", "paw")
+NewStr := StrReplace(NewStr, "thumb", "paw")
+NewStr := StrReplace(NewStr, "now", "meow")
+NewStr := StrReplace(NewStr, "moment", "meowment")
+NewStr := StrReplace(NewStr, "opportunities", "oppawtunities")
+; /conv
+; (work in progress, more soon.)
+
+#NoEnv
+; #Warn
+SendMode Event
+SetWorkingDir %A_ScriptDir%
+
+setkeydelay 70
+
+CMD:
+;Send {Raw}%NewStr%
+vText := NewStr
+NewStr := vText
+Loop Parse, vText, % "`n", % "`r"
+{
+    Send, % "{Text}" A_LoopField
+}
+return
+
+; script;stop
+; EOF
+

@@ -1,0 +1,28 @@
+# figuring out functions in python, and how they
+# have parameters and can return things
+
+def doubler(num):
+    num = num * 2
+    return num
+
+num = doubler(420)
+
+print(num)
+
+
+num = doubler(20)
+
+print(num)
+
+# and now instead of just doubling the one defined num when i run the function,
+# like in the previous script, i can now double any num i want at any time
+# uwu
+
+# you can use it with writing
+# doubler(22)
+# 44
+#
+# or assign its result to a variable with something like
+# num = doubler(10)
+# print(num)
+# 20

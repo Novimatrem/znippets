@@ -1,0 +1,19 @@
+#!/bin/bash
+# xfce4-debian10.sh
+
+sudo apt install -y xfce4
+
+sudo apt install -y task-xfce-desktop
+
+sudo apt install -y xfwm4
+
+sudo apt install -y xfdesktop4
+
+sudo apt install -y xfce4-whiskermenu-plugin
+
+sudo apt install -y xfce4-session
+
+sudo apt install -y xfce4-goodies
+
+sudo apt install -y xfce4-appfinder
+

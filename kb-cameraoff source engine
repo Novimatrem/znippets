@@ -1,0 +1,20 @@
+// kb-camera_off.cfg source engine v9
+cl_mouselook 1
+
+// you must disconnect before running this script
+disconnect
+cl_mouselook 1
+
+// unbinds
+unbind i
+unbind j
+unbind k
+unbind l
+unbind leftarrow
+unbind rightarrow
+unbind u
+unbind o
+unbind 8
+cl_mouselook 1
+
+echo "Script ran. You should be back to normal, now."

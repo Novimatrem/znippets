@@ -1,0 +1,15 @@
+#!/bin/bash
+# remove-all-nvidia-fedora.sh
+
+echo "Automatically uninstall all NVIDIA driver everything."
+echo "A reboot will occur automatically once finished."
+echo "Enter your sudo password to begin;"
+
+sudo echo "Starting..."
+
+rpm -qa | grep nvidia >list
+sudo dnf remove -y $(awk '{print $1}' <list)
+
+echo "Process complete. Rebooting in 5."
+sleep 5s
+sudo reboot now

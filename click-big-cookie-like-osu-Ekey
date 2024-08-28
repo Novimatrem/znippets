@@ -1,0 +1,9 @@
+E::
+Sleep,0
+;MouseClick, left, 276, 437
+;Click, Screen, 276, 437
+CoordMode, Mouse, Screen
+x := 276
+y := 437
+Click %x% %Y%
+keywait,e

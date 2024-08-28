@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+
+"""
+covid-date.py
+Lets you know the current date, topically.
+"""
+
+from datetime import datetime
+import time
+global timedelta
+date1 = datetime.now()
+date2 = datetime(day=11, month=3, year=2020)
+
+timedelta = date2 - date1
+
+timedeltastr = str(timedelta)
+
+substring = timedeltastr[0:5]
+
+substring = timedeltastr[1:5]
+
+print(substring)
+day=int(substring)
+
+if 4 <= day <= 20 or 24 <= day <= 30:
+    suffix = "th"
+else:
+    suffix = ["st", "nd", "rd"][day % 10 - 1]
+
+timeend=time.strftime("%I:%M %p")
+
+print ("\n" * 49)
+print ("\n" * 49)
+print ("\n" * 49)
+print("Today is March " + substring + suffix + ", 2020, at " + timeend + ".")
+print ("\n" * 0)

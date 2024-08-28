@@ -1,0 +1,16 @@
+# Restart GNOME Shell but try to not close applications, bash alias
+
+
+# put the following in /opt/restartgnome3.sh
+
+busctl --user call org.gnome.Shell /org/gnome/Shell org.gnome.Shell Eval s 'Meta.restart("Restarting…")'
+
+
+# put the following in your bashrc
+
+alias r="bash /opt/restartgnome3.sh"
+
+# restart your terminals, enter r into the terminal to respring
+
+# yes i know gnome 3's alt+f2 menu has this feature natively, but depending on config,
+#       - and if the key's been rebound, the native feature may not work. this is why i made this

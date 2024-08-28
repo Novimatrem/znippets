@@ -1,0 +1,6 @@
+# either something's really buggy, or someone's "having fun" with me, either way, this fixes it.
+while true
+do
+pkill steamwebhelper
+killall steamwebhelper
+done

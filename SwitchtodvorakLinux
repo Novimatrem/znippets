@@ -1,0 +1,11 @@
+# Switch to dvorak (Linux)
+
+setxkbmap dvorak
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us+dvorak')]"
+
+# If running those doesn't work, try this;
+sudo dpkg-reconfigure keyboard-configuration
+
+# A LOT more information and tips about Dvorak can be found here;
+# https://gitlab.com/snippets/1997412
+# (^ recommended reading ^)

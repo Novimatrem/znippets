@@ -1,0 +1,56 @@
+#!/bin/bash
+# discord-activity-script.sh v6
+
+# If you are reading this, I am ALWAYS online on Discord when I'm not asleep.
+# Discord has very bad online status indication, that would lead you to believe I'm offline, 
+# but it isn't true.
+# Within a moment I can see whatever you send me, as a notification, on both my desktop and phone,
+# just because it's not green doesn't mean otherwise.
+# So this script makes the online status indicator work in such a way that'll cause you less anxiety- 
+# without changing my (always immediate) ability to access Discord at all times.
+# I promise.
+# I'm not abandoning you, Discord is just badly designed.
+
+# Repeat given char 80 times using shell function
+repeat(){
+	for i in {1..80}; do echo -n "$1"; done
+}
+
+clear
+echo discord-activity-script.sh_v6
+echo "Script to reduce the anxiety of somebody I care about."
+echo "Online presence status detection really is an anxiety inducing plague."
+echo ""
+echo "If prompted, enter password to install deps:"
+echo ""
+echo "So. An issue with this script is that you cannot get mobile PUSH notifications  while using it, because Discord thinks you're at the PC."
+echo "If you want to receive the discord SOFT-notifications on your PHONE, you need to"
+echo "have Discord *open*, but not *focussed*, in your window manager on Linux."
+echo "Keep your focus on the Terminal if you're using your phone Discord, I mean."
+echo ""
+echo "Otherwise, if you're just at your PC, just use Discord like normal, but without using your mouse."
+echo ""
+echo "Don't touch the mouse after the script starts."
+echo ""
+echo "Instructions on what to do when you're on the phone side of this will be shown  after you start the script."
+echo ""
+sudo dnf install -y xdotool
+sudo dnf install -y numlockx
+clear
+echo ""
+echo "Deps installed."
+echo ""
+echo "DON'T TOUCH THE MOUSE NOW, HAVE PC DISCORD open BUT DO NOT FOCUS IT IN X."
+echo "JUST STAY ON THE TERMINAL AS YOUR X11 FOCUS."
+echo ""
+echo "Starting..."
+sleep 1s
+sleep 1s
+sleep 1s
+sleep 1s
+sleep 2s
+clear
+echo "Starting.."
+while sleep 1; do sleep 1s && numlockx on && xdotool key Scroll_Lock && xdotool key Break && xdotool mousemove 300 300 && sleep 1s && xdotool mousemove 330 330 && sleep 1s && xdotool mousemove_relative 20 20 && sleep 1s && xdotool mousemove_relative -- -10 -10 && xdotool mousemove_relative -- -30 -30 && xdotool key Break && xdotool key Scroll_Lock && numlockx off && echo "" && repeat "=" && echo "Keeping you Online on Discord $(date)" && echo "(because you literally are a moment away, but probably just on a phone..)" && echo "" && echo "REMEMBER: discord won't notify you because it thinks you're at your PC." && echo "So to still get notifs, keep Discord open on your phone, and switch to somebody  else's chat. Switch to another friend so that the popup and visual notification" && echo "from *🧑* still comes through, while still keeping your status accurate." && repeat "=" && echo ""; done
+
+# End of file.

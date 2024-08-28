@@ -1,0 +1,1 @@
+sleep 0.01s && thunar -q && while true; do sleep 0.01s && thunar && sleep 0.01s; done

@@ -1,0 +1,18 @@
+; typeclipboardgradually.ahk
+#NoEnv
+; #Warn
+SendMode Event
+SetWorkingDir %A_ScriptDir%
+
+setkeydelay 70
+
+CMD:
+;Send {Raw}%Clipboard%
+vText := Clipboard
+Clipboard := vText
+Loop Parse, vText, % "`n", % "`r"
+{
+    Send, % "{Text}" A_LoopField
+    Send, % "+{Enter}"
+}
+return
